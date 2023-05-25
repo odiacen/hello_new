@@ -8,7 +8,7 @@
       background-image: url('https://www.helloflatmate.com/img/img/5.png');
       height: 75%;
     ">
-     <p class="text-cyan-300">helloflatmate</p>
+     
     <div
       class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
       style="">
