@@ -1,0 +1,13 @@
+@include('nuevo.global.new_header')
+<section>
+    @include('nuevo.home_partials.new_hero')
+</section>
+<section>
+    @include('nuevo.home_partials.new_promo')
+</section>
+<section>
+    @include('nuevo.home_partials.new_carruselr')
+</section>
+<section>
+    @include('nuevo.home_partials.new_carrusell')
+</section>
