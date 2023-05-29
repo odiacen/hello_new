@@ -17,8 +17,4 @@
             Atención personalizada, pisos <br/> recién reformados. Las mejores condiciones.
         </span>
 </div>
-<div class="flex justify-center items-center py-10 bg-gray-100">
-    <span class="text-gray-800 text-xl font-bold">
-        ¿Qué incluye tu habitación?
-    </span>
-</div>
+@include('nuevo.rooms_partials.new_rooms_promo')
