@@ -1,7 +1,7 @@
 <div x-data="cardsGrid()">
-    <div class="flex flex-wrap justify-center items-center px-36">
+    <div class="flex flex-wrap justify-center items-center px-24">
         <template x-for="card in cards" :key="card">
-            <a href="#" class="flex flex-col items-center bg-white border border-gray-100  md:flex-row md:max-w-xl hover:bg-gray-100">
+            <a href="#" class="flex flex-col items-center bg-gray-100">
                 <img class="object-cover w-full h-56" :src="card.imageSrc" alt="">
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-xl font-bold text-black" x-text="card.title"></h5>
