@@ -4,7 +4,7 @@
     </span>
     <div class="flex lg:flex-row flex-col mt-8">
         <div class="flex flex-col justify-center items-center mt-4">
-            <img class="w-12 h-12" src='https://www.helloflatmate.com/img/img/icon-mail.png'/>
+            <img class="lg:w-12 lg:h-12 w-16 h-16" src='https://www.helloflatmate.com/img/img/icon-mail.png'/>
             <span class="text-black text-md font-bold mt-4">Contrato</span>
             <p class="text-gray-700 text-sm mt-4 text-justify px-6">
                 Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -12,7 +12,7 @@
             </p>
         </div>
         <div class="flex flex-col justify-center items-center mt-4">
-            <img class="w-12 h-12" src='https://www.helloflatmate.com/img/img/icon-card.png'/>
+            <img class="lg:w-12 lg:h-12 w-20 h-20" src='https://www.helloflatmate.com/img/img/icon-card.png'/>
             <span class="text-black text-md font-bold mt-4">Reserva inmediata</span>
             <p class="text-gray-700 text-sm mt-4 text-justify px-6">
                 Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -20,7 +20,7 @@
             </p>
         </div>
         <div class="flex flex-col justify-center items-center mt-4">
-            <img class="w-12 h-12" src='https://www.helloflatmate.com/img/img/icon-clock.png'/>
+            <img class="lg:w-12 lg:h-12 w-20 h-20" src='https://www.helloflatmate.com/img/img/icon-clock.png'/>
             <span class="text-black text-md font-bold mt-4">Servicio 24/7</span>
             <p class="text-gray-700 text-sm mt-4 text-justify px-6">
                 Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -28,7 +28,7 @@
             </p>
         </div>
         <div class="flex flex-col justify-center items-center mt-4">
-            <img class="w-12 h-12" src='https://www.helloflatmate.com/img/img/icon-calendar.png'/>
+            <img class="lg:w-12 lg:h-12 w-20 h-20" src='https://www.helloflatmate.com/img/img/icon-calendar.png'/>
             <span class="text-black text-md font-bold mt-4">Check-in</span>
             <p class="text-gray-700 text-sm mt-4 text-justify px-6">
                 Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
