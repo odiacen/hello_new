@@ -1,7 +1,7 @@
 <div x-data="cardsGrid()">
     <div class="flex flex-wrap justify-center items-center px-20 mt-2">
         <template x-for="card in cards" :key="card">
-            <a href="#" class="flex flex-col w-[300px] items-start bg-gray-100 mt-10 ml-10 relative">
+            <a href="#" class="flex flex-col lg:w-[300px] w-full items-start bg-gray-100 mt-10 lg:ml-10 relative">
                 <img class="object-cover w-full h-48" :src="card.imageSrc" alt="">
                 <div class="absolute bg-cyan-300 flex flex-row p-2 text-sm text-white font-bold mb-1 bottom-14 right-1">
                     <span x-text="card.price"></span>

@@ -1,10 +1,9 @@
 @include('nuevo.global.new_header')
 <div
-        class="relative overflow-hidden bg-cover bg-no-repeat"
+        class="relative overflow-hidden bg-cover bg-no-repeat lg:h-[60%] h-[30%]"
         style="
     background-position: 50%;
     background-image: url('https://www.helloflatmate.com/img/img/rooms_banner.png');
-    height: 60%;
     ">
     <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
         <span class="uppercase text-white text-6xl font-bold">
