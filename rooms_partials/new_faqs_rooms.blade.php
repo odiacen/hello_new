@@ -1,4 +1,4 @@
-<div x-data="listItems()" class="flex flex-col justify-center items-center py-10 bg-white px-36">
+<div class="flex flex-col justify-center items-center py-10 bg-white px-36">
     <div class="flex flex-col justify-center items-center">
         <span class="text-black text-md font-bold">
             ¿Por qué alquilar una habitación para estudiantes en Valencia con helloflatmate?
@@ -31,7 +31,7 @@
             tu habitación ideal en base a parámetros como:
         </p>
         <p class="text-black text-sm text-justify">
-            <ul class="p-1" >
+            <ul x-data="listItems()" class="p-1" >
                 <template x-for="(item, index) in items" :key="index">
                     <li class="py-2">{{ item }}</li>
                 </template>
