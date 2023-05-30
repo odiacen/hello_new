@@ -30,13 +30,11 @@
             Gracias a los diferentes filtros de nuestra central de reservas podrás elegir
             tu habitación ideal en base a parámetros como:
         </p>
-{{--        <p class="text-black text-sm text-justify">--}}
-{{--            <ul x-data="listItems()" class="p-1" >--}}
-{{--                <template x-for="(item, index) in items" :key="index">--}}
-{{--                    <li class="py-2">{{ item }}</li>--}}
-{{--                </template>--}}
-{{--            </ul>--}}
-{{--        </p>--}}
+        <ul x-data="listItems()" class="p-1 text-black text-sm text-justify" >
+            <template x-for="(item, index) in items" :key="index">
+                <li class="py-2">{{ item }}</li>
+            </template>
+        </ul>
         <p class="text-black text-sm text-justify">
             Además, si tienes cualquier tipo de duda o necesitas que te asesoremos personalmente,
             puedes contactar con nuestros agentes que te orientarán durante todo el proceso de búsqueda,
@@ -44,21 +42,21 @@
         </p>
     </div>
 
-{{--    <script>--}}
-{{--        function listItems() {--}}
-{{--            const items = [--}}
-{{--                'Cercanía a tu universidad',--}}
-{{--                'Presupuesto mensual',--}}
-{{--                'Temporada en la que quieras ocupar la habitación',--}}
-{{--                'Zona de Valencia preferida por cercanía de servicios, ocio y demás.',--}}
-{{--                'Habitaciones exclusivas sólo para chicas'--}}
-{{--            ];--}}
+    <script>
+        function listItems() {
+            const items = [
+                'Cercanía a tu universidad',
+                'Presupuesto mensual',
+                'Temporada en la que quieras ocupar la habitación',
+                'Zona de Valencia preferida por cercanía de servicios, ocio y demás.',
+                'Habitaciones exclusivas sólo para chicas'
+            ];
 
-{{--            return {--}}
-{{--                items,--}}
-{{--            };--}}
-{{--        }--}}
-{{--    </script>--}}
+            return {
+                items,
+            };
+        }
+    </script>
 </div>
 
 

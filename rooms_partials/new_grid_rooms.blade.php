@@ -14,7 +14,7 @@
             </a>
         </template>
         <button x-show="showLoadMoreButton" @click="loadMoreCards"
-                class="mt-4 bg-cyan-300 lg:w-1/3 w-3/4 hover:bg-cyan-400 text-white font-bold py-2 px-10 rounded-full">
+                class="mt-4 bg-cyan-300 lg:w-1/4 w-3/4 hover:bg-cyan-400 text-white font-bold py-2 px-10 rounded-full">
             Cargar más
         </button>
     </div>
