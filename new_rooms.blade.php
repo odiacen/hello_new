@@ -19,3 +19,4 @@
 </div>
 @include('nuevo.rooms_partials.new_rooms_promo')
 @include('nuevo.rooms_partials.new_search_bar')
+@include('nuevo.rooms_partials.new_grid_rooms')
