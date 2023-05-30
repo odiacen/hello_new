@@ -14,66 +14,82 @@
             </a>
         </template>
     </div>
+    <button x-show="showLoadMoreButton" @click="loadMoreCards"
+            class="mt-4 bg-cyan-300 hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded-full">
+        Cargar más
+    </button>
 
     <script>
         function cardsGrid() {
+            const cards = [
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 275
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 375
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 285
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 275
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 375
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 285
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 275
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 375
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
+                    title: 'Tranquila habitación doble',
+                    description: 'En la mejor zona universitaria',
+                    price: 285
+                },
+            ];
+
+            const visibleCardsCount = 9;
+            const showLoadMoreButton = cards.length > visibleCardsCount;
+            let visibleCards = cards.slice(0, visibleCardsCount);
+
             return {
-                cards: [
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 275
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 375
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 285
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 275
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 375
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 285
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 275
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 375
-                    },
-                    {
-                        imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
-                        title: 'Tranquila habitación doble',
-                        description: 'En la mejor zona universitaria',
-                        price: 285
-                    },
-                ]
+                cards,
+                visibleCards,
+                showLoadMoreButton,
+                loadMoreCards() {
+                    const nextVisibleCardsCount = this.visibleCards.length + visibleCardsCount;
+                    this.visibleCards = cards.slice(0, nextVisibleCardsCount);
+                }
             };
         }
     </script>
