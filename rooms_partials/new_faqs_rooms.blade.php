@@ -1,4 +1,4 @@
-<div x-data="{ items: [] }" class="flex flex-col justify-center items-center py-10 bg-white px-36">
+<div x-data="listItems()" class="flex flex-col justify-center items-center py-10 bg-white px-36">
     <div class="flex flex-col justify-center items-center">
         <span class="text-black text-md font-bold">
             ¿Por qué alquilar una habitación para estudiantes en Valencia con helloflatmate?
@@ -45,14 +45,19 @@
     </div>
 
     <script>
-        const items = [
-            'Cercanía a tu universidad',
-            'Presupuesto mensual',
-            'Temporada en la que quieras ocupar la habitación',
-            'Zona de Valencia preferida por cercanía de servicios, ocio y demás.',
-            'Habitaciones exclusivas sólo para chicas'
-        ];
+        function listItems() {
+            const items = [
+                'Cercanía a tu universidad',
+                'Presupuesto mensual',
+                'Temporada en la que quieras ocupar la habitación',
+                'Zona de Valencia preferida por cercanía de servicios, ocio y demás.',
+                'Habitaciones exclusivas sólo para chicas'
+            ];
 
+            return {
+                items,
+            };
+        }
         // document.addEventListener('DOMContentLoaded', function() {
         //     const app = Alpine.data('myApp');
         //     app.items = items;
