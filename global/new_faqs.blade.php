@@ -6,7 +6,7 @@
             <button class="bg-white text-neutral-700 py-2 px-4 rounded-md shadow-sm">Ver más preguntas</button>
         </div>
         <div>
-            <div class="bg-white p-4 rounded-md shadow-md">
+            <div>
                 <template x-for="(question, index) in questions" :key="index">
                     <div class="flex items-start mb-4">
                         <div class="mr-2">
@@ -34,7 +34,7 @@
     </div>
     <script>
         function listFaqs() {
-            const items = [
+            const questions = [
                 {
                     title: "¿Pregunta 1?",
                     answer: "Respuesta a la pregunta 1.",
@@ -53,7 +53,7 @@
             ];
 
             return {
-                items,
+                questions,
             };
         }
     </script>
