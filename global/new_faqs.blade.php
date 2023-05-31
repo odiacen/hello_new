@@ -6,7 +6,7 @@
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in error.</p>
-            <button class="bg-white text-md text-black fond-bold py-2 px-4 rounded-full">Ver más preguntas</button>
+            <button class="bg-white text-md text-gray-900 fond-bold py-2 px-4 rounded-full">Ver más preguntas</button>
         </div>
         <div class="px-8">
             <hr class="bg-white my-2">
@@ -28,7 +28,7 @@
                         </button>
                     </div>
                 </div>
-                <hr class="bg-white my-2">
+                <hr class="bg-white my-2" x-show="index !== questions.length - 1">
             </template>
         </div>
     </div>
