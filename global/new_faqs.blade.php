@@ -1,30 +1,33 @@
-<div x-data="listFaqs()" class="bg-neutral-700 py-6 px-4">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+<div x-data="listFaqs()" class="bg-neutral-700 py-6 px-32">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-            <h2 class="text-white text-xl font-bold mb-4">Preguntas frecuentes</h2>
-            <p class="text-white mb-4">Aquí encontrarás respuestas a las preguntas más comunes.</p>
-            <button class="bg-white text-neutral-700 py-2 px-4 rounded-md shadow-sm">Ver más preguntas</button>
+            <h2 class="text-white text-2xl font-bold mb-4">Preguntas frecuentes</h2>
+            <p class="text-white mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in error.</p>
+            <button class="bg-white text-black fond-bold py-2 px-4 rounded-full">Ver más preguntas</button>
         </div>
         <div>
             <div>
                 <template x-for="(question, index) in questions" :key="index">
-                    <div class="flex items-start mb-4">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-md text-white font-bold" x-text="question.title"></h3>
+                            <p class="text-sm text-white mt-1" x-show="question.open" x-text="question.answer"></p>
+                        </div>
                         <div class="mr-2">
-                            <button @click="question.open = !question.open">
+                            <button
+                                class="text-white"
+                                @click="question.open = !question.open">
                                 <svg x-show="!question.open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle w-6 h-6">
-                                    <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="12" y1="8" x2="12" y2="16"></line>
                                     <line x1="8" y1="12" x2="16" y2="12"></line>
                                 </svg>
                                 <svg x-show="question.open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus-circle w-6 h-6">
-                                    <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="8" y1="12" x2="16" y2="12"></line>
                                 </svg>
                             </button>
-                        </div>
-                        <div>
-                            <h3 class="font-medium" x-text="question.title"></h3>
-                            <p class="text-sm text-gray-500 mt-1" x-show="question.open" x-text="question.answer"></p>
                         </div>
                     </div>
                     <hr class="border-gray-200 my-2" x-show="index !== questions.length - 1">
