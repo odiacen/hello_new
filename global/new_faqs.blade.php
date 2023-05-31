@@ -1,8 +1,8 @@
 <div x-data="listFaqs()" class="bg-neutral-700 py-12 px-32">
     <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
         <div class="px-12">
-            <h2 class="text-white text-2xl font-bold mb-4">Preguntas frecuentes</h2>
-            <p class="text-white mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            <h2 class="text-white lg:text-2xl text-xl font-bold mb-4">Preguntas frecuentes</h2>
+            <p class="text-white mb-4 lg:text-md text-sm text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in error.</p>
@@ -11,7 +11,7 @@
         <div class="px-8">
             <hr class="bg-white my-2">
             <template x-for="(question, index) in questions" :key="index">
-                <div :class="{'bg-white': question.open, 'bg-neutral-700': !question.open}" class="flex flex-row justify-between items-center mb-4 p-4">
+                <div :class="{'bg-white': question.open, 'bg-neutral-700': !question.open}" class="flex flex-row justify-between items-center mb-4 p-4 divide-y divide-white">
                     <div>
                         <h3 class="text-md font-bold" :class="{'text-black': question.open, 'text-white': !question.open}" x-text="question.title"></h3>
                         <p class="text-sm mt-1" :class="{'text-black': question.open, 'text-white': !question.open}" x-show="question.open" x-text="question.answer"></p>
@@ -28,8 +28,6 @@
                         </button>
                     </div>
                 </div>
-                <hr class="border-white my-2" x-show="index !== questions.length - 1">
-                <hr class="border-white my-2" x-show="index === questions.length - 1">
             </template>
         </div>
     </div>
