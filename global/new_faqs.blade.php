@@ -28,7 +28,8 @@
                         </button>
                     </div>
                 </div>
-                <hr class="bg-white my-2" x-show="index !== questions.length - 1">
+                <hr class="border-white my-2" x-show="index !== questions.length - 1">
+                <hr class="border-white my-2" x-show="index === questions.length - 1">
             </template>
         </div>
     </div>
