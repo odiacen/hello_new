@@ -9,9 +9,9 @@
             <button class="bg-white text-md text-gray-900 fond-bold py-2 px-4 rounded-full">Ver más preguntas</button>
         </div>
         <div class="px-8">
-            <hr class="bg-white my-2">
+            <hr class="border-white border-2 my-2">
             <template x-for="(question, index) in questions" :key="index">
-                <div :class="{'bg-white': question.open, 'bg-neutral-700': !question.open}" class="flex flex-row justify-between items-center mb-4 p-4 divide-y divide-white">
+                <div :class="{'bg-white': question.open, 'bg-neutral-700': !question.open}" class="flex flex-row justify-between items-center mb-4 p-4">
                     <div>
                         <h3 class="text-md font-bold" :class="{'text-black': question.open, 'text-white': !question.open}" x-text="question.title"></h3>
                         <p class="text-sm mt-1" :class="{'text-black': question.open, 'text-white': !question.open}" x-show="question.open" x-text="question.answer"></p>
@@ -28,6 +28,9 @@
                         </button>
                     </div>
                 </div>
+                <template x-if="index !== questions.length - 1">
+                    <hr class="border-white border-2 my-2">
+                </template>
             </template>
         </div>
     </div>
