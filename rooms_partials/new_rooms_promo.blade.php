@@ -2,7 +2,7 @@
     <span class="text-black text-xl font-bold">
         ¿Qué incluye tu habitación?
     </span>
-    <div class="flex lg:flex-row flex-col mt-8">
+    <div class="grid lg:grid-rows-1 grid-cols-2 mt-8">
         <div class="flex flex-col justify-center items-center mt-4">
             <img class="lg:w-12 lg:h-12 w-16 h-16" src='https://www.helloflatmate.com/img/img/icon-mail.png'/>
             <span class="text-black text-md font-bold mt-4">Contrato</span>

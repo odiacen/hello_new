@@ -11,12 +11,13 @@
         </span>
     </div>
 </div>
-<div class="bg-white py-12 w-full flex justify-center items-center">
-        <span class="text-sm text-gray-800">Habitaciones para estudiantes en Valencia con la mejor empresa del sector.
-            Atención personalizada, pisos <br/> recién reformados. Las mejores condiciones.
-        </span>
+<div class="bg-white hidden lg:flex py-12 w-full justify-center items-center">
+    <span class="text-sm text-gray-800">Habitaciones para estudiantes en Valencia con la mejor empresa del sector.
+        Atención personalizada, pisos <br/> recién reformados. Las mejores condiciones.
+    </span>
 </div>
 @include('nuevo.rooms_partials.new_rooms_promo')
 @include('nuevo.rooms_partials.new_search_bar')
 @include('nuevo.rooms_partials.new_grid_rooms')
 @include('nuevo.rooms_partials.new_faqs_rooms')
+@include('nuevo.global.new_faqs')
