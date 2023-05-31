@@ -1,7 +1,7 @@
-<div x-data="cardsGrid()">
+<div x-data="cardsGrid()" class="grid justify-center items-center">
     <div class="grid grid-cols-2 lg:grid-cols-3 justify-center items-center px-20 mt-2">
         <template x-for="(card, index) in visibleCards" :key="card">
-            <a href="#" class="flex flex-col lg:w-[300px] w-[250px] items-start bg-gray-100 mt-10 ml-10 relative">
+            <a href="#" class="flex flex-col w-[300px] items-start bg-gray-100 mt-10 ml-10 relative">
                 <img class="object-cover w-full lg:h-48 h-56" :src="card.imageSrc" alt="">
                 <div class="absolute bg-cyan-300 flex flex-row p-2 text-sm text-white font-bold mb-1 bottom-14 right-1">
                     <span x-text="card.price"></span>

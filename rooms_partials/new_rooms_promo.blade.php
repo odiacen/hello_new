@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-center items-center py-10 bg-gray-100 lg:px-36 px-28">
+<div class="grid justify-center items-center py-10 bg-gray-100 lg:px-36 px-28">
     <span class="text-black text-xl font-bold">
         ¿Qué incluye tu habitación?
     </span>
