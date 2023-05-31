@@ -46,11 +46,11 @@
     <script>
         function listItems() {
             const items = [
-                '- Cercanía a tu universidad',
-                '- Presupuesto mensual',
-                '- Temporada en la que quieras ocupar la habitación',
-                '- Zona de Valencia preferida por cercanía de servicios, ocio y demás.',
-                '- Habitaciones exclusivas sólo para chicas'
+                'Cercanía a tu universidad',
+                'Presupuesto mensual',
+                'Temporada en la que quieras ocupar la habitación',
+                'Zona de Valencia preferida por cercanía de servicios, ocio y demás.',
+                'Habitaciones exclusivas sólo para chicas'
             ];
 
             return {
