@@ -1,5 +1,5 @@
 <div x-data="listFaqs()" class="bg-neutral-700 py-12 px-32 relative">
-    <img class="absolute w-48 h-48 top-0 right-0" src="https://www.helloflatmate.com/img/img/vector.png"/>
+    <img class="absolute w-36 h-36 top-0 right-0" src="https://www.helloflatmate.com/img/img/vector.png"/>
     <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
         <div class="px-12">
             <h2 class="text-white lg:text-2xl text-xl font-bold mb-4">Preguntas frecuentes</h2>
