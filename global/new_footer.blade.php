@@ -1,4 +1,4 @@
-<footer class="footer flex-col justify-center items-center w-full bg-['3f12a3']">
+<footer style="background-color: #3f12a3" class="footer flex-col justify-center items-center w-full">
     <div class="flex w-full justify-center flex-wrap text-left py-8 px-32">
         <div class="w-full lg:w-3/12 lg:px-4">
             <div class="flex flex-wrap justify-center items-center">
