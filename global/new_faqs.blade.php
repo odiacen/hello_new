@@ -1,5 +1,5 @@
 <div x-data="listFaqs()" class="bg-neutral-700 py-12 px-32 relative">
-    <img class="absolute w-20 h-20 -top-8 -right-8" src="https://www.helloflatmate.com/img/img/vector-circle.png"/>
+    <img class="absolute w-32 h-32 -top-10 -right-10" src="https://www.helloflatmate.com/img/img/vector-circle.png"/>
     <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
         <div class="px-12">
             <h2 class="text-white lg:text-2xl text-xl font-bold mb-4">Preguntas frecuentes</h2>
@@ -29,7 +29,7 @@
                         </button>
                     </div>
                 </div>
-                <hr class="bg-white my-2 z-10">
+                <hr class="bg-white my-2 border-t-2 border-gray-300">
             </template>
         </div>
     </div>
