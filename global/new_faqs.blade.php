@@ -1,5 +1,5 @@
 <div x-data="listFaqs()" class="bg-neutral-700 py-12 px-32 relative">
-    <img class="absolute w-48 h-48 -top-28 -right-28" src="https://www.helloflatmate.com/img/img/vector-circle.png"/>
+    <img class="absolute w-48 h-48 -top-24 -right-24" src="https://www.helloflatmate.com/img/img/vector-circle.png"/>
     <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
         <div class="px-12">
             <h2 class="text-white lg:text-2xl text-xl font-bold mb-4">Preguntas frecuentes</h2>
@@ -10,9 +10,9 @@
             <button class="bg-white text-md text-gray-900 fond-bold py-2 px-4 rounded-full">Ver más preguntas</button>
         </div>
         <div class="px-8">
-            <hr class="bg-white my-2">
+            <hr class="border-t-2 border-gray-50 my-2">
             <template x-for="(question, index) in questions" :key="index">
-                <div :class="{'bg-white': question.open, 'bg-neutral-700': !question.open}" class="flex flex-row justify-between items-center mb-4 p-4 border-t-2 border-gray-50">
+                <div :class="{'bg-white': question.open, 'bg-neutral-700': !question.open}" class="flex flex-row justify-between items-center mb-4 p-4 border-b-2 border-gray-50">
                     <div>
                         <h3 class="text-md font-bold" :class="{'text-black': question.open, 'text-white': !question.open}" x-text="question.title"></h3>
                         <p class="text-sm mt-1" :class="{'text-black': question.open, 'text-white': !question.open}" x-show="question.open" x-text="question.answer"></p>
