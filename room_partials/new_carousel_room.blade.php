@@ -1,6 +1,6 @@
 <div x-data="carousel()" x-init="startCarousel()" class="flex justify-center items-center h-screen">
     <div class="w-64">
-        <div class="relative">
+        <div class="relative flex justify-center items-center">
             <template x-for="(image, index) in images">
                 <div x-show="activeSlide === index" :key="index" class="absolute w-full">
                     <img :src="image.imageSrc" alt="Slide" class="w-full">
@@ -8,10 +8,10 @@
             </template>
 
             <div class="flex justify-between absolute w-full px-4">
-                <button @click="activeSlide = Math.max(activeSlide - 1, 0)" class="text-cyan-300 bg-white text-xl p-1">
+                <button @click="activeSlide = Math.max(activeSlide - 1, 0)" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                     <ion-icon name="chevron-back-outline"></ion-icon>
                 </button>
-                <button @click="activeSlide = Math.min(activeSlide + 1, images.length - 1)" class="text-cyan-300 bg-white text-xl p-1">
+                <button @click="activeSlide = Math.min(activeSlide + 1, images.length - 1)" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
             </div>
