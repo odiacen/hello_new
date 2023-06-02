@@ -46,7 +46,7 @@
             }
 
             function previousSlide() {
-                activeSlide = activeSlide === 0 ? images.length - 1 : activeSlide - 1;
+                activeSlide = (activeSlide - 1 + images.length) % images.length;
             }
 
             function nextSlide() {
