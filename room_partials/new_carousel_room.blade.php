@@ -2,16 +2,16 @@
     <div class="w-64">
         <div class="relative flex justify-center items-center">
             <template x-for="(image, index) in images">
-                <div x-show="activeSlide === index" :key="index" class="absolute w-full">
+                <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
                     <img :src="image.imageSrc" alt="Slide" class="w-full">
                 </div>
             </template>
 
             <div class="flex justify-between absolute w-full px-4">
-                <button @click="activeSlide = Math.max(activeSlide - 1, 0)" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                <button @click="previousSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                     <ion-icon name="chevron-back-outline"></ion-icon>
                 </button>
-                <button @click="activeSlide = Math.min(activeSlide + 1, images.length - 1)" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                <button @click="nextSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
             </div>
@@ -37,14 +37,29 @@
 
             function startCarousel() {
                 intervalId = setInterval(() => {
-                    activeSlide = (activeSlide + 1) % images.length;
+                    nextSlide();
                 }, 2000);
+            }
+
+            function isActiveSlide(index) {
+                return activeSlide === index;
+            }
+
+            function previousSlide() {
+                activeSlide = activeSlide === 0 ? images.length - 1 : activeSlide - 1;
+            }
+
+            function nextSlide() {
+                activeSlide = (activeSlide + 1) % images.length;
             }
 
             return {
                 images,
                 activeSlide,
                 startCarousel,
+                isActiveSlide,
+                previousSlide,
+                nextSlide,
             };
         }
     </script>
