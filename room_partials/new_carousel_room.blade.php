@@ -32,34 +32,23 @@
                 },
             ];
 
-            let activeSlide = 0;
-            let intervalId = null;
-
-            function startCarousel() {
-                intervalId = setInterval(() => {
-                    nextSlide();
-                }, 2000);
-            }
-
-            function isActiveSlide(index) {
-                return activeSlide === index;
-            }
-
-            function previousSlide() {
-                activeSlide = (activeSlide - 1 + images.length) % images.length;
-            }
-
-            function nextSlide() {
-                activeSlide = (activeSlide + 1) % images.length;
-            }
-
             return {
                 images,
-                activeSlide,
-                startCarousel,
-                isActiveSlide,
-                previousSlide,
-                nextSlide,
+                activeSlide: 0,
+                startCarousel() {
+                    setInterval(() => {
+                        this.nextSlide();
+                    }, 2000);
+                },
+                isActiveSlide(index) {
+                    return this.activeSlide === index;
+                },
+                previousSlide() {
+                    this.activeSlide = (this.activeSlide - 1 + this.images.length) % this.images.length;
+                },
+                nextSlide() {
+                    this.activeSlide = (this.activeSlide + 1) % this.images.length;
+                },
             };
         }
     </script>
