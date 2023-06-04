@@ -17,8 +17,47 @@
     </span>
 </div>
 @include('nuevo.rooms_partials.new_rooms_promo')
+<section x-data="cardsGrid()" x-init="getRooms()">
 @include('nuevo.rooms_partials.new_search_bar')
 @include('nuevo.rooms_partials.new_grid_rooms')
+<script>
+        function cardsGrid() {
+            return {
+                showLoadMoreButton: true,
+                endpointRooms: "https://www.helloflatmate.com/api/rooms?page=",
+                page: 1,
+                rooms: [],
+                portadas: [],
+                actualRooms: 0,
+                totalRooms: 0,
+                getRooms(){
+                    axios.get( this.endpointRooms + this.page )
+                    .then( (r)=>{
+                            
+                            if (r.data.rooms.data.length < 12) {
+                                this.showLoadMoreButton = false;
+                            }
+                            
+                            r.data.rooms.data.forEach(room => {
+                                this.rooms.push(room);
+                            });
+                            
+                            
+                            r.data.portadas.forEach(portada => {
+                                this.portadas.push(portada);
+                            });
+
+                            this.actualRooms = this.rooms.length;
+                            this.totalRooms = r.data.rooms.data.total;
+
+                        }).catch( (e)=>{
+                            
+                        })
+                }
+            };
+        }
+    </script>
+</section>
 @include('nuevo.rooms_partials.new_faqs_rooms')
 @include('nuevo.global.new_faqs')
 @include('nuevo.global.new_footer')

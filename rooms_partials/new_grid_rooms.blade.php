@@ -1,4 +1,4 @@
-<div x-data="cardsGrid()" x-init="getRooms()" class="grid justify-center items-center">
+<div class="grid justify-center items-center">
     <div class="grid grid-cols-2 lg:grid-cols-3 justify-center items-center px-20 mt-2">
         <template x-for="(room, index) in rooms">
             <a href="#" class="flex flex-col lg:w-[300px] w-[330px] items-start bg-gray-100 mt-10 ml-10 relative">
@@ -19,43 +19,5 @@
                 class="mt-10 bg-cyan-300 lg:w-1/4 w-3/4 hover:bg-cyan-400 text-white font-bold py-2 px-10 rounded-full">
             Cargar más
         </button>
-    </div>
-
-    <script>
-        function cardsGrid() {
-            return {
-                showLoadMoreButton: true,
-                endpointRooms: "https://www.helloflatmate.com/api/rooms?page=",
-                page: 1,
-                rooms: [],
-                portadas: [],
-                actualRooms: 0,
-                totalRooms: 0,
-                getRooms(){
-                    axios.get( this.endpointRooms + this.page )
-                    .then( (r)=>{
-                            
-                            if (r.data.rooms.data.length < 12) {
-                                this.showLoadMoreButton = false;
-                            }
-                            
-                            r.data.rooms.data.forEach(room => {
-                                this.rooms.push(room);
-                            });
-                            
-                            
-                            r.data.portadas.forEach(portada => {
-                                this.portadas.push(portada);
-                            });
-
-                            this.actualRooms = this.rooms.length;
-                            this.totalRooms = r.data.rooms.data.total;
-
-                        }).catch( (e)=>{
-                            
-                        })
-                }
-            };
-        }
-    </script>
+    </div>    
 </div>
