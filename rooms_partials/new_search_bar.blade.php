@@ -1,5 +1,5 @@
-<div class="bg-cyan-300 px-36 flex flex-row justify-between items-center">
-    <span class="text-white text-sm font-bold">Mostrando 9 de 50 resultados</span>
+<div x-data="cardsGrid()" class="bg-cyan-300 px-36 flex flex-row justify-between items-center">
+    <span x-text="`Mostrando` + actualRooms + `de` + totalRooms + `resultados`" class="text-white text-sm font-bold"></span>
     <div class="relative flex flex-row items-center space-x-3">
         <span class="text-black font-bold text-sm hidden lg:flex">¿Quiéres hacer una nueva búsqueda?</span>
         <input

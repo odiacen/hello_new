@@ -29,6 +29,8 @@
                 page: 1,
                 rooms: [],
                 portadas: [],
+                actualRooms: 0,
+                totalRooms: 0,
                 getRooms(){
                     axios.get( this.endpointRooms + this.page )
                     .then( (r)=>{
@@ -45,7 +47,10 @@
                             r.data.portadas.forEach(portada => {
                                 this.portadas.push(portada);
                             });
-                                                                              
+
+                            this.actualRooms = this.rooms.length;
+                            this.totalRooms = r.data.rooms.data.total;
+
                         }).catch( (e)=>{
                             
                         })
