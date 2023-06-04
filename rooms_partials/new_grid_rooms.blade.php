@@ -8,7 +8,7 @@
                     <span class="ml-2">e/mes</span>
                 </div>
                 <div class="flex flex-col justify-between items-start py-2 p-0.5 ml-4">
-                    <h5 class="text-sm font-bold text-black text-ellipsis overflow-hidden" x-text="room.title"></h5>
+                    <h5 class="text-sm font-bold text-black w-10 text-ellipsis overflow-hidden" x-text="room.title"></h5>
                     <p class="text-sm text-gray-900 text-ellipsis overflow-hidden" x-text="room.type"></p>
                 </div>
             </a>
