@@ -8,8 +8,8 @@
                     <span class="ml-2">e/mes</span>
                 </div>
                 <div class="flex flex-col justify-between items-start py-2 p-0.5 ml-4">
-                    <h5 class="text-sm font-bold text-black indent-4" x-text="room.title"></h5>
-                    <p class="text-sm text-gray-900 indent-8" x-text="room.type"></p>
+                    <h5 class="text-sm font-bold text-black -indent-4" x-text="room.title"></h5>
+                    <p class="text-sm text-gray-900 -indent-8" x-text="room.type"></p>
                 </div>
             </a>
         </template>
