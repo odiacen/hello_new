@@ -1,5 +1,5 @@
 <script>
-        function cardsGrid() {
+        function searchGrid() {
             return {
                 showLoadMoreButton: true,
                 endpointRooms: "https://www.helloflatmate.com/api/rooms?page=",

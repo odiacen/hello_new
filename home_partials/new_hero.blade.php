@@ -58,8 +58,8 @@
       Buscar
     </a>
   </form>
-
-  <div :class="notify ? `` : `hidden`" id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <template x-if="notify === true">
+  <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative w-full max-w-md max-h-full">
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             
@@ -72,7 +72,8 @@
             </div>
         </div>
     </div>
-</div>
+  </div>
+  </template>
 
 
 </div>
@@ -99,13 +100,12 @@
                    searchUrl(){
                     
                     if(isNaN(this.tipo) && isNaN(this.zona) && isNaN(this.fecha) && isNaN(this.univ)){
-                          console.log("Debe elegir al menos un criterio de búsqueda");
                           this.notify = true;
-                        }else{
-                          console.log(this.tipo, this.zona, this.fecha, this.univ);
+                    } else  {
+                          
                           let url = "https://www.helloflatmate.com/nuevo_search/"+ this.tipo + "/" + this.zona + "/" + this.fecha + "/" + this.univ;
                           window.location.href = url;
-                        }    
+                    }    
                     
                         
                    }, 
