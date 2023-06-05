@@ -19,32 +19,32 @@
     <div class="grid grid-cols-4 gap-4">
       <!--First name input-->
       <select x-model="tipo" class="peer block w-full h-8 rounded border-0 bg-white" data-te-select-init data-te-select-visible-options="3">
-          <option value="1">Tipo de alojamiento</option>
+          <option value="tipo">Tipo de alojamiento</option>
           <option value="2">Habitaciones</option>
           <option value="3">Coliving</option>
        </select>
      
       <!--First name input-->
       <select x-model="zona" class="peer block w-full h-8 rounded border-0 bg-white" data-te-select-init data-te-select-visible-options="3">
-          <option value="1">¿En que zona?</option>
+          <option value="zona">¿En que zona?</option>
           <template x-for="zone in zones">
-              <option x-text="zone.zone"></option>
+              <option x-text="zone.zone" :value="zone.id"></option>
           </template>
        </select>
        
        <!--First name input-->
       <select x-model="fecha" class="peer block w-full h-8 rounded border-0 bg-white" data-te-select-init data-te-select-visible-options="3">
-          <option value="1">¿Para qué fecha?</option>
+          <option value="fecha">¿Para qué fecha?</option>
           <template x-for="fecha in fechas">
-              <option x-text="fecha.name"></option>
+              <option x-text="fecha.name" :value="fecha.id"></option>
           </template>
        </select>
        
        <!--First name input-->
       <select x-model="univ" class="peer block w-full h-8 rounded border-0 bg-white" data-te-select-init data-te-select-visible-options="3">
-          <option value="1">Cerca de tu universidad</option>
+          <option value="univ">Cerca de tu universidad</option>
           <template x-for="univ in univs">
-              <option x-text="univ.university"></option>
+              <option x-text="univ.university" :value="univ.id"></option>
           </template>
        </select>
 
