@@ -2,15 +2,5 @@
 <section>
     @include('nuevo.home_partials.new_hero')
 </section>
-<section>
-    @include('nuevo.home_partials.new_promo')
-</section>
-<section>
-    @include('nuevo.home_partials.new_carruselr')
-</section>
-<section>
-    @include('nuevo.home_partials.new_carrusell')
-</section>
-@include('nuevo.rooms_partials.new_faqs_rooms')
 @include('nuevo.global.new_faqs')
 @include('nuevo.global.new_footer')
