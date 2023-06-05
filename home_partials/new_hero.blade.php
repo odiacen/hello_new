@@ -103,6 +103,8 @@
                           this.notify = true;
                         }else{
                           console.log(this.tipo, this.zona, this.fecha, this.univ);
+                          let url = "https://www.helloflatmate.com/nuevo_search/"+ this.tipo + "/" + this.zona + "/" + this.fecha + "/" + this.univ;
+                          window.location.href = url;
                         }    
                     
                         
