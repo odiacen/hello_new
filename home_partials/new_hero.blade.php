@@ -80,7 +80,14 @@
                    univ: 'univ',
                    redirect: false,
                    searchUrl(){
-                        console.log(this.tipo, this.zona, this.fecha, this.univ);
+                    
+                    if(isNaN(this.tipo) && isNaN(this.zona) && isNaN(this.fecha) && isNaN(this.univ)){
+                          console.log("Debe elegir al menos un criterio de búsqueda");
+                        }else{
+                          console.log(this.tipo, this.zona, this.fecha, this.univ);
+                        }    
+                    
+                        
                    }, 
                    axiosCall(endpoint){
                         axios.get( endpoint )
