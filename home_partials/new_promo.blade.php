@@ -4,7 +4,6 @@
     class="flex bg-slate-50 bg-cover overflow-hidden h-[60%]"
     
   >
-    
     <div class="md:mx-40 md:pt-14  h-[40%] ">
       <h3 class="text-cyan-300 text-4xl font-{900} pb-2">¡Ten Previsto</h3>
       <h3 class="text-black-400 text-bold text-4xl pb-2">Los imprevistos!<h3>

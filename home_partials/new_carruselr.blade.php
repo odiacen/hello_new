@@ -1,55 +1,31 @@
-
-<div>
-      <div class="mx-80">
-          <img
-            src="https://www.helloflatmate.com/img/img/pqr.png"
-            class="w-50 h-[15%] "
-            alt="Wild Landscape" />
-      </div>
-      <div id="carouselExampleCrossfade"
-      class="grid grid-cols-3 relative items-center bg-cyan-300 h-[70%] w-[70%] justify-items-center"
-      data-te-carousel-init
-      data-te-carousel-slide>
-      <!--Carousel items-->
-              <div class="absolute inset-x-12 -top-16">
-                  <img
-            src="https://www.helloflatmate.com/img/img/hab-v.png"
-            class="w-50 h-[15%] "
-            alt="Wild Landscape" />
-              </div>
-              <div class="">
-                  <h1>Text</h1>
-              </div>
-              <div
-                class="w-5 grid overflow-hidden justify-items-end">
-                <!--First item-->
-                <div
-                class=" mb-4 list-none flex flex-col content-center justify-end p-0"
-                data-te-carousel-indicators>
+<div x-data="{
+  activeTab: 'tab1',
+  tabs: [
+    { id: 'tab1', icon: 'https://www.helloflatmate.com/img/img/icon-mail', label: 'Contrato' },
+    { id: 'tab2', icon: 'https://www.helloflatmate.com/img/img/icon-clock', label: 'Emergencias 24/7' },
+    { id: 'tab3', icon: 'https://www.helloflatmate.com/img/img/icon-setting', label: 'Mantenimiento' },
+    { id: 'tab4', icon: 'https://www.helloflatmate.com/img/img/icon-shower', label: 'Suministros' },
+    { id: 'tab5', icon: 'https://www.helloflatmate.com/img/img/icon-person-check', label: 'Medicación entre inquilinos' }
+  ]
+}">
+    <div class="flex">
+        <div class="flex-1">
+            <template x-for="tab in tabs" :key="tab.id">
                 <button
-                  type="button"
-                  data-te-slide-to="0"
-                  data-te-carousel-active
-                  class="mx-[3px] box-content h-3 w-3 rounded-full flex-initial cursor-pointer bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                  aria-current="true"
-                  aria-label="Slide 1"></button>
-                <button
-                  type="button"
-                  data-te-target="#carouselExampleCrossfade"
-                  data-te-slide-to="1"
-                  class="mx-[3px] box-content h-3 w-3 rounded-full flex-initial cursor-pointer bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                  aria-label="Slide 2"></button>
-                <button
-                  type="button"
-                  data-te-target="#carouselExampleCrossfade"
-                  data-te-slide-to="2"
-                  class="mx-[3px] box-content h-3 w-3 rounded-full flex-initial cursor-pointer bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                  aria-label="Slide 3"></button>
-              </div>
+                        x-on:click="activeTab = tab.id"
+                        :class="{ 'bg-cyan-300 text-white font-bold rounded-full': activeTab === tab.id, 'bg-white text-black font-bold rounded-full': activeTab !== tab.id } flex flex-row"
+                >
+                    <span :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id } rounded-full h-6 w-6 p-1">
+                       <img class="h-4 w-4" :src="tab.icon" />
+                    </span>
+                    <span x-text="tab.label"></span>
+                </button>
+            </template>
         </div>
-
-  
-  
-          
-    
+        <div class="flex-1 p-4">
+            <template x-for="tab in tabs" :key="tab.id">
+                <div x-show="activeTab === tab.id" x-text="'Contenido de ' + tab.label"></div>
+            </template>
+        </div>
+    </div>
 </div>
