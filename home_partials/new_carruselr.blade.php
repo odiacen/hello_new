@@ -9,8 +9,18 @@
   ]
 }">
     <div class="flex">
-        <div class="flex-1">
+        <div class="flex flex-col">
+            <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
+            <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
+        </div>
+        <div class="bg-cyan-300 flex flex-row">
+            <img src="https://www.helloflatmate.com/img/img/hab-v.png"/>
             <template x-for="tab in tabs" :key="tab.id">
+                <div x-show="activeTab === tab.id" x-text="'Contenido de ' + tab.label"></div>
+            </template>
+        </div>
+        <div class="flex-1">
+            <template class="flex flex-col" x-for="tab in tabs" :key="tab.id">
                 <button
                         x-on:click="activeTab = tab.id"
                         :class="{ 'bg-cyan-300 text-white font-bold rounded-full': activeTab === tab.id, 'bg-white text-black font-bold rounded-full': activeTab !== tab.id } flex flex-row"
@@ -22,10 +32,6 @@
                 </button>
             </template>
         </div>
-        <div class="flex-1 p-4">
-            <template x-for="tab in tabs" :key="tab.id">
-                <div x-show="activeTab === tab.id" x-text="'Contenido de ' + tab.label"></div>
-            </template>
-        </div>
     </div>
 </div>
+
