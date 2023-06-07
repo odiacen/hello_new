@@ -8,8 +8,16 @@
                     <span class="ml-2">e/mes</span>
                 </div>
                 <div class="flex flex-col justify-between items-start py-2 p-0.5 ml-4">
-                    <h5 class="text-sm font-bold text-black" x-text="room.title"></h5>
-                    <p class="text-sm text-gray-900" x-text="room.type"></p>
+                    <h5 style="display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 1;
+                            overflow: hidden;"
+                        class="text-sm font-bold text-black" x-text="room.title"></h5>
+                    <p style="display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        overflow: hidden;"
+                        class="text-sm text-gray-900" x-text="room.type"></p>
                 </div>
             </a>
         </template>
