@@ -1,23 +1,24 @@
 <!-- Promo section -->
 
   <div  x-data="promo()"
-    class="flex bg-slate-50 bg-cover overflow-hidden h-[60%]"
+    class="flex bg-slate-50 bg-cover overflow-hidden h-[60%] relative"
     
   >
+    <img class="absolute right-0 top-0" src="https://www.helloflatmate.com/img/img/vector-line.png">
     <div class="md:mx-40 md:pt-14  h-[40%] ">
-      <h3 class="text-cyan-300 text-4xl font-{900} pb-2">¡Ten Previsto</h3>
-      <h3 class="text-black-400 text-bold text-4xl pb-2">Los imprevistos!<h3>
-      <p class="pb-2"> <strong>helloflatmate</strong> está diseñada para estudiantes, postgrados y nomadas digitales puedan reservar alojamiento sin espera.<p>
-      <p class="pb-2">Sabemos que vienen de forma temporal, por eso les ofrecemos alojamientos amueblados e Internet en Valencia y Moncada con contrato de media estancia<p>
+      <h3 class="text-cyan-300 text-4xl font-bold pb-2">¡Ten Previsto</h3>
+      <h3 class="text-black-400 font-bold text-4xl pb-2">Los imprevistos!</h3>
+      <p class="pb-2 text-justify"> <strong>helloflatmate</strong> está diseñada para estudiantes, postgrados y nomadas digitales puedan reservar alojamiento sin espera.<p>
+      <p class="pb-2 text-justify">Sabemos que vienen de forma temporal, por eso les ofrecemos alojamientos amueblados e Internet en Valencia y Moncada con contrato de media estancia<p>
     </div>
     
     
-    <div class="items-center w-full h-full ">
+    <div class="items-center w-full h-full relative">
         <img
           src="https://www.helloflatmate.com/img/img/promo.png"
-          
           alt=""
           loading="lazy" />
+        <span class="bg-cyan-300 text-white p-2 flex justify-center items-center absolute right-4 bottom-4">¿Qué hacemos?</span>
     </div>   
     
   </div>
