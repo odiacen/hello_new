@@ -159,6 +159,8 @@
                return { 
                     open: false,
                     menuItems : [
+                                 { desc: "Habitaciones", url: "https://www.helloflatmate.com/nuevo_rooms/habitaciones" },
+                                 { desc: "Coliving", url: "https://www.helloflatmate.com/nuevo_rooms/coliving" },
                                  { desc: "Cómo funciona", url: "#" },
                                  { desc: "Iniciar sesión", url: "#" },
                                  { desc: "Propietario", url: "https://www.helloflatmate.com/es/about" },
