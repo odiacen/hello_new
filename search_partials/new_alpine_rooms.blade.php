@@ -13,7 +13,6 @@
                     let url = window.location.pathname;
                     this.path = url.split("/nuevo_search").pop();
                     this.endpointRooms = "https://www.helloflatmate.com/api/search" + this.path;
-                    console.log (this.endpointRooms);
                     this.showLoadMoreButton = false;
                     this.loading = true;
 
