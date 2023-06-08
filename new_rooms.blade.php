@@ -17,7 +17,7 @@
     </span>
 </div>
 @include('nuevo.rooms_partials.new_rooms_promo')
-<section x-data="cardsGrid()" x-init="getRooms()">
+<section x-data="cardsGrid()" x-init="getRooms(), path = `path`">
 @include('nuevo.rooms_partials.new_search_bar')
 @include('nuevo.rooms_partials.new_grid_rooms')
 @include('nuevo.rooms_partials.new_alpine_rooms')
