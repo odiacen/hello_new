@@ -81,7 +81,7 @@
       
       <a
         class="mb-4 mr-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
-        href="#">
+        href="https://www.helloflatmate.com/nuevo_home/">
         <img
           src="https://www.helloflatmate.com/img/img/logo-bar.png"
           style="height: 40px"
@@ -90,7 +90,7 @@
       </a>
      
       <a    class="grid grid-cols-1 mb-4 mr-2 mt-3 flex items-center text-slate-50 text-xl text-bold hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
-            href="#">
+            href="https://www.helloflatmate.com/nuevo_home/">
               <p>hello</p>
               <p>flatmate</p>
       </a>
