@@ -12,9 +12,7 @@
                 getRooms(){
                     let url = window.location.pathname;
                     this.path = url.split("/").pop(); 
-                    if ( this.endpointRooms.includes(this.path) === false) {                  
-                        this.endpointRooms = "https://www.helloflatmate.com/api/" + this.path + "/rooms?page=";
-                    }    
+                    this.endpointRooms = "https://www.helloflatmate.com/api/" + this.path + "/rooms?page=";                       
                     console.log(this.endpointRooms);
                     axios.get( this.endpointRooms + this.page )
                     .then( (r)=>{
