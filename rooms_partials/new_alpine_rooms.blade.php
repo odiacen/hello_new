@@ -9,6 +9,8 @@
                 actualRooms: 0,
                 totalRooms: 0,
                 getRooms(){
+                    let url = window.location;
+                    console.log(url);
                     axios.get( this.endpointRooms + this.page )
                     .then( (r)=>{
                             
