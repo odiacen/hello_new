@@ -2,7 +2,7 @@
         function cardsGrid() {
             return {
                 showLoadMoreButton: true,
-                endpointRooms: "https://www.helloflatmate.com/api/" + this.path + "/rooms?page=",
+                endpointRooms: "https://www.helloflatmate.com/api/" + path + "/rooms?page=",
                 page: 1,
                 rooms: [],
                 path: "path",
