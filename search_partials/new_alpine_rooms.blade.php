@@ -13,7 +13,7 @@
                     this.path = url.split("/nuevo_search").pop();
                     this.endpointRooms = "https://www.helloflatmate.com/api/search" + this.path;
                     console.log (this.endpointRooms);
-                    axios.get( this.endpointRooms + "?page=" + this.page )
+                    axios.get( this.endpointRooms + "/?page=" + this.page )
                     .then( (r)=>{
                             
                             if (r.data.rooms.data.length < 12) {
