@@ -12,12 +12,12 @@
                             -webkit-box-orient: vertical;
                             -webkit-line-clamp: 1;
                             overflow: hidden;"
-                        class="text-sm font-bold text-black" x-text="room.title"></h5>
+                        class="text-sm font-bold text-black" x-text="room.type"></h5>
                     <p style="display: -webkit-box;
                         -webkit-box-orient: vertical;
                         -webkit-line-clamp: 1;
                         overflow: hidden;"
-                        class="text-sm text-gray-900" x-text="room.type"></p>
+                        class="text-sm text-gray-900" x-text="room.title"></p>
                 </div>
             </a>
         </template>
