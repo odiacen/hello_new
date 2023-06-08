@@ -3,7 +3,6 @@
             return {
                 showLoadMoreButton: true,
                 endpointRooms = "https://www.helloflatmate.com/api/path/rooms?page=",
-                path: "&path",
                 page: 1,
                 rooms: [],                
                 portadas: [],
@@ -11,8 +10,7 @@
                 totalRooms: 0,
                 getRooms(){
                     let url = window.location.pathname;
-                    let pathname = url.split("/").pop();                                       
-                    console.log(this.endpointRooms);
+                    
                     axios.get( this.endpointRooms + this.page )
                     .then( (r)=>{
                             
