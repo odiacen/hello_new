@@ -16,10 +16,7 @@
                     axios.get( this.endpointRooms + "/?page=" + this.page )
                     .then( (r)=>{
                             
-                            if (r.data.rooms.data.length < 12) {
-                                this.showLoadMoreButton = false;
-                            }
-                            
+                                                       
                             r.data.rooms.data.forEach(room => {
                                 this.rooms.push(room);
                             });
@@ -31,6 +28,10 @@
 
                             this.actualRooms = this.rooms.length;
                             this.totalRooms = r.data.rooms.total;
+
+                            if ( (r.data.rooms.data.length < 12) || (this.actualRooms === this.totalRooms)) {
+                                this.showLoadMoreButton = false;
+                            }
 
                         }).catch( (e)=>{
                             
