@@ -36,7 +36,7 @@
         <button x-show="showLoadMoreButton" @click="page++, getRooms()"
                 class="mt-10 bg-cyan-300 lg:w-1/4 w-3/4 hover:bg-cyan-400 text-white font-bold py-2 px-10 rounded-full">
             Cargar más
-        </button>
-        <br>
-    </div>    
+        </button>        
+    </div> 
+    <br>   
 </div>
