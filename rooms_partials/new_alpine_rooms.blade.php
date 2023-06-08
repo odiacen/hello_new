@@ -2,15 +2,16 @@
         function cardsGrid() {
             return {
                 showLoadMoreButton: true,
-                endpointRooms: "https://www.helloflatmate.com/api/rooms?page=",
+                endpointRooms: "https://www.helloflatmate.com/api/path/rooms?page=",
                 page: 1,
                 rooms: [],
                 portadas: [],
                 actualRooms: 0,
                 totalRooms: 0,
                 getRooms(){
-                    let url = window.location;
-                    console.log(url);
+                    let url = window.location.pathname;
+                    let path = url.split("/").pop();
+                    console.log(path);
                     axios.get( this.endpointRooms + this.page )
                     .then( (r)=>{
                             
