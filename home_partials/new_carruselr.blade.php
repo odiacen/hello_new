@@ -23,9 +23,12 @@
             <template x-for="tab in tabs" :key="tab.id">
                 <button
                         @click="activeTab = tab.id"
-                        :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id } flex flex-row items-center justify-center font-bold rounded-full"
+                        class="flex flex-row items-center justify-center font-bold rounded-full"
+                        :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                 >
-                    <span :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id } rounded-full h-6 w-6 p-1">
+                    <span
+                            class="rounded-full h-6 w-6 p-1"
+                            :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id }">
                        <img class="h-4 w-4" :src="tab.icon" />
                     </span>
                     <span x-text="tab.label"></span>
