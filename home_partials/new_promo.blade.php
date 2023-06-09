@@ -4,7 +4,6 @@
     class="flex bg-slate-50 bg-cover overflow-hidden h-[60%] relative"
     
   >
-    <img class="absolute right-0 top-0" src="https://www.helloflatmate.com/img/img/vector-line.png">
     <div class="md:mx-40 md:pt-14  h-[40%] ">
       <h3 class="text-cyan-300 text-4xl font-bold pb-2">¡Ten Previsto</h3>
       <h3 class="text-black-400 font-bold text-4xl pb-2">Los imprevistos!</h3>
@@ -18,7 +17,6 @@
           src="https://www.helloflatmate.com/img/img/promo.png"
           alt=""
           loading="lazy" />
-        <span class="bg-cyan-300 text-white p-2 flex justify-center items-center absolute right-4 bottom-4">¿Qué hacemos?</span>
     </div>   
     
   </div>
