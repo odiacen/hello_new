@@ -1,4 +1,4 @@
-<div class="mt-20 flex flex-col" x-data="{
+<div class="mt-48 flex flex-col" x-data="{
   activeTab: 'tab1',
   tabs: [
     {
@@ -31,22 +31,24 @@
     }
   ]
 }">
-    <div class="flex flex-col pl-56">
-        <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
-        <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
-    </div>
     <div class="flex flex-row">
-        <div class="bg-cyan-300 flex flex-row pr-32 w-[80%]">
-            <img class="pl-32 -mt-20" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
-            <div class="flex flex-col">
-                <span class="text-white font-bold text-2xl">
-                    Habitaciones - hello rooms
-                </span>
-                <p class="text-md text-justify text-black">
-                    Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate
-                    encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates.
-                    Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
-                </p>
+        <div class="bg-cyan-300 relative flex flex-row w-[80%]">
+            <img class="absolute left-56 -top-20" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
+            <div class="flex flex-col justify-center relative">
+                <div class="flex flex-col absolute -top-20">
+                    <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
+                    <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
+                </div>
+               <div>
+                    <span class="text-white font-bold text-2xl">
+                        Habitaciones - hello rooms
+                    </span>
+                   <p class="text-md text-justify text-black">
+                       Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate
+                       encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates.
+                       Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
+                   </p>
+               </div>
             </div>
             <hr class="border-t-2 border-gray-50 my-2">
             <template x-for="tab in tabs" :key="tab.id">
