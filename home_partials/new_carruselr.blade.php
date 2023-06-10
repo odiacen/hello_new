@@ -1,4 +1,4 @@
-<div class="mt-48 flex flex-col items-start lg:h-auto h-[20%]" x-data="{
+<div class="mt-48 flex flex-col items-start " x-data="{
   activeTab: 'tab1',
   tabs: [
     {
@@ -34,9 +34,9 @@
   ]
 }">
     <div class="flex flex-row justify-start w-full">
-        <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] lg:w-[80%]">
+        <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] h-auto lg:w-[80%]">
             <img class="absolute lg:left-36 lg:w-1/4 w-1/3 h-auto left-8 -top-32" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
-            <div class="flex flex-col lg:px-12 px-8 w-[60%]">
+            <div class="flex flex-col lg:px-12 px-8 w-[60%] h-auto overflow-y-auto">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
@@ -46,7 +46,7 @@
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Habitaciones - hello rooms
                       </span>
-                        <p class="lg:text-md text-sd text-justify text-black overflow-y-auto">
+                        <p class="lg:text-md text-sd text-justify text-black">
                             Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates. Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
                         </p>
                     </div>
@@ -56,7 +56,7 @@
                     <template x-for="tab in tabs" :key="tab.id">
                         <div x-show="activeTab === tab.id">
                             <span class="text-black font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
-                            <p class="text-black text-justify lg:text-md text-sd overflow-y-auto" x-text="tab.content"></p>
+                            <p class="text-black text-justify lg:text-md text-sd" x-text="tab.content"></p>
                         </div>
                     </template>
                 </div>
