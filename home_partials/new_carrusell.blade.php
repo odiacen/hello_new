@@ -53,7 +53,7 @@
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
                         <span style="color: #3f12a3" class="font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
-                    <div class="mt-4">
+                    <div class="mt-4 bg-green-300">
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Pisos - hello landlords
                       </span>
