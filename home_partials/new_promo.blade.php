@@ -4,7 +4,7 @@
     class="flex bg-slate-50 bg-cover overflow-hidden lg:h-[60%] h-auto relative"
     
   >
-    <div class="md:mx-40 md:pt-14  h-[40%] ">
+    <div class="mx-40 pt-14  h-[40%] ">
       <h3 class="text-cyan-300 text-4xl font-bold pb-2">¡Ten Previsto</h3>
       <h3 class="text-black-400 font-bold text-4xl pb-2">Los imprevistos!</h3>
       <p class="pb-2 text-justify"> <strong>helloflatmate</strong> está diseñada para estudiantes, postgrados y nomadas digitales puedan reservar alojamiento sin espera.<p>
