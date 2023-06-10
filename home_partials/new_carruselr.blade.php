@@ -72,7 +72,7 @@
                 </template>
             </div>
         </div>
-        <div class="flex flex-col items-start justify-center ml-6 w-auto">
+        <div class="flex flex-col items-start justify-start ml-6 w-auto">
             <div class="w-full space-y-6">
                 <template x-for="tab in tabs" :key="tab.id">
                     <button
