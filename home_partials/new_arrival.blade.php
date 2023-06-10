@@ -3,11 +3,17 @@
         <span class="text-cyan-300 font-bold text-2xl">La llegada</span>
         <span class="text-black text-sm text-justify">Nunca ha sido tan fácil llegar a la ciudad de Valencia, reserva con nosotros y nos encargamos del resto.</span>
     </div>
-    <div class="h-full lg:w-3/4 w-[85%]" style="
+    <div class="h-full lg:w-3/4 w-[85%] relative flex justify-center items-center" style="
         background-position: 50%;
         background-image: url('https://www.helloflatmate.com/img/img/4.png');
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
+        <img src="https://www.helloflatmate.com/img/img/point-map.png">
+        <img src="https://www.helloflatmate.com/img/img/icon-play.png">
+        <div class="flex flex-col justify-start">
+            <span class="text-white text-sm font-bold">BIENVENIDOS</span>
+            <span class="text-cyan-300 text-sm font-bold">A HELLO</span>
+        </div>
     </div>
 </div>
