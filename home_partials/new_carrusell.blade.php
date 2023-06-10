@@ -47,11 +47,11 @@
         </div>
         <div style="background-color: #3f12a3" class="relative flex flex-row justify-start w-[80%]">
             <img class="absolute right-10 top-10 lg:w-1/4 w-1/3 h-auto" src="https://www.helloflatmate.com/img/img/3.png"/>
-            <div class="flex flex-col px-12 w-[60%] ml-24 py-10">
+            <div class="flex flex-col lg:px-12 px-8 w-[60%] lg:ml-24 py-10">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
-                        <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
-                        <span style="color: #3f12a3" class="font-bold text-4xl">que una habitación?</span>
+                        <span class="text-black font-bold lg:text-4xl text-3xl">¿Por qué es mucho más</span>
+                        <span style="color: #3f12a3" class="font-bold lg:text-4xl text-3xl">que una habitación?</span>
                     </div>
                     <div class="mt-4">
                       <span class="text-white font-bold text-2xl">
