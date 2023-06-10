@@ -1,4 +1,4 @@
-<div class="mt-48 flex flex-col h-auto items-start" x-data="{
+<div class="mt-48 flex flex-col items-start" x-data="{
   activeTab: 'tab1',
   tabs: [
     {
@@ -46,7 +46,7 @@
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Habitaciones - hello rooms
                       </span>
-                        <p class="lg:text-md text-sd text-justify text-black h-auto overflow-y-auto">
+                        <p class="lg:text-md text-sd text-justify text-black lg:h-auto h-[40%] overflow-y-auto">
                             Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates. Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
                         </p>
                     </div>
@@ -56,7 +56,7 @@
                     <template x-for="tab in tabs" :key="tab.id">
                         <div x-show="activeTab === tab.id">
                             <span class="text-black font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
-                            <p class="text-black text-justify lg:text-md text-sd h-auto overflow-y-auto" x-text="tab.content"></p>
+                            <p class="text-black text-justify lg:text-md text-sd lg:h-auto h-[40%] overflow-y-auto" x-text="tab.content"></p>
                         </div>
                     </template>
                 </div>
