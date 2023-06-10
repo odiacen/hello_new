@@ -33,13 +33,13 @@
 }">
     <div class="flex flex-row w-full">
         <div class="bg-cyan-300 flex flex-row w-[80%]">
-            <img class="left-32 -top-28" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
+            <img class="ml-32 -mt-24" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
             <div class="flex flex-col justify-center relative">
-                <div class="flex flex-col absolute -top-28">
+                <div class="flex flex-col absolute -top-24">
                     <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
                     <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
                 </div>
-               <div>
+               <div class="px-8">
                     <span class="text-white font-bold text-2xl">
                         Habitaciones - hello rooms
                     </span>
@@ -58,7 +58,7 @@
                 </div>
             </template>
         </div>
-        <div class="flex flex-col w-[20%] justify-start space-y-6">
+        <div class="flex flex-col justify-start space-y-6">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
                     @click="activeTab = tab.id"
