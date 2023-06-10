@@ -73,21 +73,23 @@
             </div>
         </div>
         <div class="flex flex-col justify-start items-start space-y-6 ml-6">
-            <template x-for="tab in tabs" :key="tab.id">
-                <button
-                    @click="activeTab = tab.id"
-                    class="flex flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
-                    :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
-                >
+           <div>
+               <template x-for="tab in tabs" :key="tab.id">
+                   <button
+                           @click="activeTab = tab.id"
+                           class="flex flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
+                           :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
+                   >
                   <span
-                      class="rounded-full flex justify-center items-center h-8 w-8 p-1"
-                      :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id }"
+                          class="rounded-full flex justify-center items-center h-8 w-8 p-1"
+                          :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id }"
                   >
                      <img class="h-5 w-5" :src="tab.icon" />
                   </span>
-                    <span class="ml-2" x-text="tab.label"></span>
-                </button>
-            </template>
+                       <span class="ml-2" x-text="tab.label"></span>
+                   </button>
+               </template>
+           </div>
         </div>
     </div>
 </div>
