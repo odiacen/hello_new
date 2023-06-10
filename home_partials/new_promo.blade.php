@@ -1,7 +1,7 @@
 <!-- Promo section -->
 
   <div  x-data="promo()"
-    class="flex bg-slate-50 bg-cover overflow-hidden h-[60%] relative"
+    class="flex bg-slate-50 bg-cover overflow-hidden lg:h-[60%] h-auto relative"
     
   >
     <div class="md:mx-40 md:pt-14  h-[40%] ">
