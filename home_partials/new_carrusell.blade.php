@@ -53,11 +53,11 @@
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
                         <span style="color: #3f12a3" class="font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
-                    <div class="mt-4 bg-green-300 h-auto">
+                    <div class="mt-4 h-auto inline-block">
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Pisos - hello landlords
                       </span>
-                        <p class="lg:text-md bg-pink-300 text-sd text-justify text-white lg:h-auto h-[40%] overflow-y-auto">
+                        <p class="lg:text-md text-sd text-justify text-white lg:h-auto h-[40%] overflow-y-auto">
                             Son habitaciones regentadas por propietarios que son colaboradores con el sistema de gestión de viviendas que propone helloflatmate.
 
                             Los <strong>hello landlord</strong> llevan trabajando conjuntamente con helloflatmate años y que tienen el tiempo para ofrecer una atención personalizada a sus inquilinos.
@@ -65,9 +65,9 @@
                     </div>
                 </div>
                 <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
-                <div class="mt-5">
+                <div class="mt-5 ">
                     <template x-for="tab in tabs" :key="tab.id">
-                        <div class="my-auto" x-show="activeTab === tab.id">
+                        <div class="h-auto inline-block" x-show="activeTab === tab.id">
                             <span class="text-white font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
                             <p class="text-white text-justify lg:text-md text-sd lg:h-auto h-[45%] overflow-y-auto" x-text="tab.content"></p>
                         </div>
