@@ -6,8 +6,8 @@
     <div class="h-[60%] h-[40%] w-2/3" style="
       background-position: 50%;
       background-image: url('https://www.helloflatmate.com/img/img/4.png');
-      -webkit-clip-path: polygon(0 0, 100% 0, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 0% 100%);
+       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
     ">
     </div>
 </div>
