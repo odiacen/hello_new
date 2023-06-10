@@ -1,4 +1,4 @@
-<div class="mt-48 flex flex-col" x-data="{
+<div class="mt-48 flex flex-col h-[500px]" x-data="{
   activeTab: 'tab1',
   tabs: [
     {
@@ -31,11 +31,11 @@
     }
   ]
 }">
-    <div class="flex flex-row">
-        <div class="bg-cyan-300 relative flex flex-row w-[80%]">
-            <img class="absolute left-56 -top-20" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
+    <div class="flex flex-row w-full">
+        <div class="bg-cyan-300 flex flex-row w-[80%]">
+            <img class="left-32 -top-28" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
             <div class="flex flex-col justify-center relative">
-                <div class="flex flex-col absolute -top-20">
+                <div class="flex flex-col absolute -top-28">
                     <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
                     <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
                 </div>
@@ -61,13 +61,13 @@
         <div class="flex flex-col w-[20%] justify-start space-y-6">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
-                        @click="activeTab = tab.id"
-                        class="flex flex-row items-center justify-center font-bold rounded-full p-2"
-                        :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
+                    @click="activeTab = tab.id"
+                    class="flex flex-row items-center justify-center font-bold rounded-full p-2"
+                    :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                 >
                     <span
-                            class="rounded-full h-8 w-8 p-2"
-                            :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id }">
+                        class="rounded-full h-8 w-8 p-2"
+                        :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id }">
                        <img class="h-6 w-6" :src="tab.icon" />
                     </span>
                     <span x-text="tab.label"></span>
