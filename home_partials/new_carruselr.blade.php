@@ -33,7 +33,7 @@
     }
   ]
 }">
-    <div class="flex flex-row w-full">
+    <div class="flex flex-row justify-start w-full">
         <div class="bg-cyan-300 relative flex flex-row justify-end w-[80%]">
             <img class="absolute left-36 -top-32" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
             <div class="flex flex-col px-12 w-[60%]">
@@ -72,11 +72,11 @@
                 </template>
             </div>
         </div>
-        <div class="flex flex-col justify-start items-start space-y-6 ml-6 text-left">
+        <div class="flex flex-col justify-start items-start space-y-6 ml-6">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
                     @click="activeTab = tab.id"
-                    class="flex flex-row text-left items-center justify-center font-bold rounded-full p-2 mx-auto"
+                    class="flex flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
                     :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                 >
                   <span
