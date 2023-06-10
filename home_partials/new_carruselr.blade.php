@@ -34,19 +34,19 @@
   ]
 }">
     <div class="flex flex-row justify-start w-full">
-        <div class="bg-cyan-300 relative flex flex-row justify-end w-[80%]">
+        <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] lg:w-[80%]">
             <img class="absolute lg:left-36 lg:w-1/4 w-1/3 h-auto left-8 -top-32" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
             <div class="flex flex-col lg:px-12 px-8 w-[60%]">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
-                        <span class="text-black font-bold lg:text-4xl text-3xl">¿Por qué es mucho más</span>
-                        <span class="text-cyan-300 font-bold lg:text-4xl text-3xl">que una habitación?</span>
+                        <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
+                        <span class="text-cyan-300 font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
                     <div class="mt-4">
-                      <span class="text-white font-bold text-2xl">
+                      <span class="text-white font-bold lg:text-2xl text-xl">
                         Habitaciones - hello rooms
                       </span>
-                        <p class="text-md text-justify text-black">
+                        <p class="lg:text-md text-sd text-justify text-black">
                             Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates. Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
                         </p>
                     </div>
@@ -55,8 +55,8 @@
                 <div class="mt-5">
                     <template x-for="tab in tabs" :key="tab.id">
                         <div x-show="activeTab === tab.id">
-                            <span class="text-black font-bold text-2xl" x-text="tab.label"></span>
-                            <p class="text-black text-justify text-md" x-text="tab.content"></p>
+                            <span class="text-black font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
+                            <p class="text-black text-justify lg:text-md text-sd" x-text="tab.content"></p>
                         </div>
                     </template>
                 </div>
