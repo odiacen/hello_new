@@ -34,9 +34,9 @@
   ]
 }">
     <div class="flex flex-row justify-start w-full">
-        <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] lg:w-[80%] lg:h-auto h-[20%] overflow-y-auto">
+        <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] lg:w-[80%]">
             <img class="absolute lg:left-36 lg:w-1/4 w-1/3 h-auto left-8 -top-32" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
-            <div class="flex flex-col lg:px-12 px-8 w-[60%]">
+            <div class="flex flex-col lg:px-12 px-8 w-[60%] lg:h-auto h-[20%] overflow-y-auto">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
