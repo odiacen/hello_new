@@ -1,35 +1,72 @@
 <div class="mt-20 flex flex-col" x-data="{
   activeTab: 'tab1',
   tabs: [
-    { id: 'tab1', icon: 'https://www.helloflatmate.com/img/img/icon-mail.png', label: 'Contrato' },
-    { id: 'tab2', icon: 'https://www.helloflatmate.com/img/img/icon-clock.png', label: 'Emergencias 24/7' },
-    { id: 'tab3', icon: 'https://www.helloflatmate.com/img/img/icon-setting.png', label: 'Mantenimiento' },
-    { id: 'tab4', icon: 'https://www.helloflatmate.com/img/img/icon-shower.png', label: 'Suministros' },
-    { id: 'tab5', icon: 'https://www.helloflatmate.com/img/img/icon-person-check.png', label: 'Medicación entre inquilinos' }
+    {
+        id: 'tab1',
+        icon: 'https://www.helloflatmate.com/img/img/icon-mail.png',
+        label: 'Contrato'
+        content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir.
+                Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al
+                Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
+    },
+    {
+        id: 'tab2',
+        icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
+        label: 'Emergencias 24/7'
+    },
+    {
+        id: 'tab3',
+        icon: 'https://www.helloflatmate.com/img/img/icon-setting.png',
+        label: 'Mantenimiento'
+    },
+    {
+        id: 'tab4',
+        icon: 'https://www.helloflatmate.com/img/img/icon-shower.png',
+        label: 'Suministros'
+    },
+    {
+        id: 'tab5',
+        icon: 'https://www.helloflatmate.com/img/img/icon-person-check.png',
+        label: 'Medicación entre inquilinos'
+    }
   ]
 }">
-    <div class="flex flex-col pl-20">
+    <div class="flex flex-col pl-56">
         <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
         <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
     </div>
     <div class="flex flex-row">
-        <div class="bg-cyan-300 flex flex-row pr-32">
-            <img class="pl-20" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
+        <div class="bg-cyan-300 flex flex-row pr-32 w-[80%]">
+            <img class="pl-32 -mt-20" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
+            <div class="flex flex-col">
+                <span class="text-white font-bold text-2xl">
+                    Habitaciones - hello rooms
+                </span>
+                <p class="text-md text-justify text-black">
+                    Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate
+                    encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates.
+                    Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
+                </p>
+            </div>
+            <hr class="border-t-2 border-gray-50 my-2">
             <template x-for="tab in tabs" :key="tab.id">
-                <div x-show="activeTab === tab.id" x-text="'Contenido de ' + tab.label"></div>
+                <div x-show="activeTab === tab.id">
+                    <span class="text-black font-bold text-2xl" x-text="tab.label"></span>
+                    <p class="text-black text-justify text-md" x-text="tab.content"></p>
+                </div>
             </template>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col w-[20%] justify-start space-y-6">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
                         @click="activeTab = tab.id"
-                        class="flex flex-row items-center justify-center font-bold rounded-full"
+                        class="flex flex-row items-center justify-center font-bold rounded-full p-2"
                         :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                 >
                     <span
-                            class="rounded-full h-6 w-6 p-1"
+                            class="rounded-full h-8 w-8 p-2"
                             :class="{ 'bg-white': activeTab === tab.id, 'bg-gray-100': activeTab !== tab.id }">
-                       <img class="h-4 w-4" :src="tab.icon" />
+                       <img class="h-6 w-6" :src="tab.icon" />
                     </span>
                     <span x-text="tab.label"></span>
                 </button>
