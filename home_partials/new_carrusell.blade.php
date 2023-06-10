@@ -1,4 +1,4 @@
-<div class="lg:mb-28 mb-48 lg:mt-16 mt-24 flex flex-col h-auto items-start" x-data="{
+<div class="lg:mb-28 mb-48 lg:mt-16 mt-32 flex flex-col h-auto items-start" x-data="{
   activeTab: 'tab1',
    tabs: [
     {
@@ -57,7 +57,7 @@
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Pisos - hello landlords
                       </span>
-                        <p class="lg:text-md text-sd text-justify text-white lg:h-auto h-[40%] overflow-y-auto">
+                        <p class="lg:text-md text-sd text-justify text-white h-auto overflow-y-auto">
                             Son habitaciones regentadas por propietarios que son colaboradores con el sistema de gestión de viviendas que propone helloflatmate.
 
                             Los <strong>hello landlord</strong> llevan trabajando conjuntamente con helloflatmate años y que tienen el tiempo para ofrecer una atención personalizada a sus inquilinos.
@@ -69,7 +69,7 @@
                     <template x-for="tab in tabs" :key="tab.id">
                         <div x-show="activeTab === tab.id">
                             <span class="text-white font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
-                            <p class="text-white text-justify lg:text-md text-sd lg:h-auto h-[40%] overflow-y-auto" x-text="tab.content"></p>
+                            <p class="text-white text-justify lg:text-md text-sd h-auto overflow-y-auto" x-text="tab.content"></p>
                         </div>
                     </template>
                 </div>
