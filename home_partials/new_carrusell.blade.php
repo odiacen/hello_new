@@ -1,4 +1,4 @@
-<div class="mb-48 mt-10 flex flex-col h-[500px] items-start" x-data="{
+<div class="mb-32 mt-20 flex flex-col h-[500px] items-start" x-data="{
   activeTab: 'tab1',
    tabs: [
     {
@@ -28,12 +28,12 @@
   ]
 }">
     <div class="flex flex-row justify-start w-full">
-        <div class="flex flex-col items-start justify-start mr-6 w-auto space-y-6 py-4 px-4">
+        <div class="flex flex-col items-start justify-start w-auto space-y-6 py-4 px-6">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
                         @click="activeTab = tab.id"
                         class="flex flex-row items-center justify-center font-bold rounded-full p-2 px-2"
-                        :class="{ 'bg-violet-800 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
+                        :class="{ 'bg-[#3f12a3] text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                 >
                   <span
                           class="rounded-full flex justify-center items-center h-8 w-8 p-1"
@@ -47,7 +47,7 @@
         </div>
         <div style="background-color: #3f12a3" class="relative flex flex-row justify-start w-[80%]">
             <img class="absolute right-10 top-10 w-1/4 h-auto" src="https://www.helloflatmate.com/img/img/3.png"/>
-            <div class="flex flex-col px-12 w-[60%]">
+            <div class="flex flex-col px-12 w-[60%] ml-24 py-10">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
                         <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
-                <div class="mt-5 ml-10">
+                <div class="mt-5">
                     <template x-for="tab in tabs" :key="tab.id">
                         <div x-show="activeTab === tab.id">
                             <span class="text-white font-bold text-2xl" x-text="tab.label"></span>
