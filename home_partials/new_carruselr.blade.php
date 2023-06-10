@@ -1,4 +1,4 @@
-<div class="mt-48 flex flex-col h-[500px]" x-data="{
+<div class="mt-48 flex flex-col h-[500px] items-start" x-data="{
   activeTab: 'tab1',
   tabs: [
     {
@@ -72,7 +72,7 @@
                 </template>
             </div>
         </div>
-        <div class="flex flex-col justify-start items-start space-y-6 ml-6 w-[20%]">
+        <div class="flex flex-col items-start space-y-6 ml-6 w-[20%]">
            <template x-for="tab in tabs" :key="tab.id">
                    <button
                            @click="activeTab = tab.id"
