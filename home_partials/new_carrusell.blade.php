@@ -45,19 +45,19 @@
                 </button>
             </template>
         </div>
-        <div style="background-color: #3f12a3" class="relative flex flex-row justify-start w-[80%]">
+        <div style="background-color: #3f12a3" class="relative flex flex-row justify-start w-[85%] lg:w-[80%]">
             <img class="absolute right-10 top-10 lg:w-1/4 w-1/3 h-auto" src="https://www.helloflatmate.com/img/img/3.png"/>
             <div class="flex flex-col lg:px-12 px-8 w-[60%] lg:ml-24 py-10">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
-                        <span class="text-black font-bold lg:text-4xl text-3xl">¿Por qué es mucho más</span>
-                        <span style="color: #3f12a3" class="font-bold lg:text-4xl text-3xl">que una habitación?</span>
+                        <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
+                        <span style="color: #3f12a3" class="font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
                     <div class="mt-4">
-                      <span class="text-white font-bold text-2xl">
+                      <span class="text-white font-bold lg:text-2xl text-xl">
                         Pisos - hello landlords
                       </span>
-                        <p class="text-md text-justify text-white">
+                        <p class="lg:text-md text-sd text-justify text-white">
                             Son habitaciones regentadas por propietarios que son colaboradores con el sistema de gestión de viviendas que propone helloflatmate.
 
                             Los <strong>hello landlord</strong> llevan trabajando conjuntamente con helloflatmate años y que tienen el tiempo para ofrecer una atención personalizada a sus inquilinos.
@@ -68,8 +68,8 @@
                 <div class="mt-5">
                     <template x-for="tab in tabs" :key="tab.id">
                         <div x-show="activeTab === tab.id">
-                            <span class="text-white font-bold text-2xl" x-text="tab.label"></span>
-                            <p class="text-white text-justify text-md" x-text="tab.content"></p>
+                            <span class="text-white font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
+                            <p class="text-white text-justify lg:text-md text-sd" x-text="tab.content"></p>
                         </div>
                     </template>
                 </div>
