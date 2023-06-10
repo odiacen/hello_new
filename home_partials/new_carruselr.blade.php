@@ -34,37 +34,49 @@
   ]
 }">
     <div class="flex flex-row w-full">
-        <div class="bg-cyan-300 relative flex flex-row justify-end w-[75%]">
+        <div class="bg-cyan-300 relative flex flex-row justify-end w-[80%]">
             <img class="absolute left-36 -top-32" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
-            <div class="flex flex-col px-8 w-[60%]">
-                <div class="flex flex-col relative">
+            <div class="flex flex-col px-12 w-[60%]">
+                <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
-                        <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
-                        <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
+                        <span class="text-black font-bold text-6xl">¿Por qué es mucho más</span>
+                        <span class="text-cyan-300 font-bold text-6xl">que una habitación?</span>
                     </div>
                     <div class="mt-4">
-                  <span class="text-white font-bold text-2xl">
-                    Habitaciones - hello rooms
-                  </span>
+                      <span class="text-white font-bold text-2xl">
+                        Habitaciones - hello rooms
+                      </span>
                         <p class="text-md text-justify text-black">
                             Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates. Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
                         </p>
                     </div>
                 </div>
-                <hr class="border-t-2 border-gray-50 my-2 w-[60%] py-10">
-                <template x-for="tab in tabs" :key="tab.id">
-                    <div x-show="activeTab === tab.id">
-                        <span class="text-black font-bold text-2xl" x-text="tab.label"></span>
-                        <p class="text-black text-justify text-md" x-text="tab.content"></p>
-                    </div>
+                <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
+                <div class="mt-5">
+                    <template x-for="tab in tabs" :key="tab.id">
+                        <div x-show="activeTab === tab.id">
+                            <span class="text-black font-bold text-2xl" x-text="tab.label"></span>
+                            <p class="text-black text-justify text-md" x-text="tab.content"></p>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div class="flex items-center space-x-1 absolute right-4 top-1/2 transform -translate-y-1/2">
+                <template x-for="(tab, index) in tabs" :key="tab.id">
+                    <div class="rounded-full h-2 w-2"
+                         :class="{
+                             'bg-gray-500': activeTab !== tab.id,
+                             'bg-white': activeTab === tab.id
+                           }"
+                    ></div>
                 </template>
             </div>
         </div>
-        <div class="flex flex-col justify-start items-start space-y-4 ml-6">
+        <div class="flex flex-col justify-start items-start space-y-6 ml-6 text-left">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
                     @click="activeTab = tab.id"
-                    class="flex flex-row items-start justify-start font-bold rounded-full p-2 mx-auto"
+                    class="flex flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
                     :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                 >
                   <span
