@@ -6,41 +6,41 @@
       icon: 'https://www.helloflatmate.com/img/img/icon-mail.png',
       label: 'Contrato',
       content: 'De lunes a viernes de 10 a 18 h.
-Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
-Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.
-'
+                Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
+                Tienes la opción de contratar nuestro Pick Up Service por 90 € y te
+                recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
     },
     {
       id: 'tab2',
       icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
       label: 'Emergencias 24/7',
       content: 'De lunes a viernes de 10 a 18 h.
-Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
-Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.
-'
+                Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
+                Tienes la opción de contratar nuestro Pick Up Service por 90 € y te
+                recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
     },
     {
       id: 'tab3',
       icon: 'https://www.helloflatmate.com/img/img/icon-calendar.png',
       label: 'Check-in',
       content: 'De lunes a viernes de 10 a 18 h.
-Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
-Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.
-'
+                Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
+                Tienes la opción de contratar nuestro Pick Up Service por 90 € y te
+                recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
     },
     {
       id: 'tab4',
       icon: 'https://www.helloflatmate.com/img/img/icon-shower.png',
       label: 'Suministros',
       content: 'De lunes a viernes de 10 a 18 h.
-Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
-Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.
-'
+                Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h.
+                Tienes la opción de contratar nuestro Pick Up Service por 90 € y te
+                recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
     },
   ]
 }">
     <div class="flex flex-row justify-start w-full">
-        <div class="flex flex-col items-start justify-start ml-6 w-auto space-y-6 py-4 px-4">
+        <div class="flex flex-col items-start justify-start mr-6 w-auto space-y-6 py-4 px-4">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
                         @click="activeTab = tab.id"
@@ -58,7 +58,7 @@ Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogerem
             </template>
         </div>
         <div style="background-color: #3f12a3" class="relative flex flex-row justify-start w-[80%]">
-            <img class="absolute right-10 top-10" src="https://www.helloflatmate.com/img/img/3.png"/>
+            <img class="absolute right-10 top-10 w-1/4 h-auto" src="https://www.helloflatmate.com/img/img/3.png"/>
             <div class="flex flex-col px-12 w-[60%]">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
