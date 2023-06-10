@@ -57,7 +57,7 @@
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Pisos - hello landlords
                       </span>
-                        <p class="lg:text-md bg-pink-300 text-sd text-justify text-white lg:h-auto h-[40%] overflow-y-auto">
+                        <p class="lg:text-md bg-pink-300 my-auto text-sd text-justify text-white lg:h-auto h-[40%] overflow-y-auto">
                             Son habitaciones regentadas por propietarios que son colaboradores con el sistema de gestión de viviendas que propone helloflatmate.
 
                             Los <strong>hello landlord</strong> llevan trabajando conjuntamente con helloflatmate años y que tienen el tiempo para ofrecer una atención personalizada a sus inquilinos.
