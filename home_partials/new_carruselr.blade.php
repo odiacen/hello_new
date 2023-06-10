@@ -72,9 +72,8 @@
                 </template>
             </div>
         </div>
-        <div class="flex flex-col justify-start items-start space-y-6 ml-6">
-           <div>
-               <template x-for="tab in tabs" :key="tab.id">
+        <div class="flex flex-col justify-start items-start space-y-6 ml-6 w-[20%]">
+           <template x-for="tab in tabs" :key="tab.id">
                    <button
                            @click="activeTab = tab.id"
                            class="flex flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
@@ -89,7 +88,6 @@
                        <span class="ml-2" x-text="tab.label"></span>
                    </button>
                </template>
-           </div>
         </div>
     </div>
 </div>
