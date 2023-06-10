@@ -53,7 +53,7 @@
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
                         <span style="color: #3f12a3" class="font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
-                    <div class="mt-4 my-auto flex flex-col">
+                    <div class="mt-4 lg:h-auto h-[55%] flex flex-col">
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Pisos - hello landlords
                       </span>
@@ -67,7 +67,7 @@
                 <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
                 <div class="mt-5 ">
                     <template x-for="tab in tabs" :key="tab.id">
-                        <div class="my-auto flex flex-col" x-show="activeTab === tab.id">
+                        <div class="lg:h-auto h-[55%] flex flex-col" x-show="activeTab === tab.id">
                             <span class="text-white font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
                             <p class="text-white text-justify lg:text-md text-sd lg:h-auto h-[45%] overflow-y-auto" x-text="tab.content"></p>
                         </div>
