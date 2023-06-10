@@ -1,4 +1,4 @@
-<div class="mb-28 lg:mt-16 mt-24 flex flex-col lg:h-[500px] h-[350px] items-start" x-data="{
+<div class="lg:mb-28 mb-48 lg:mt-16 mt-24 flex flex-col lg:h-[500px] h-[250px] items-start" x-data="{
   activeTab: 'tab1',
    tabs: [
     {
@@ -46,7 +46,7 @@
             </template>
         </div>
         <div style="background-color: #3f12a3" class="relative flex flex-row justify-start w-[80%]">
-            <img class="absolute right-10 top-10 w-1/4 h-auto" src="https://www.helloflatmate.com/img/img/3.png"/>
+            <img class="absolute right-10 top-10 lg:w-1/4 w-1/3 h-auto" src="https://www.helloflatmate.com/img/img/3.png"/>
             <div class="flex flex-col px-12 w-[60%] ml-24 py-10">
                 <div class="flex flex-col relative mb-5">
                     <div class="flex flex-col absolute -top-32 ">
