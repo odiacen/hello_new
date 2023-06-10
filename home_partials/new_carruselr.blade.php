@@ -13,29 +13,41 @@
         id: 'tab2',
         icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
         label: 'Emergencias 24/7'
+        content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir.
+                Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al
+                Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
     },
     {
         id: 'tab3',
         icon: 'https://www.helloflatmate.com/img/img/icon-setting.png',
         label: 'Mantenimiento'
+        content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir.
+                Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al
+                Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
     },
     {
         id: 'tab4',
         icon: 'https://www.helloflatmate.com/img/img/icon-shower.png',
         label: 'Suministros'
+        content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir.
+                Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al
+                Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
     },
     {
         id: 'tab5',
         icon: 'https://www.helloflatmate.com/img/img/icon-person-check.png',
         label: 'Medicación entre inquilinos'
+        content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir.
+                Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al
+                Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
     }
   ]
 }">
     <div class="flex flex-row w-full">
         <div class="bg-cyan-300 flex flex-row w-[80%]">
-            <img class="ml-32 -mt-24" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
-            <div class="flex flex-col justify-center relative">
-                <div class="flex flex-col absolute -top-24">
+            <img class="ml-36 -mt-24" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
+            <div class="flex flex-col relative">
+                <div class="flex flex-col absolute -top-24 px-8">
                     <span class="text-black font-bold text-4xl">¿Por qué es mucho más</span>
                     <span class="text-cyan-300 font-bold text-4xl">que una habitación?</span>
                 </div>
