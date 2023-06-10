@@ -72,12 +72,11 @@
                 </template>
             </div>
         </div>
-        <div class="flex flex-col items-start justify-start ml-6 w-auto">
-            <div class="w-full space-y-6">
-                <template x-for="tab in tabs" :key="tab.id">
+        <div class="flex flex-col items-start justify-start ml-6 w-auto space-y-6">
+            <template x-for="tab in tabs" :key="tab.id">
                     <button
                             @click="activeTab = tab.id"
-                            class="flex flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
+                            class="flex flex-row items-center justify-center font-bold rounded-full p-2 px-2"
                             :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                     >
                   <span
@@ -89,7 +88,6 @@
                         <span class="ml-2" x-text="tab.label"></span>
                     </button>
                 </template>
-            </div>
         </div>
     </div>
 </div>
