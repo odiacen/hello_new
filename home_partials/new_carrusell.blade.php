@@ -1,4 +1,4 @@
-<div class="lg:mb-28 mb-48 lg:mt-16 mt-24 flex flex-col lg:h-[500px] h-[250px] items-start" x-data="{
+<div class="lg:mb-28 mb-48 lg:mt-16 mt-24 flex flex-col lg:h-[500px] h-[20%] items-start" x-data="{
   activeTab: 'tab1',
    tabs: [
     {
