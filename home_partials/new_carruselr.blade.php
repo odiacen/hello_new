@@ -76,7 +76,7 @@
            <template x-for="tab in tabs" :key="tab.id">
                    <button
                            @click="activeTab = tab.id"
-                           class="flex flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
+                           class="flex align-self-start flex-row items-center justify-center font-bold rounded-full p-2 mx-auto"
                            :class="{ 'bg-cyan-300 text-white': activeTab === tab.id, 'bg-white text-black': activeTab !== tab.id }"
                    >
                   <span
