@@ -2,11 +2,10 @@
   <div
     x-data="hero()"
     x-init="getData()"
-    class="relative overflow-hidden bg-cover bg-no-repeat brightness-100 place-content-center"
+    class="relative lg:h-[75%] h-[40%] overflow-hidden bg-cover bg-no-repeat brightness-100 place-content-center"
     style="
       background-position: 50%;
       background-image: url('https://www.helloflatmate.com/img/img/5.png');
-      height: 75%;
     ">
      
     <div
