@@ -42,7 +42,7 @@
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
                         <span class="text-cyan-300 font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
-                    <div class="mt-4">
+                    <div class="mt-4 lg:h-auto h-[40%]">
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Habitaciones - hello rooms
                       </span>
@@ -54,7 +54,7 @@
                 <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
                 <div class="mt-5">
                     <template x-for="tab in tabs" :key="tab.id">
-                        <div x-show="activeTab === tab.id">
+                        <div class="lg:h-auto h-[40%]" x-show="activeTab === tab.id">
                             <span class="text-black font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
                             <p class="text-black text-justify lg:text-md text-sd lg:h-auto h-[40%] overflow-y-auto" x-text="tab.content"></p>
                         </div>
