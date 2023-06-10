@@ -33,16 +33,16 @@
     }
   ]
 }">
-    <div class="flex flex-row justify-start w-full h-auto">
-        <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] h-auto lg:w-[80%]">
+    <div class="flex flex-row justify-start w-full h-auto my-auto">
+        <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] h-auto my-auto lg:w-[80%]">
             <img class="absolute lg:left-36 lg:w-1/4 w-1/3 h-auto left-8 -top-32" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
-            <div class="flex flex-col lg:px-12 px-8 w-[60%] h-auto">
-                <div class="flex flex-col relative mb-5">
+            <div class="flex flex-col lg:px-12 px-8 w-[60%] h-auto my-auto">
+                <div class="flex flex-col relative mb-5 my-auto">
                     <div class="flex flex-col absolute -top-32 ">
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
                         <span class="text-cyan-300 font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
-                    <div class="mt-4">
+                    <div class="mt-4 my-auto">
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Habitaciones - hello rooms
                       </span>
@@ -52,9 +52,9 @@
                     </div>
                 </div>
                 <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
-                <div class="mt-5">
+                <div class="mt-5 my-auto">
                     <template x-for="tab in tabs" :key="tab.id">
-                        <div x-show="activeTab === tab.id">
+                        <div class="my-auto" x-show="activeTab === tab.id">
                             <span class="text-black font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
                             <p class="text-black text-justify lg:text-md text-sd lg:h-auto h-[40%] overflow-y-auto" x-text="tab.content"></p>
                         </div>
