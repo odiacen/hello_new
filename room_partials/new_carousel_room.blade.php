@@ -1,7 +1,7 @@
-<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-20 px-36">
+<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 mb-20 px-36">
     <div class="flex flex-row justify-start items-start w-full">
         <div class="flex flex-col justify-between w-2/3">
-            <div class="flex flex-row justify-between mb-20">
+            <div class="flex flex-row justify-between mb-10">
                 <div class="flex flex-col">
                     <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
                     <span class="text-black text-sm">Zona centro</span>
@@ -10,7 +10,7 @@
             Cod. habitación <strong>ZNANSDHAJAKJA</strong>
         </span>
             </div>
-            <div class="relative flex justify-center items-center mt-20">
+            <div class="relative flex justify-center items-center mt-32">
                 <template x-for="(image, index) in images">
                     <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
                         <img :src="image.imageSrc" alt="Slide" class="w-full">
@@ -28,20 +28,20 @@
             </div>
         </div>
         <div class="flex flex-col justify-start items-start ml-10 w-1/3">
-            <span class="bg-cyan-300 text-white font-bold text-sm p-2 w-1/3">275 e/mes</span>
-            <button class="bg-[#3f12a3] w-1/2 mt-4 flex flex-row justify-between items-center p-1 rounded-full text-white text-sm font-bold">
+            <span class="bg-cyan-300 text-white font-bold text-sm p-2 w-1/3 flex justify-center items-center">275 e/mes</span>
+            <button class="bg-[#3f12a3] w-[65%] mt-4 flex flex-row justify-between items-center p-1 rounded-full text-white text-sm font-bold">
                 Reserva sin esperas
                 <span class="bg-white rounded-full p-1 h-6 w-6 flex justify-center items-center ml-2">
                     <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
                 </span>
             </button>
-            <button class="bg-gray-500 w-1/2 mt-4 flex flex-row justify-between items-center p-1 rounded-full text-white text-sm font-bold">
+            <button class="bg-gray-500 w-[65%] mt-4 flex flex-row justify-between items-center p-1 rounded-full text-white text-sm font-bold">
                 ¿Alguna pregunta?
                 <span class="bg-white rounded-full p-1 h-6 w-6 flex justify-center items-center ml-2">
                     <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
                 </span>
             </button>
-            <button class="bg-cyan-300 w-1/2 mt-4 flex flex-row justify-between items-center p-1 rounded-full text-white text-sm font-bold">
+            <button class="bg-cyan-300 w-[65%] mt-4 flex flex-row justify-between items-center p-1 rounded-full text-white text-sm font-bold">
                 Como reservar
                 <span class="bg-white rounded-full p-1 h-6 w-6 flex justify-center items-center ml-2">
                     <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
