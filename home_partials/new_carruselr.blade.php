@@ -51,7 +51,7 @@
                         </p>
                     </div>
                 </div>
-                <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
+                <hr class="border-t-2 border-gray-50 my-2 ml-12 w-[60%]">
                 <div class="lg:mt-5 mt-2 px-12">
                     <template x-for="tab in tabs" :key="tab.id">
                         <div class="flex flex-col" x-show="activeTab === tab.id">
