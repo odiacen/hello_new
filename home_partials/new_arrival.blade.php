@@ -9,9 +9,11 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
-        <img src="https://www.helloflatmate.com/img/img/point-map.png">
-        <img src="https://www.helloflatmate.com/img/img/icon-play.png">
-        <div class="flex flex-col justify-start">
+        <img class="w-20 h-auto" src="https://www.helloflatmate.com/img/img/point-map.png">
+        <span class="w-12 h-12 rounded-full p-1 flex justify-center items-center">
+            <img class="w-12 h-12" src="https://www.helloflatmate.com/img/img/icon-play.png">
+        </span>
+        <div class="flex flex-col justify-start absolute top-20 right-20">
             <span class="text-white text-sm font-bold">BIENVENIDOS</span>
             <span class="text-cyan-300 text-sm font-bold">A HELLO</span>
         </div>
