@@ -1,11 +1,17 @@
-<div x-data="listFaqsRoom()" class="py-12 px-28 relative mt-24">
+<div x-data="listFaqsRoom()" class="py-12 px-28 relative mt-36">
     <div class="px-8">
         <hr class="border-t-2 border-gray-50 my-2">
         <template x-for="(question, index) in questions" :key="index">
             <div class="flex flex-row justify-between items-center pb-4 p-4 border-b-2 border-gray-50">
                 <div>
-                    <h3 class="text-md font-bold"  x-text="question.title"></h3>
-                    <p class="text-sm mt-1"  x-show="question.open" x-text="question.answer"></p>
+                    <h3 class="text-md font-bold"  x-text="questions.answer.title"></h3>
+{{--                    <p class="text-sm mt-1"  x-show="question.open" x-text="question.answer"></p>--}}
+                    <ul class="p-1 text-black text-sm text-justify mt-2" >
+                        <template x-for="(item, index) in questions.answer.list" :key="index">
+                            <li x-text="item">
+                            </li>
+                        </template>
+                    </ul>
                 </div>
                 <div class="mr-2">
                     <button @click="question.open = !question.open">
@@ -21,32 +27,122 @@
             const questions = [
                 {
                     title: "Condiciones de alquiler",
-                    answer: "Respuesta a la pregunta 1.",
+                    answer: {
+                        title:"Incluido el precio de la habitación",
+                        list:[
+                            "Servicio de raparaciones y mantenimiento",
+                            "Atención a emergencias 24h",
+                            "Fast WIFI",
+                            "Desinfectada anti COVID-19",
+                            "Habitación de unos 8m2",
+                            "Cama de 105 x 190 cm",
+                            "Exterior al patio de manzana",
+                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
+                            "Armario empotrado de 4 puertas, increible capacidad",
+                            "Ventana de aluminio con persiana",
+                            "Habitación muy luminosa",
+                        ]
+                    },
                     open: false
                 },
                 {
                     title: "Habitación",
-                    answer: "Respuesta a la pregunta 2.",
+                    answer: {
+                        title:"Incluido el precio de la habitación",
+                        list:[
+                            "Servicio de raparaciones y mantenimiento",
+                            "Atención a emergencias 24h",
+                            "Fast WIFI",
+                            "Desinfectada anti COVID-19",
+                            "Habitación de unos 8m2",
+                            "Cama de 105 x 190 cm",
+                            "Exterior al patio de manzana",
+                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
+                            "Armario empotrado de 4 puertas, increible capacidad",
+                            "Ventana de aluminio con persiana",
+                            "Habitación muy luminosa",
+                        ]
+                    },
                     open: false
                 },
                 {
                     title: "Facturas",
-                    answer: "Respuesta a la pregunta 3.",
+                    answer: {
+                        title:"Incluido el precio de la habitación",
+                        list:[
+                            "Servicio de raparaciones y mantenimiento",
+                            "Atención a emergencias 24h",
+                            "Fast WIFI",
+                            "Desinfectada anti COVID-19",
+                            "Habitación de unos 8m2",
+                            "Cama de 105 x 190 cm",
+                            "Exterior al patio de manzana",
+                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
+                            "Armario empotrado de 4 puertas, increible capacidad",
+                            "Ventana de aluminio con persiana",
+                            "Habitación muy luminosa",
+                        ]
+                    },
                     open: false
                 },
                 {
                     title: "Raparaciones",
-                    answer: "Respuesta a la pregunta 3.",
+                    answer: {
+                        title:"Incluido el precio de la habitación",
+                        list:[
+                            "Servicio de raparaciones y mantenimiento",
+                            "Atención a emergencias 24h",
+                            "Fast WIFI",
+                            "Desinfectada anti COVID-19",
+                            "Habitación de unos 8m2",
+                            "Cama de 105 x 190 cm",
+                            "Exterior al patio de manzana",
+                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
+                            "Armario empotrado de 4 puertas, increible capacidad",
+                            "Ventana de aluminio con persiana",
+                            "Habitación muy luminosa",
+                        ]
+                    },
                     open: false
                 },
                 {
                     title: "Normas",
-                    answer: "Respuesta a la pregunta 3.",
+                    answer: {
+                        title:"Incluido el precio de la habitación",
+                        list:[
+                            "Servicio de raparaciones y mantenimiento",
+                            "Atención a emergencias 24h",
+                            "Fast WIFI",
+                            "Desinfectada anti COVID-19",
+                            "Habitación de unos 8m2",
+                            "Cama de 105 x 190 cm",
+                            "Exterior al patio de manzana",
+                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
+                            "Armario empotrado de 4 puertas, increible capacidad",
+                            "Ventana de aluminio con persiana",
+                            "Habitación muy luminosa",
+                        ]
+                    },
                     open: false
                 },
                 {
                     title: "Check-in",
-                    answer: "Respuesta a la pregunta 3.",
+                    answer: {
+                        title:"Incluido el precio de la habitación",
+                        list:[
+                            "Servicio de raparaciones y mantenimiento",
+                            "Atención a emergencias 24h",
+                            "Fast WIFI",
+                            "Desinfectada anti COVID-19",
+                            "Habitación de unos 8m2",
+                            "Cama de 105 x 190 cm",
+                            "Exterior al patio de manzana",
+                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
+                            "Armario empotrado de 4 puertas, increible capacidad",
+                            "Ventana de aluminio con persiana",
+                            "Habitación muy luminosa",
+                        ]
+                    },
                     open: false
                 },
             ];
