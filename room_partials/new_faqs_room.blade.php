@@ -4,14 +4,16 @@
         <template x-for="(question, index) in questions" :key="index">
             <div class="flex flex-row justify-between items-center pb-4 p-4 border-b-2 border-gray-50">
                 <div>
-                    <h3 class="text-md font-bold"  x-text="question.title"></h3>
-                    <ul x-show="question.open" class="p-1 text-black text-sm text-justify mt-2" >
-                        <template x-for="(item, index) in question.answer.list" :key="index">
-                            <spam class="text-sm font-bold"  x-text="question.answer.title"></spam>
-                            <li x-text="item">
-                            </li>
-                        </template>
-                    </ul>
+                   <h3 class="text-md font-bold"  x-text="question.title"></h3>
+                   <div x-show="question.open">
+                       <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
+                       <ul class="p-1 text-black text-sm text-justify mt-2" >
+                           <template x-for="(item, index) in question.answer.list" :key="index">
+                               <li x-text="item">
+                               </li>
+                           </template>
+                       </ul>
+                   </div>
                 </div>
                 <div class="mr-2">
                     <button @click="question.open = !question.open">
