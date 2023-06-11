@@ -1,30 +1,31 @@
 <div x-data="carousel()" x-init="startCarousel()" class="w-full flex flex-col justify-start items-start mt-20 px-36">
-    <div class="flex flex-row justify-between w-2/3 mb-32">
-        <div class="flex flex-col">
-            <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
-            <span class="text-black text-sm">Zona centro</span>
-        </div>
-        <span class="bg-neutral-200 text-black text-sm p-0.5">
+    <div class="flex flex-row justify-start items-start">
+        <div class="flex flex-col w-2/3">
+            <div class="flex flex-row justify-between mb-10">
+                <div class="flex flex-col">
+                    <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
+                    <span class="text-black text-sm">Zona centro</span>
+                </div>
+                <span class="bg-neutral-200 text-black text-sm p-0.5">
             Cod. habitación <strong>ZNANSDHAJAKJA</strong>
         </span>
-    </div>
+            </div>
+            <div class="h-auto">
+                <div class="relative flex justify-center items-center">
+                    <template x-for="(image, index) in images">
+                        <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
+                            <img :src="image.imageSrc" alt="Slide" class="w-full">
+                        </div>
+                    </template>
 
-    <div class="flex flex-row justify-start items-start mt-20 w-2/3">
-        <div class="w-2/3 h-auto">
-            <div class="relative flex justify-center items-center">
-                <template x-for="(image, index) in images">
-                    <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
-                        <img :src="image.imageSrc" alt="Slide" class="w-full">
+                    <div class="flex justify-between absolute w-full px-4">
+                        <button @click="previousSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <button @click="nextSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
                     </div>
-                </template>
-
-                <div class="flex justify-between absolute w-full px-4">
-                    <button @click="previousSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
-                        <ion-icon name="chevron-back-outline"></ion-icon>
-                    </button>
-                    <button @click="nextSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </button>
                 </div>
             </div>
         </div>
