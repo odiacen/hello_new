@@ -6,7 +6,7 @@
                     <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
                     <span class="text-black text-sm">Zona centro</span>
                 </div>
-                <div class="bg-neutral-200 text-black text-xs flex flex-row">
+                <div class="bg-neutral-200 text-black text-xs flex flex-row p-1 h-[20px]">
                     <span>
                         Cod. habitación
                     </span>
