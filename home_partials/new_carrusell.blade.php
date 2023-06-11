@@ -27,7 +27,7 @@
     },
   ]
 }">
-    <div class="flex flex-row justify-start w-full">
+    <div class="flex flex-row justify-start w-full lg:h-[500px]  h-[300px]">
         <div class="flex flex-col items-start justify-start w-auto space-y-6 py-4 px-6">
             <template x-for="tab in tabs" :key="tab.id">
                 <button
@@ -69,7 +69,7 @@
                     <template x-for="tab in tabs" :key="tab.id">
                         <div class="bg-green-300 flex flex-col" x-show="activeTab === tab.id">
                             <span class="text-white font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
-                            <p class="text-white text-justify lg:text-md text-sd lg:h-auto h-[45%] overflow-y-auto" x-text="tab.content"></p>
+                            <p class="text-white text-justify lg:text-md text-sd lg:h-auto h-[40%] overflow-y-auto" x-text="tab.content"></p>
                         </div>
                     </template>
                 </div>
