@@ -6,6 +6,7 @@
 @include('nuevo.home_partials.new_carrusell')
 @include('nuevo.home_partials.new_arrival')
 @include('nuevo.home_partials.new_environment')
+@include('nuevo.home_partials.new_notices')
 
 
 @include('nuevo.global.new_faqs')
