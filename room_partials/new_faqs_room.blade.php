@@ -1,4 +1,4 @@
-<div x-data="listFaqs()" class="py-12 px-28 relative mt-24">
+<div x-data="listFaqsRoom()" class="py-12 px-28 relative mt-24">
     <div class="px-8">
         <hr class="border-t-2 border-gray-50 my-2">
         <template x-for="(question, index) in questions" :key="index">
@@ -17,7 +17,7 @@
         </template>
     </div>
     <script>
-        function listFaqs() {
+        function listFaqsRoom() {
             const questions = [
                 {
                     title: "Condiciones de alquiler",
