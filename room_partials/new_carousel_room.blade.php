@@ -1,5 +1,5 @@
-<div x-data="carousel()" x-init="startCarousel()" class="flex flex-col justify-center items-start mt-20 px-36">
-    <div class="flex flex-row justify-between w-full">
+<div x-data="carousel()" x-init="startCarousel()" class="w-full flex flex-col justify-center items-start mt-20 px-36">
+    <div class="flex flex-row justify-between w-2/3 mb-20">
         <div class="flex flex-col">
             <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
             <span class="text-black text-sm">Zona centro</span>
@@ -9,8 +9,8 @@
         </span>
     </div>
 
-    <div class="flex flex-row justify-end items-start mt-20">
-        <div class="w-[550px] h-auto">
+    <div class="flex flex-row justify-end items-start mt-20 w-full">
+        <div class="w-2/3 h-auto">
             <div class="relative flex justify-center items-center">
                 <template x-for="(image, index) in images">
                     <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
