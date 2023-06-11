@@ -1,22 +1,55 @@
-<div x-data="carousel()" x-init="startCarousel()" class="flex justify-center items-center h-screen">
-    <div class="w-64">
-        <div class="relative flex justify-center items-center">
-            <template x-for="(image, index) in images">
-                <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
-                    <img :src="image.imageSrc" alt="Slide" class="w-full">
-                </div>
-            </template>
+<div x-data="carousel()" x-init="startCarousel()" class="flex flex-col justify-start items-start">
+    <div class="flex flex-row">
+        <div class="flex flex-col">
+            <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
+            <span class="text-black text-sm">Zona centro</span>
+        </div>
+        <span class="bg-neutral-200 text-black p-1">
+            Cod. habitación <strong>ZNANSDHAJAKJA</strong>
+        </span>
+    </div>
+    <div class="flex flex-row justify-start items-start">
+        <div class="w-[450px] h-auto">
+            <div class="relative flex justify-center items-center">
+                <template x-for="(image, index) in images">
+                    <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
+                        <img :src="image.imageSrc" alt="Slide" class="w-full">
+                    </div>
+                </template>
 
-            <div class="flex justify-between absolute w-full px-4">
-                <button @click="previousSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
-                    <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>
-                <button @click="nextSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
+                <div class="flex justify-between absolute w-full px-4">
+                    <button @click="previousSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    <button @click="nextSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                </div>
             </div>
         </div>
+        <div class="flex flex-col">
+            <span class="bg-cyan-300 text-white font-bold text-sm p-2">275 e/mes</span>
+            <button class="bg-[#3f12a3] flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
+                Reserva sin esperas
+                <span class="bg-white rounded-full p-2 h-8 w-8">
+                    <ion-icon class="text-black h-6 w-6" name="add-outline"></ion-icon>
+                </span>
+            </button>
+            <button class="bg-gray-800 flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
+                ¿Alguna pregunta?
+                <span class="bg-white rounded-full p-2 h-8 w-8">
+                    <ion-icon class="text-black h-6 w-6" name="add-outline"></ion-icon>
+                </span>
+            </button>
+            <button class="bg-cyan-300 flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
+                Como reservar
+                <span class="bg-white rounded-full p-2 h-8 w-8">
+                    <ion-icon class="text-black h-6 w-6" name="add-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
     </div>
+
 
     <script>
         function carousel() {
@@ -38,7 +71,7 @@
                 startCarousel() {
                     setInterval(() => {
                         this.nextSlide();
-                    }, 2000);
+                    }, 10000);
                 },
                 isActiveSlide(index) {
                     return this.activeSlide === index;
