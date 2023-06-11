@@ -49,40 +49,4 @@
             </button>
         </div>
     </div>
-
-
-    <script>
-        function carousel() {
-            const images = [
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
-                },
-            ];
-
-            return {
-                images,
-                activeSlide: 0,
-                startCarousel() {
-                    setInterval(() => {
-                        this.nextSlide();
-                    }, 10000);
-                },
-                isActiveSlide(index) {
-                    return this.activeSlide === index;
-                },
-                previousSlide() {
-                    this.activeSlide = (this.activeSlide - 1 + this.images.length) % this.images.length;
-                },
-                nextSlide() {
-                    this.activeSlide = (this.activeSlide + 1) % this.images.length;
-                },
-            };
-        }
-    </script>
 </div>
