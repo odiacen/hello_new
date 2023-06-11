@@ -1,5 +1,5 @@
 <div x-data="carousel()" x-init="startCarousel()" class="flex flex-col justify-start items-start mt-20 px-36">
-    <div class="flex flex-row">
+    <div class="flex flex-row w-full">
         <div class="flex flex-col">
             <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
             <span class="text-black text-sm">Zona centro</span>
@@ -8,8 +8,8 @@
             Cod. habitación <strong>ZNANSDHAJAKJA</strong>
         </span>
     </div>
-    <div class="flex flex-row justify-start items-start mt-8">
-        <div class="w-[450px] h-auto">
+    <div class="flex flex-row justify-start items-start mt-20">
+        <div class="w-[550px] h-auto">
             <div class="relative flex justify-center items-center">
                 <template x-for="(image, index) in images">
                     <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col ml-10">
+        <div class="flex flex-col justify-start items-start ml-10 space-y-4">
             <span class="bg-cyan-300 text-white font-bold text-sm p-2 w-1/2">275 e/mes</span>
             <button class="bg-[#3f12a3] flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
                 Reserva sin esperas
