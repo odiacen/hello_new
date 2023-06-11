@@ -4,10 +4,10 @@
         <template x-for="(question, index) in questions" :key="index">
             <div class="flex flex-row justify-between items-center pb-4 p-4 border-b-2 border-gray-50">
                 <div>
-                    <h3 class="text-md font-bold"  x-text="questions.answer.title"></h3>
-{{--                    <p class="text-sm mt-1"  x-show="question.open" x-text="question.answer"></p>--}}
-                    <ul class="p-1 text-black text-sm text-justify mt-2" >
+                    <h3 class="text-md font-bold"  x-text="question.title"></h3>
+                    <ul x-show="question.open" class="p-1 text-black text-sm text-justify mt-2" >
                         <template x-for="(item, index) in question.answer.list" :key="index">
+                            <spam class="text-sm font-bold"  x-text="question.answer.title"></spam>
                             <li x-text="item">
                             </li>
                         </template>
