@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-center items-start px-36 mt-20">
+<div class="flex flex-col justify-center items-start px-32 lg:px-48 lg:mt-20 mt-32">
     <div class="flex flex-col justify-start items-start">
         <span class="text-4xl text-cyan-300 font-bold">
             Precencia
