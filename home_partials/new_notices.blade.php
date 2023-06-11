@@ -10,7 +10,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         </span>
     </div>
-    <div class="flex flex-row justify-center items-center lg:space-x-10 space-x-6 mt-8">
+    <div class="flex flex-row justify-center items-center lg:space-x-20 space-x-6 mt-8">
         <img class="w-24 h-auto" src="https://www.helloflatmate.com/img/img/logo-vvo.png">
         <img class="w-36 h-auto" src="https://www.helloflatmate.com/img/img/logo-informacion.png">
         <img class="w-36 h-auto" src="https://www.helloflatmate.com/img/img/logo-diario-critico.png">
