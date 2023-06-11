@@ -7,7 +7,7 @@
                     <h3 class="text-md font-bold"  x-text="questions.answer.title"></h3>
 {{--                    <p class="text-sm mt-1"  x-show="question.open" x-text="question.answer"></p>--}}
                     <ul class="p-1 text-black text-sm text-justify mt-2" >
-                        <template x-for="(item, index) in questions.answer.list" :key="index">
+                        <template x-for="(item, index) in question.answer.list" :key="index">
                             <li x-text="item">
                             </li>
                         </template>
