@@ -9,7 +9,7 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
-        <img class="w-20 h-auto -ml-8" src="https://www.helloflatmate.com/img/img/point-map.png">
+        <img class="w-20 h-auto -ml-12" src="https://www.helloflatmate.com/img/img/point-map.png">
         <span class="w-14 h-14 bg-white rounded-full p-1 flex justify-center items-center ml-8">
             <img class="w-12 h-12" src="https://www.helloflatmate.com/img/img/icon-play.png">
         </span>
