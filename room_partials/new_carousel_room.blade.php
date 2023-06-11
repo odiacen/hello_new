@@ -6,11 +6,14 @@
                     <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
                     <span class="text-black text-sm">Zona centro</span>
                 </div>
-                <span class="bg-neutral-200 text-black text-sm">
-                    Cod. habitación <strong>ZNANSDHAJAKJA</strong>
-                </span>
+                <div class="bg-neutral-200 text-black text-sm flex flex-row">
+                    <span>
+                        Cod. habitación
+                    </span>
+                    <span class="font-bold">ZNANSDHAJAKJA</span>
+                </div>
             </div>
-            <div class="relative flex justify-center items-center mt-48">
+            <div class="relative flex justify-center items-center mt-40">
                 <template x-for="(image, index) in images">
                     <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
                         <img :src="image.imageSrc" alt="Slide" class="w-full">
