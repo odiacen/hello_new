@@ -2,20 +2,18 @@
     <div class="px-8">
         <hr class="border-t-2 border-gray-50 my-2">
         <template x-for="(question, index) in questions" :key="index">
-            <div class="flex flex-row justify-between items-center pb-4 p-4 border-b-2 border-gray-50">
-                <div>
-                   <h3 class="text-md font-bold"  x-text="question.title"></h3>
-                   <div x-show="question.open">
-                       <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
-                       <ul class="p-1 text-black text-sm text-justify mt-2" >
-                           <template x-for="(item, index) in question.answer.list" :key="index">
-                               <li x-text="item">
-                               </li>
-                           </template>
-                       </ul>
-                   </div>
+            <div class="flex relative flex-row justify-between items-center pb-4 p-4">
+                <h3 class="text-md font-bold"  x-text="question.title"></h3>
+                <div class="border-b-2 border-gray-50" x-show="question.open">
+                    <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
+                    <ul class="p-1 text-black text-sm text-justify mt-2" >
+                        <template x-for="(item, index) in question.answer.list" :key="index">
+                            <li x-text="item">
+                            </li>
+                        </template>
+                    </ul>
                 </div>
-                <div class="mr-2">
+                <div class="mr-2 absolute top-0">
                     <button @click="question.open = !question.open">
                         <ion-icon x-show="!question.open" name="chevron-down-outline"></ion-icon>
                         <ion-icon x-show="question.open" name="chevron-up-outline"></ion-icon>
