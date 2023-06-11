@@ -1,4 +1,4 @@
-<div x-data="carousel()" x-init="startCarousel()" class="flex flex-col justify-start items-start">
+<div x-data="carousel()" x-init="startCarousel()" class="flex flex-col justify-start items-start mt-20 px-36">
     <div class="flex flex-row">
         <div class="flex flex-col">
             <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
@@ -8,7 +8,7 @@
             Cod. habitación <strong>ZNANSDHAJAKJA</strong>
         </span>
     </div>
-    <div class="flex flex-row justify-start items-start">
+    <div class="flex flex-row justify-start items-start mt-8">
         <div class="w-[450px] h-auto">
             <div class="relative flex justify-center items-center">
                 <template x-for="(image, index) in images">
@@ -27,24 +27,24 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col">
-            <span class="bg-cyan-300 text-white font-bold text-sm p-2">275 e/mes</span>
+        <div class="flex flex-col ml-10">
+            <span class="bg-cyan-300 text-white font-bold text-sm p-2 w-1/2">275 e/mes</span>
             <button class="bg-[#3f12a3] flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
                 Reserva sin esperas
-                <span class="bg-white rounded-full p-2 h-8 w-8">
-                    <ion-icon class="text-black h-6 w-6" name="add-outline"></ion-icon>
+                <span class="bg-white rounded-full p-2 h-6 w-6 flex justify-center items-center ml-2">
+                    <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
                 </span>
             </button>
-            <button class="bg-gray-800 flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
+            <button class="bg-gray-500 flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
                 ¿Alguna pregunta?
-                <span class="bg-white rounded-full p-2 h-8 w-8">
-                    <ion-icon class="text-black h-6 w-6" name="add-outline"></ion-icon>
+                <span class="bg-white rounded-full p-2 h-6 w-6 flex justify-center items-center ml-2">
+                    <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
                 </span>
             </button>
             <button class="bg-cyan-300 flex flex-row justify-center items-center p-1 rounded-full text-white font-bold">
                 Como reservar
-                <span class="bg-white rounded-full p-2 h-8 w-8">
-                    <ion-icon class="text-black h-6 w-6" name="add-outline"></ion-icon>
+                <span class="bg-white rounded-full p-2 h-6 w-6 flex justify-center items-center ml-2">
+                    <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
                 </span>
             </button>
         </div>
