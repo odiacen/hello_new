@@ -5,9 +5,9 @@
             <div class="flex relative flex-row justify-between items-center pb-4 p-4 border-b-2 border-gray-50">
                 <div class="flex flex-col">
                     <h3 class="text-md font-bold"  x-text="question.title"></h3>
-                    <div x-show="question.open">
+                    <div class="mt-4" x-show="question.open">
                         <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
-                        <ul class="p-1 text-black text-sm text-justify mt-2" >
+                        <ul style="color: #91dfe4;" type="disk" class="p-1 text-black text-sm text-justify mt-2" >
                             <template x-for="(item, index) in question.answer.list" :key="index">
                                 <li x-text="item">
                                 </li>
