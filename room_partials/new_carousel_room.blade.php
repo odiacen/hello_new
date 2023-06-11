@@ -1,12 +1,12 @@
-<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 mb-48 px-36">
+<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 mb-28 px-36">
     <div class="flex flex-row justify-start items-start w-full">
         <div class="flex flex-col justify-between w-2/3">
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row justify-between mb-10">
                 <div class="flex flex-col">
                     <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
                     <span class="text-black text-sm">Zona centro</span>
                 </div>
-                <div class="bg-neutral-200 text-black text-xs flex flex-row h-auto">
+                <div class="bg-neutral-200 text-black text-xs flex flex-row">
                     <span>
                         Cod. habitación
                     </span>
