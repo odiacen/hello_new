@@ -10,7 +10,7 @@
             <button class="flex z-10 justify-center items-center bg-black text-white font-bold text-xl p-2 rounded-full">
                 Quiero saber más
             </button>
-            <div class="bg-[#e7c007] text-black font-bold lg:text-xl text-md flex justify-center items-center absolute lg:-bottom-10 p-2 px-8 w-1/2 h-[120px] lg:right-20 right-4 -bottom-16">
+            <div class="bg-[#e7c007] text-black font-bold lg:text-xl text-md flex justify-center items-center absolute lg:-bottom-10 p-2 px-8 w-1/2 h-[120px] lg:right-20 right-4 -bottom-20">
                 Aquí deben ir las últimas noticias o bien un enlace a todas
             </div>
         </div>
