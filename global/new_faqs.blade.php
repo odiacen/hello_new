@@ -1,4 +1,4 @@
-<div x-data="listFaqs()" class="bg-neutral-700 py-12 px-32 relative">
+<div x-data="listFaqs()" class="bg-neutral-700 py-12 px-32 relative mt-24">
     <img class="absolute w-32 h-32 top-0 right-0" src="https://www.helloflatmate.com/img/img/vector.png"/>
     <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
         <div class="px-12">

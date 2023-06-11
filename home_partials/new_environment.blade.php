@@ -4,9 +4,9 @@
         <div class="h-[40%] bg-cyan-300 px-12 text-white text-4xl font-bold flex justify-center items-center">
             ¡Compromiso con el medio ambiente!
         </div>
-        <div class="h-[60%] flex flex-col justify-start items-start py-10 relative">
+        <div class="h-[60%] flex flex-col justify-start items-start py-10 relative px-20 space-y-10">
             <span class="text-black text-2xl font-bold">Reforestar +250 árboles</span>
-            <p class="text-black text-justify text-md px-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in error.</p>
+            <p class="text-black text-justify text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in error.</p>
             <button class="flex justify-center items-center bg-black text-white font-bold text-xl p-2 rounded-full">
                 Quiero saber más
             </button>
