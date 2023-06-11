@@ -7,7 +7,7 @@
                     <h3 class="text-md font-bold"  x-text="question.title"></h3>
                     <div class="mt-4" x-show="question.open">
                         <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
-                        <ul style="color: #91dfe4;" type="disk" class="p-1 text-black text-sm text-justify mt-2" >
+                        <ul class="p-1 text-black text-sm text-justify mt-2 custom-list" >
                             <template x-for="(item, index) in question.answer.list" :key="index">
                                 <li x-text="item">
                                 </li>
@@ -24,6 +24,28 @@
             </div>
         </template>
     </div>
+
+    <style>
+        .custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
+
+        .custom-list li::before {
+            content: "•";
+            color:  #91dfe4;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+        }
+    </style>
+
     <script>
         function listFaqsRoom() {
             const questions = [
