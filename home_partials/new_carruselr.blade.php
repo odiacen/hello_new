@@ -35,28 +35,28 @@
 }">
     <div class="flex flex-row justify-start w-full lg:h-[450px]  h-[350px]">
         <div class="bg-cyan-300 relative flex flex-row justify-end w-[85%] lg:w-[80%]">
-            <img class="absolute lg:left-36 lg:w-1/4 w-1/3 h-auto left-8 -top-32" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
-            <div class="flex flex-col lg:px-12 px-8 w-[60%]">
-                <div class="flex flex-col relative mb-5">
-                    <div class="flex flex-col absolute -top-32 ">
+            <img class="absolute lg:left-36 lg:w-1/4 w-1/3 h-auto left-8 lg:-top-32 -top-24" src="https://www.helloflatmate.com/img/img/hab-v.png"/>
+            <div class="flex flex-col lg:px-12 px-4 w-[60%]">
+                <div class="flex flex-col relative lg:mb-5 mb-2">
+                    <div class="flex flex-col absolute lg:-top-32 -top-24">
                         <span class="text-black font-bold lg:text-4xl text-2xl">¿Por qué es mucho más</span>
                         <span class="text-cyan-300 font-bold lg:text-4xl text-2xl">que una habitación?</span>
                     </div>
-                    <div class="mt-4">
+                    <div class="lg:mt-4 mt-2 flex flex-col">
                       <span class="text-white font-bold lg:text-2xl text-xl">
                         Habitaciones - hello rooms
                       </span>
-                        <p class="lg:text-md text-sd text-justify text-black lg:h-auto h-[100px]">
+                        <p class="lg:text-md text-sd text-justify text-black lg:h-auto h-[80px]">
                             Las habitaciones <strong>HELLO ROOMS</strong>, son habitaciones que prepara cada año helloflatmate encargándose de la limpieza, mantenimiento y gestión de la estancia de flatmates. Para que el tiempo que esté con nosotros no se tenga que preocupar prácticamente de nada.
                         </p>
                     </div>
                 </div>
                 <hr class="border-t-2 border-gray-50 my-2 w-[60%]">
-                <div class="mt-5">
+                <div class="lg:mt-5 mt-2">
                     <template x-for="tab in tabs" :key="tab.id">
-                        <div x-show="activeTab === tab.id">
+                        <div class="flex flex-col" x-show="activeTab === tab.id">
                             <span class="text-black font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
-                            <p class="text-black text-justify lg:text-md text-sd lg:h-auto h-[100px] " x-text="tab.content"></p>
+                            <p class="text-black text-justify lg:text-md text-sd lg:h-auto h-[80px] " x-text="tab.content"></p>
                         </div>
                     </template>
                 </div>
@@ -72,7 +72,7 @@
                 </template>
             </div>
         </div>
-        <div class="flex flex-col items-start justify-start ml-6 w-auto space-y-6 py-4 px-4">
+        <div class="flex flex-col items-start justify-start lg:ml-6 ml-2 w-auto space-y-6 lg:py-4 px-4">
             <template x-for="tab in tabs" :key="tab.id">
                     <button
                             @click="activeTab = tab.id"
