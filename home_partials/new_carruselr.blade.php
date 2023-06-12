@@ -5,7 +5,7 @@
       id: 'tab1',
       icon: 'https://www.helloflatmate.com/img/img/icon-mail.png',
       label: 'Contrato',
-      content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir. Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
+      content: 'Es muy importante que como inquilino tenga contrato  de alquiler y así tener un alojamiento legal donde residir. Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
     },
     {
       id: 'tab2',
