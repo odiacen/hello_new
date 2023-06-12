@@ -8,7 +8,7 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=3KSXxo8CbpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3KSXxo8CbpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -17,7 +17,7 @@
     const textContainer = document.getElementById('text-container');
 
     videoContainer.addEventListener('click', function() {
-        videoContainer.style.width = '100%';
+        videoContainer.style.width = '80%';
         videoContainer.style.backgroundPosition = 'initial';
         videoContainer.style.webkitClipPath = 'initial';
         videoContainer.style.clipPath = 'initial';
