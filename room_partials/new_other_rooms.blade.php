@@ -2,8 +2,8 @@
     <span class="text-2xl font-bold text-black text-center">Otras habitaciones</span>
     <div class="grid grid-cols-3 justify-center items-center lg:px-20 px-10 mt-2">
         <template x-for="(room, index) in rooms">
-            <a href="#" class="flex flex-col lg:w-[300px] w-[200px] items-start bg-gray-100 mt-10 lg:ml-10 ml-2 relative">
-                <img class="object-cover w-full lg:h-48 h-48" :src="portadas[index]" alt="">
+            <a href="#" class="flex flex-col lg:w-[300px] w-[210px] items-start bg-gray-100 mt-10 lg:ml-10 ml-2 relative">
+                <img class="object-cover w-full h-48" :src="portadas[index]" alt="">
                 <div class="absolute bg-cyan-300 flex flex-row p-2 text-sm text-white font-bold mb-1 bottom-12 right-1">
                     <span x-text="room.price"></span>
                     <span class="ml-2">e/mes</span>
