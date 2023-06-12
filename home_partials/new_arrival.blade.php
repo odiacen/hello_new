@@ -39,4 +39,14 @@
             videoContainer.style.clipPath = 'initial';
         });
     });
+
+    videoIframe.addEventListener('load', function() {
+        videoIframe.contentWindow.addEventListener('ended', function() {
+            videoContainer.classList.remove('playing');
+            textContainer.style.display = 'block';
+            videoContainer.style.backgroundPosition = '50%';
+            videoContainer.style.webkitClipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%)';
+            videoContainer.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%)';
+        });
+    });
 </script>
