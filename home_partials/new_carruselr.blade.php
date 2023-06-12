@@ -17,9 +17,7 @@
       id: 'tab3',
       icon: 'https://www.helloflatmate.com/img/img/icon-setting.png',
       label: 'Mantenimiento',
-      content: 'Las viviendas que gestionamos con contrato de 5 meses son pintadas y revisadas 2 veces al año y 1 en los pisos de 10 y 11 meses.
-                De todas formas si algo deja de funcionar, escríbanos a través del grupo de whatsapp y dentro del horario laboral organizamos la asistencia. 
-                '
+      content: 'Las viviendas que gestionamos con contrato de 5 meses son pintadas y revisadas 2 veces al año y 1 en los pisos de 10 y 11 meses. <br> De todas formas si algo deja de funcionar, escríbanos a través del grupo de whatsapp y dentro del horario laboral organizamos la asistencia.'
     },
     {
       id: 'tab4',
