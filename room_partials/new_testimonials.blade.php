@@ -1,15 +1,15 @@
 <div x-data="carouselTestimonial()" x-init="startCarousel()" class="w-full mt-14 mb-28 px-36">
-    <div class="flex flex-row justify-start items-start w-full bg-gray-200">
-        <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-row justify-start items-start w-full bg-gray-200 py-8">
+        <div class="flex flex-col justify-center items-center w-full">
             <span class="text-2xl font-bold text-black">Opiniones</span>
-            <div class="relative flex justify-center items-center mt-40">
+            <div class="relative flex justify-center items-center w-full px-10">
                 <template x-for="(testimonial, index) in testimonials">
                     <div x-show="isActiveSlide(index)" :key="index" class="w-full flex flex-row">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col w-1/3">
                             <img :src="testimonial.avatar" alt="Slide" class="rounded-full w-32 h-32">
                             <span class="text-xl text-cyan-300 font-bold" x-text="testimonial.name"></span>
                         </div>
-                        <p class="text-sm text-black text-justify" x-text="testimonial.content"></p>
+                        <p class="text-sm text-black text-justify w-2/3" x-text="testimonial.content"></p>
                     </div>
                 </template>
 
