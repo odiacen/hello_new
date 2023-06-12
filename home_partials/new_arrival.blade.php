@@ -14,7 +14,6 @@
         </div>
     </div>
 </div>
-
 <script>
     function playVideo() {
         var video = document.getElementById('videoPlayer');
