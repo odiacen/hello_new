@@ -10,7 +10,7 @@
                     <span>
                         Cod. habitación
                     </span>
-                    <span class="font-bold">ZNANSDHAJAKJA</span>
+                    <span class="font-bold ml-2">ZNANSDHAJAKJA</span>
                 </div>
             </div>
             <div class="relative flex justify-center items-center mt-40">
