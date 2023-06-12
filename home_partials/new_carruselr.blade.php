@@ -5,13 +5,13 @@
       id: 'tab1',
       icon: 'https://www.helloflatmate.com/img/img/icon-mail.png',
       label: 'Contrato',
-      content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir. Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
+      content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir. <br> Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
     },
     {
       id: 'tab2',
       icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
       label: 'Emergencias 24/7',
-      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia. Si hubiera una emergencia fuera de horario, todos nuestros flatmates disponen de un número de teléfono que les damos en el check in para contactar con helloflatmate en caso de urgencia.'
+      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia. <br> Si hubiera una emergencia fuera de horario, todos nuestros flatmates disponen de un número de teléfono que les damos en el check in para contactar con helloflatmate en caso de urgencia.'
     },
     {
       id: 'tab3',
@@ -23,7 +23,7 @@
       id: 'tab4',
       icon: 'https://www.helloflatmate.com/img/img/icon-shower.png',
       label: 'Suministros',
-      content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir. Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
+      content: 'Las facturas no están incluidas en ningún alojamiento hello rooms, ni hello landlord. Únicamente están incluidas en hello coliving con un tope máximo de 40€ al mes por persona. <br> Llevar el control del uso responsable en una vivienda compartida puede ser algo complicado, por ello helloflatmate hace informes periódicos de las facturas que van llegando y les notificamos cuando detectamos un uso excesivo, que se ve reflejado en euros de la factura. <br> También creamos contenido de interés para el ahorro energético. <br> Los contratos de los suministros van a nombre de la propiedad, con ello evitamos que nuestros flatmates tengan que firmar contratos con empresas privadas de suministros las cuales normalmente piden permanencia.'
     },
     {
       id: 'tab5',
