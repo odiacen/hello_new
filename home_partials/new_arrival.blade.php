@@ -14,7 +14,7 @@
 
 <script>
     function playVideo() {
-        var videoUrl = 'https://youtu.be/3KSXxo8CbpY';
+        var videoUrl = 'https://www.youtube.com/watch?v=3KSXxo8CbpY ';
         var embedUrl = videoUrl.replace('watch?v=', 'embed/');
         var videoContainer = document.querySelector('.video-container');
         var textContainer = document.getElementById('text-container');
