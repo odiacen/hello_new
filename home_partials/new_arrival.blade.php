@@ -30,15 +30,20 @@
     const videoContainer = document.querySelector('.video-container');
     const textContainer = document.getElementById('text-container');
 
-    videoIframe.addEventListener('load', function() {
-        const video = videoIframe.contentWindow.document.querySelector('video');
-        video.addEventListener('loadedmetadata', function() {
-            video.addEventListener('play', function() {
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                const video = entry.target.contentWindow.document.querySelector('video');
+                video.play();
                 videoContainer.classList.add('playing');
-            });
-            video.addEventListener('pause', function() {
+            } else {
+                const video = entry.target.contentWindow.document.querySelector('video');
+                video.pause();
                 videoContainer.classList.remove('playing');
-            });
+            }
         });
     });
+
+    observer.observe(videoIframe);
+
 </script>
