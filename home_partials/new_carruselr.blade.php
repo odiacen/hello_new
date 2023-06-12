@@ -17,7 +17,9 @@
       id: 'tab3',
       icon: 'https://www.helloflatmate.com/img/img/icon-setting.png',
       label: 'Mantenimiento',
-      content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir. Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
+      content: 'Las viviendas que gestionamos con contrato de 5 meses son pintadas y revisadas 2 veces al año y 1 en los pisos de 10 y 11 meses.
+                De todas formas si algo deja de funcionar, escríbanos a través del grupo de whatsapp y dentro del horario laboral organizamos la asistencia. 
+                '
     },
     {
       id: 'tab4',
@@ -56,7 +58,7 @@
                     <template x-for="tab in tabs" :key="tab.id">
                         <div class="flex flex-col" x-show="activeTab === tab.id">
                             <span class="text-black font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
-                            <p class="text-black text-justify lg:text-md text-sd lg:h-auto h-[110px] overflow-y-auto" x-text="tab.content"></p>
+                            <p class="text-black text-justify lg:text-md text-sd lg:h-auto h-[110px] overflow-y-auto" x-html="tab.content"></p>
                         </div>
                     </template>
                 </div>
