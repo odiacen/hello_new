@@ -23,7 +23,7 @@
       id: 'tab4',
       icon: 'https://www.helloflatmate.com/img/img/icon-shower.png',
       label: 'Suministros',
-      content: 'Las facturas no están incluidas en ningún alojamiento hello rooms, ni hello landlord. Únicamente están incluidas en hello coliving con un tope máximo de 40€ al mes por persona. <br> Helloflatmate hace informes periódicos de las facturas que van llegando y les notificamos cuando detectamos un uso excesivo, que se ve reflejado en euros de la factura. <br> También creamos contenido de interés para el ahorro energético. <br> Los contratos de los suministros van a nombre de la propiedad, para evitar que nuestros flatmates tengan que firmar contratos con empresas privadas de suministros.'
+      content: 'Las facturas no están incluidas en ningún alojamiento hello rooms, ni hello landlord. Únicamente están incluidas en hello coliving con un tope máximo de 40€ al mes por persona. <br> Helloflatmate hace informes periódicos de las facturas que van llegando y les notificamos cuando detectamos un uso excesivo; también creamos contenido de interés para el ahorro energético. <br> Los contratos de los suministros van a nombre de la propiedad, para evitar que nuestros flatmates tengan que firmar contratos con empresas privadas de suministros.'
     },
     {
       id: 'tab5',
