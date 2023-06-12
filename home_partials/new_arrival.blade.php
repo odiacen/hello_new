@@ -16,10 +16,10 @@
 
 <style>
     .video-container.playing {
-        width: 100%;
-        background-position: initial;
-        -webkit-clip-path: initial;
-        clip-path: initial;
+        width: 100% !important;
+        background-position: initial !important;
+        -webkit-clip-path: initial !important;
+        clip-path: initial !important;
     }
 
     .video-container.playing #text-container {
@@ -30,8 +30,10 @@
 <script>
     const videoWrapper = document.querySelector('.video-wrapper');
     const videoContainer = document.querySelector('.video-container');
+    const textContainer = document.getElementById('text-container');
 
     videoWrapper.addEventListener('click', function() {
         videoContainer.classList.add('playing');
+        textContainer.style.display = 'none';
     });
 </script>
