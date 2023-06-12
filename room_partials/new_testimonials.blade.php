@@ -1,8 +1,8 @@
 <div x-data="carouselTestimonial()" x-init="startCarousel()" class="w-full mt-14 mb-28 px-36">
-    <div class="flex flex-row justify-start items-start w-full">
+    <div class="flex flex-row justify-start items-start w-full bg-gray-200">
         <div class="flex flex-col justify-between items-center">
             <span class="text-2xl font-bold text-black">Opiniones</span>
-            <div class="relative flex justify-center items-center mt-40">
+            <div class="relative flex justify-center mt-40">
                 <template x-for="(testimonial, index) in testimonials">
                     <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full flex flex-row">
                         <div class="flex flex-col">
