@@ -7,6 +7,10 @@
         background-position: 50%;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     ">
         <div id="player"></div>
     </div>
@@ -14,7 +18,7 @@
 
 <style>
     .video-container.playing {
-        width: 70%;
+        width: 80%;
         background-position: initial !important;
         -webkit-clip-path: initial !important;
         clip-path: initial !important;
@@ -52,6 +56,14 @@
     function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING) {
             videoContainer.classList.add('playing');
+            textContainer.style.display = 'none'; // Oculta el contenedor de texto
+
+            // Centrar el video
+            const video = player.getIframe();
+            const videoWidth = video.offsetWidth;
+            const videoHeight = video.offsetHeight;
+            video.style.marginLeft = -videoWidth / 2 + 'px';
+            video.style.marginTop = -videoHeight / 2 + 'px';
         } else {
             videoContainer.classList.remove('playing');
         }
