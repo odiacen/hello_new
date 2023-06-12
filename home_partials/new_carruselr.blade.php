@@ -11,15 +11,13 @@
       id: 'tab2',
       icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
       label: 'Emergencias 24/7',
-      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia.
-                Si hubiera una emergencia fuera de horario, todos nuestros flatmates disponen de un número de teléfono que les damos en el check in para contactar con helloflatmate en caso de urgencia.'
+      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia. Si hubiera una emergencia fuera de horario, todos nuestros flatmates disponen de un número de teléfono que les damos en el check in para contactar con helloflatmate en caso de urgencia.'
     },
     {
       id: 'tab3',
       icon: 'https://www.helloflatmate.com/img/img/icon-setting.png',
       label: 'Mantenimiento',
-      content: 'Las viviendas que gestionamos con contrato de 5 meses son pintadas y revisadas 2 veces al año y 1 en los pisos de 10 y 11 meses.
-                De todas formas si algo deja de funcionar, escríbanos a través del grupo de whatsapp y dentro del horario laboral organizamos la asistencia.'
+      content: 'Las viviendas que gestionamos con contrato de 5 meses son pintadas y revisadas 2 veces al año y 1 en los pisos de 10 y 11 meses. De todas formas si algo deja de funcionar, escríbanos a través del grupo de whatsapp y dentro del horario laboral organizamos la asistencia.'
     },
     {
       id: 'tab4',
