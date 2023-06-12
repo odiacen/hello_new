@@ -8,7 +8,7 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
-        <div class="video-wrapper" onclick="playVideo()">
+        <div class="video-wrapper">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3KSXxo8CbpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
@@ -28,8 +28,10 @@
 </style>
 
 <script>
-    function playVideo() {
-        var videoContainer = document.querySelector('.video-container');
+    const videoWrapper = document.querySelector('.video-wrapper');
+    const videoContainer = document.querySelector('.video-container');
+
+    videoWrapper.addEventListener('click', function() {
         videoContainer.classList.add('playing');
-    }
+    });
 </script>
