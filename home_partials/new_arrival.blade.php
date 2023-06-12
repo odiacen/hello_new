@@ -23,6 +23,15 @@
     .video-container.playing #text-container {
         display: none;
     }
+
+    .video-container #text-container {
+        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
+    }
+
+    .video-container.playing #text-container {
+        opacity: 0;
+    }
 </style>
 
 <script>
@@ -33,11 +42,9 @@
     videoIframe.addEventListener('load', function() {
         videoIframe.contentWindow.addEventListener('play', function() {
             videoContainer.classList.add('playing');
-            textContainer.style.display = 'none';
         });
         videoIframe.contentWindow.addEventListener('pause', function() {
             videoContainer.classList.remove('playing');
-            textContainer.style.display = 'flex';
         });
     });
 </script>
