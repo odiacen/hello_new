@@ -34,6 +34,9 @@
         videoIframe.contentWindow.addEventListener('play', function() {
             videoContainer.classList.add('playing');
             textContainer.style.display = 'none';
+            videoContainer.style.backgroundPosition = 'initial';
+            videoContainer.style.webkitClipPath = 'initial';
+            videoContainer.style.clipPath = 'initial';
         });
     });
 </script>
