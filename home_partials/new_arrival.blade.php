@@ -12,20 +12,6 @@
     </div>
 </div>
 
-<script>
-    const videoContainer = document.querySelector('.video-container');
-    const textContainer = document.getElementById('text-container');
-
-    videoContainer.addEventListener('click', function() {
-        videoContainer.style.width = '100%';
-        videoContainer.style.backgroundPosition = 'initial';
-        videoContainer.style.webkitClipPath = 'initial';
-        videoContainer.style.clipPath = 'initial';
-        videoContainer.classList.add('playing');
-        textContainer.style.display = 'none';
-    });
-</script>
-
 <style>
     .video-container.playing {
         width: 100%;
@@ -33,4 +19,18 @@
         -webkit-clip-path: initial;
         clip-path: initial;
     }
+
+    .video-container.playing + #text-container {
+        display: none;
+    }
 </style>
+
+<script>
+    const videoContainer = document.querySelector('.video-container');
+    const textContainer = document.getElementById('text-container');
+    const videoIframe = videoContainer.querySelector('iframe');
+
+    videoIframe.addEventListener('click', function() {
+        videoContainer.classList.add('playing');
+    });
+</script>
