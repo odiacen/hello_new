@@ -3,7 +3,11 @@
         <span class="text-cyan-300 font-bold text-2xl">La llegada</span>
         <span class="text-black text-sm text-justify">Nunca ha sido tan fácil llegar a la ciudad de Valencia, reserva con nosotros y nos encargamos del resto.</span>
     </div>
-    <div class="h-full lg:w-3/4 w-[85%] relative flex justify-center items-center video-container" style="">
+    <div class="h-full lg:w-3/4 w-[85%] relative flex justify-center items-center video-container" style="
+        background-position: 50%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
+    ">
         <iframe id="videoIframe" width="100%" height="100%" src="https://www.youtube.com/embed/3KSXxo8CbpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
@@ -11,19 +15,13 @@
 <style>
     .video-container.playing {
         width: 70%;
+        background-position: initial !important;
+        -webkit-clip-path: initial !important;
+        clip-path: initial !important;
     }
 
     .video-container.playing #text-container {
         display: none;
-    }
-
-    .video-container #text-container {
-        transition: opacity 0.5s ease-in-out;
-        opacity: 1;
-    }
-
-    .video-container.playing #text-container {
-        opacity: 0;
     }
 </style>
 
