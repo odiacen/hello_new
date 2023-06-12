@@ -1,4 +1,4 @@
-<div class="grid justify-center items-center mt-24">
+<div x-data="otherRooms()" class="grid justify-center items-center mt-24">
     <div class="grid grid-cols-3 justify-center items-center px-20 mt-2">
         <template x-for="(room, index) in rooms">
             <a href="#" class="flex flex-col lg:w-[300px] w-[330px] items-start bg-gray-100 mt-10 ml-10 relative">
@@ -16,28 +16,35 @@
     </div>
 
     <script>
-        const rooms = [
-            {
-                title: "Cama doble",
-                type: "x2",
-                price: "100"
-            },
-            {
-                title: "Cama individual",
-                type: "x1",
-                price: "200"
-            },
-            {
-                title: "Cama individual",
-                type: "x1",
-                price: "300"
-            }
-        ];
+        function otherRooms() {
+            const rooms = [
+                {
+                    title: "Cama doble",
+                    type: "x2",
+                    price: "100"
+                },
+                {
+                    title: "Cama individual",
+                    type: "x1",
+                    price: "200"
+                },
+                {
+                    title: "Cama individual",
+                    type: "x1",
+                    price: "300"
+                }
+            ];
 
-        const portadas = [
-            'https://www.helloflatmate.com/img/img/room1.png',
-            'https://www.helloflatmate.com/img/img/room2.png',
-            'https://www.helloflatmate.com/img/img/room3.png'
-        ];
+            const portadas = [
+                'https://www.helloflatmate.com/img/img/room1.png',
+                'https://www.helloflatmate.com/img/img/room2.png',
+                'https://www.helloflatmate.com/img/img/room3.png'
+            ];
+
+            return {
+                rooms,
+                portadas,
+            };
+        }
     </script>
 </div>
