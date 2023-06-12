@@ -1,4 +1,4 @@
-<div x-data="listFaqsRoom()" class="py-12 lg:px-28 px-10 relative mt-36">
+<div x-data="listFaqsRoom()" class="py-12 lg:px-28 px-10 relative lg:mt-36 mt-14">
     <div class="px-8">
         <hr class="border-t-2 border-gray-50 my-2">
         <template x-for="(question, index) in questions" :key="index">

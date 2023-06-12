@@ -13,7 +13,7 @@
                     <span class="font-bold ml-2">ZNANSDHAJAKJA</span>
                 </div>
             </div>
-            <div class="relative flex justify-center items-center mt-10 lg:mt-40">
+            <div class="relative flex justify-center items-center mt-20 lg:mt-40">
                 <template x-for="(image, index) in images">
                     <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
                         <img :src="image.imageSrc" alt="Slide" class="w-full">
@@ -30,21 +30,21 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col justify-start items-start ml-10 w-1/3 mt-20">
-            <span class="bg-cyan-300 text-white font-bold text-sm p-2 w-1/3 flex justify-center items-center">275 e/mes</span>
-            <button class="bg-[#3f12a3] w-[65%] mt-4 flex flex-row justify-between items-center px-2 p-2 rounded-full text-white text-sm font-bold">
+        <div class="flex flex-col justify-start items-start lg:ml-10 ml-4 w-1/3 lg:mt-20 mt-14">
+            <span class="bg-cyan-300 text-white font-bold text-sm p-2 lg:w-1/3 w-1/2 flex justify-center items-center">275 e/mes</span>
+            <button class="bg-[#3f12a3] lg:w-[65%] w-[80%] mt-4 flex flex-row justify-between items-center px-2 p-2 rounded-full text-white text-sm font-bold">
                 Reserva sin esperas
                 <span class="bg-white rounded-full p-1 h-6 w-6 flex justify-center items-center ml-2">
                     <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
                 </span>
             </button>
-            <button class="bg-gray-500 w-[65%] mt-4 flex flex-row justify-between items-center px-2 p-2 rounded-full text-white text-sm font-bold">
+            <button class="bg-gray-500 lg:w-[65%] w-[80%] mt-4 flex flex-row justify-between items-center px-2 p-2 rounded-full text-white text-sm font-bold">
                 ¿Alguna pregunta?
                 <span class="bg-white rounded-full p-1 h-6 w-6 flex justify-center items-center ml-2">
                     <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
                 </span>
             </button>
-            <button class="bg-cyan-300 w-[65%] mt-4 flex flex-row justify-between items-center px-2 p-2 rounded-full text-white text-sm font-bold">
+            <button class="bg-cyan-300 lg:w-[65%] w-[80%] mt-4 flex flex-row justify-between items-center px-2 p-2 rounded-full text-white text-sm font-bold">
                 Como reservar
                 <span class="bg-white rounded-full p-1 h-6 w-6 flex justify-center items-center ml-2">
                     <ion-icon class="text-black h-4 w-4" name="add-outline"></ion-icon>
