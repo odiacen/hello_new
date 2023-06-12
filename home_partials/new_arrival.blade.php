@@ -8,13 +8,13 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
-        <iframe id="videoIframe" width="100%" height="100%" src="https://www.youtube.com/embed/3KSXxo8CbpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="player"></div>
     </div>
 </div>
 
 <style>
     .video-container.playing {
-        width: 80%;
+        width: 100%;
         background-position: initial !important;
         -webkit-clip-path: initial !important;
         clip-path: initial !important;
@@ -25,17 +25,37 @@
     }
 </style>
 
+<script src="https://www.youtube.com/iframe_api"></script>
 <script>
-    const videoIframe = document.getElementById('videoIframe');
     const videoContainer = document.querySelector('.video-container');
     const textContainer = document.getElementById('text-container');
 
-    videoIframe.addEventListener('load', function() {
-        videoIframe.contentWindow.addEventListener('play', function() {
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '100%',
+            width: '100%',
+            videoId: '3KSXxo8CbpY',
+            playerVars: {
+                'autoplay': 0,
+                'controls': 0,
+                'showinfo': 0,
+                'rel': 0,
+                'modestbranding': 1
+            },
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
             videoContainer.classList.add('playing');
-        });
-        videoIframe.contentWindow.addEventListener('pause', function() {
+            textContainer.style.display = 'none';
+        } else {
             videoContainer.classList.remove('playing');
-        });
-    });
+            textContainer.style.display = 'flex';
+        }
+    }
 </script>
