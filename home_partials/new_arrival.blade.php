@@ -52,9 +52,10 @@
     function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING) {
             videoContainer.classList.add('playing');
-            textContainer.style.display = 'none'; // Oculta el contenedor de texto
+            textContainer.style.display = 'none';
         } else {
             videoContainer.classList.remove('playing');
+            textContainer.style.display = 'flex';
         }
     }
 </script>
