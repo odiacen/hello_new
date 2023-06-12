@@ -14,7 +14,7 @@
 
 <style>
     .video-container.playing {
-        width: 80%;
+        width: 70%;
         background-position: initial !important;
         -webkit-clip-path: initial !important;
         clip-path: initial !important;
@@ -33,9 +33,11 @@
     videoIframe.addEventListener('load', function() {
         videoIframe.contentWindow.addEventListener('play', function() {
             videoContainer.classList.add('playing');
+            textContainer.style.display = 'none';
         });
         videoIframe.contentWindow.addEventListener('pause', function() {
             videoContainer.classList.remove('playing');
+            textContainer.style.display = 'flex';
         });
     });
 </script>
