@@ -2,11 +2,11 @@
     <div class="flex flex-col justify-center items-center w-full">
         <span class="text-black text-2xl font-bold">El barrio</span>
         <div class="flex flex-row justify-start items-start w-full">
-            <div class="flex flex-col justify-between w-1/2 h-[350px]">
+            <div class="flex flex-col justify-between w-1/2 h-[250px]">
                 <div class="relative flex justify-center items-center mt-24 lg:mt-40">
                     <template x-for="(image, index) in images">
                         <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
-                            <img :src="image.imageSrc" alt="Slide" class="w-full h-[350px]">
+                            <img :src="image.imageSrc" alt="Slide" class="w-full h-[250px]">
                         </div>
                     </template>
 
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="flex flex-col justify-start items-start lg:ml-10 ml-4 w-1/2 lg:mt-12 mt-6">
-                <p class="text-xs text-black text-justify px-4 flex flex-col h-[20%] overflow-y-auto">
+                <p class="text-xs text-black text-justify px-4 lg:h-auto h-[100px] overflow-y-auto">
                     Vivir en Moncada es tener toda la comodidad de poder ir andando a la Universidad CEU Cardenal Herrera, y la tranquilidad de vivir en un pueblo tranquilo donde la mayoría de los vecinos se conocen y están dispuestos a ayudarte. Llevan muchos años acogiendo a los estudiantes nacionales e internacionales, y el pueblo tiene ambiente estudiantil.
                 </p>
                 <p class="text-xs text-black text-justify px-4 mt-4">
