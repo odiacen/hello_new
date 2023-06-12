@@ -1,4 +1,4 @@
-<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 mb-28 lg:px-36 px-20">
+<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
     <div class="flex flex-row justify-start items-start w-full">
         <div class="flex flex-col justify-between w-2/3">
             <div class="flex flex-row justify-between mb-10">
@@ -13,7 +13,7 @@
                     <span class="font-bold ml-2">ZNANSDHAJAKJA</span>
                 </div>
             </div>
-            <div class="relative flex justify-center items-center mt-40">
+            <div class="relative flex justify-center items-center mt-10 lg:mt-40">
                 <template x-for="(image, index) in images">
                     <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
                         <img :src="image.imageSrc" alt="Slide" class="w-full">
