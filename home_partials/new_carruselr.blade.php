@@ -11,7 +11,9 @@
       id: 'tab2',
       icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
       label: 'Emergencias 24/7',
-      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia.'
+      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia.
+      Si hubiera una emergencia fuera de horario, todos nuestros flatmates disponen de un número de teléfono que les damos en el check in para contactar con helloflatmate en caso de urgencia.
+                '
     },
     {
       id: 'tab3',
