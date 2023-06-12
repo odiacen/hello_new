@@ -42,6 +42,7 @@
             color:  #91dfe4;
             position: absolute;
             left: 0;
+            bottom: 3px;
             font-size: 20px;
         }
     </style>
