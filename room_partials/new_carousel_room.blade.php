@@ -1,4 +1,4 @@
-<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 mb-28 px-36">
+<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 mb-28 lg:px-36 px-20">
     <div class="flex flex-row justify-start items-start w-full">
         <div class="flex flex-col justify-between w-2/3">
             <div class="flex flex-row justify-between mb-10">
