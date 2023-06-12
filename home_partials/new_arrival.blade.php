@@ -14,7 +14,7 @@
 
 <style>
     .video-container.playing {
-        width: 100% !important;
+        width: 80%;
         background-position: initial !important;
         -webkit-clip-path: initial !important;
         clip-path: initial !important;
@@ -33,20 +33,9 @@
     videoIframe.addEventListener('load', function() {
         videoIframe.contentWindow.addEventListener('play', function() {
             videoContainer.classList.add('playing');
-            textContainer.style.display = 'none';
-            videoContainer.style.backgroundPosition = 'initial';
-            videoContainer.style.webkitClipPath = 'initial';
-            videoContainer.style.clipPath = 'initial';
         });
-    });
-
-    videoIframe.addEventListener('load', function() {
-        videoIframe.contentWindow.addEventListener('ended', function() {
+        videoIframe.contentWindow.addEventListener('pause', function() {
             videoContainer.classList.remove('playing');
-            textContainer.style.display = 'block';
-            videoContainer.style.backgroundPosition = '50%';
-            videoContainer.style.webkitClipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%)';
-            videoContainer.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%)';
         });
     });
 </script>
