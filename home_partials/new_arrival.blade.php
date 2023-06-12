@@ -8,7 +8,7 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
-        <iframe id="videoIframe" width="100%" height="100%" src="https://www.youtube.com/embed/3KSXxo8CbpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="player"></div>
     </div>
 </div>
 
@@ -25,25 +25,35 @@
     }
 </style>
 
+<script src="https://www.youtube.com/iframe_api"></script>
 <script>
-    const videoIframe = document.getElementById('videoIframe');
     const videoContainer = document.querySelector('.video-container');
     const textContainer = document.getElementById('text-container');
 
-    const observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                const video = entry.target.contentWindow.document.querySelector('video');
-                video.play();
-                videoContainer.classList.add('playing');
-            } else {
-                const video = entry.target.contentWindow.document.querySelector('video');
-                video.pause();
-                videoContainer.classList.remove('playing');
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '100%',
+            width: '100%',
+            videoId: '3KSXxo8CbpY',
+            playerVars: {
+                'autoplay': 0,
+                'controls': 0,
+                'showinfo': 0,
+                'rel': 0,
+                'modestbranding': 1
+            },
+            events: {
+                'onStateChange': onPlayerStateChange
             }
         });
-    });
+    }
 
-    observer.observe(videoIframe);
-
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+            videoContainer.classList.add('playing');
+        } else {
+            videoContainer.classList.remove('playing');
+        }
+    }
 </script>
