@@ -11,7 +11,7 @@
       id: 'tab2',
       icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
       label: 'Emergencias 24/7',
-      content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir. Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y que equipara en derecho y obligación tanto a arrendador como arrendatario.'
+      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia.'
     },
     {
       id: 'tab3',
