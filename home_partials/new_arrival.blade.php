@@ -5,7 +5,7 @@
     </div>
     <div class="h-full lg:w-3/4 w-[85%] relative flex justify-center items-center" style="background-position: 50%; background-image: url('https://www.helloflatmate.com/img/img/4.png'); -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);">
         <video id="videoPlayer" src="https://vimeo.com/28281304" loop style="width: 100%; height: 100%; object-fit: cover;"></video>
-        <div class="play-button" onclick="playVideo()">
+        <div class="play-button" onclick="startVideo()">
             <img class="w-12 h-12" src="https://www.helloflatmate.com/img/img/icon-play.png">
         </div>
         <div class="flex flex-col justify-start absolute top-20 right-20">
@@ -14,10 +14,13 @@
         </div>
     </div>
 </div>
+
 <script>
-    function playVideo() {
+    function startVideo() {
         var video = document.getElementById('videoPlayer');
         var playButton = document.querySelector('.play-button');
+
+        video.load();
         video.play();
         playButton.style.display = 'none';
     }
