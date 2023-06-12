@@ -17,10 +17,20 @@
     const textContainer = document.getElementById('text-container');
 
     videoContainer.addEventListener('click', function() {
-        videoContainer.style.width = '80%';
+        videoContainer.style.width = '100%';
         videoContainer.style.backgroundPosition = 'initial';
         videoContainer.style.webkitClipPath = 'initial';
         videoContainer.style.clipPath = 'initial';
+        videoContainer.classList.add('playing');
         textContainer.style.display = 'none';
     });
 </script>
+
+<style>
+    .video-container.playing {
+        width: 100%;
+        background-position: initial;
+        -webkit-clip-path: initial;
+        clip-path: initial;
+    }
+</style>
