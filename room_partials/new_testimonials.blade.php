@@ -1,4 +1,4 @@
-<div x-data="carouselTestimonial()" x-init="startCarousel()" class="w-full mt-14 mb-28 lg:px-36 px-10 h-[40%]">
+<div x-data="carouselTestimonial()" x-init="startCarousel()" class="w-full mt-14 lg:px-36 px-10 flex flex-col h-[40%]">
     <div class="flex flex-row justify-start items-start w-full bg-gray-100 py-8">
         <div class="flex flex-col justify-center items-center w-full">
             <span class="text-2xl font-bold text-black">Opiniones</span>
