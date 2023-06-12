@@ -5,7 +5,7 @@
     </div>
     <div class="h-full lg:w-3/4 w-[85%] relative flex justify-center items-center" style="
         background-position: 50%;
-        background-image: url('https://www.youtube.com/watch?v=nyxTSCVz8w8');
+        background-image: url('https://youtu.be/3KSXxo8CbpY');
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 30% 50%);
     ">
@@ -21,7 +21,7 @@
 </div>
 <script>
     function playVideo() {
-        var videoUrl = 'https://www.youtube.com/watch?v=nyxTSCVz8w8';
+        var videoUrl = 'https://youtu.be/3KSXxo8CbpY';
         var embedUrl = videoUrl.replace('watch?v=', 'embed/');
         var videoPreview = document.querySelector('.h-full');
         var videoPlayer = document.createElement('iframe');
