@@ -15,11 +15,11 @@
             </div>
 
             <!-- Tab content -->
-            <div class="lg:h-[420px] h-[460px] bg-green-300" x-show="activeTabR === 'photos'">
+            <div class="h-[420px]" x-show="activeTabR === 'photos'">
                 <!-- Existing carousel code -->
-                <div class="relative flex justify-center items-center lg:h-[420px] h-[460px] bg-pink-300">
+                <div class="relative flex justify-center items-center h-[420px]">
                     <template x-for="(image, index) in imagesR">
-                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
+                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[420px]">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
                         </div>
                     </template>
@@ -45,11 +45,11 @@
                 <div id="player"></div>
             </div>
 
-            <div class="lg:h-[420px] h-[460px]" x-show="activeTabR === 'neighborhood'">
+            <div class="h-[420px]" x-show="activeTabR === 'neighborhood'">
                 <!-- Carousel with neighborhood photos -->
-                <div class="relative flex justify-center items-center lg:h-[420px] h-[460px]">
+                <div class="relative flex justify-center items-center h-[420px]">
                     <template x-for="(image, index) in imagesR">
-                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
+                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[420px]">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
                         </div>
                     </template>
@@ -66,11 +66,11 @@
                 </div>
             </div>
 
-            <div class="lg:h-[420px] h-[460px]" x-show="activeTabR === 'moreRooms'">
+            <div class="h-[420px]" x-show="activeTabR === 'moreRooms'">
                 <!-- Carousel with more room photos -->
-                <div class="relative flex justify-center items-center lg:h-[420px] h-[460px]">
+                <div class="relative flex justify-center items-center h-[420px]">
                     <template x-for="(image, index) in imagesR">
-                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
+                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[420px]">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
                         </div>
                     </template>
