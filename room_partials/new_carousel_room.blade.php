@@ -3,19 +3,6 @@
         <div class="flex flex-col justify-between lg:w-2/3 w-[75%]">
             <!-- Room information and carousel -->
 
-            <!-- Tab navigation -->
-            <div class="flex justify-between bg-gray-300 text-white text-sm p-2">
-                <button @click="activeTab = 'photos'" :class="{'bg-gray-400': activeTab === 'photos'}">Fotos</button>
-                <span class="border-l border-white"></span>
-                <button @click="activeTab = 'map'" :class="{'bg-gray-400': activeTab === 'map'}">Mapa</button>
-                <span class="border-l border-white"></span>
-                <button @click="activeTab = 'video'" :class="{'bg-gray-400': activeTab === 'video'}">Video</button>
-                <span class="border-l border-white"></span>
-                <button @click="activeTab = 'neighborhood'" :class="{'bg-gray-400': activeTab === 'neighborhood'}">Barrio</button>
-                <span class="border-l border-white"></span>
-                <button @click="activeTab = 'moreRooms'" :class="{'bg-gray-400': activeTab === 'moreRooms'}">+Habitaciones</button>
-            </div>
-
             <!-- Tab content -->
             <div x-show="activeTab === 'photos'">
                 <!-- Existing carousel code -->
@@ -61,6 +48,19 @@
                     <!-- More room photos carousel code -->
                 </div>
             </div>
+
+            <!-- Tab navigation -->
+            <div class="flex justify-between bg-gray-300 text-white text-sm p-2">
+                <button @click="changeTab('photos')" :class="{'bg-gray-400': activeTab === 'photos'}">Fotos</button>
+                <span class="border-l border-white"></span>
+                <button @click="changeTab('map')" :class="{'bg-gray-400': activeTab === 'map'}">Mapa</button>
+                <span class="border-l border-white"></span>
+                <button @click="changeTab('video')" :class="{'bg-gray-400': activeTab === 'video'}">Video</button>
+                <span class="border-l border-white"></span>
+                <button @click="changeTab('neighborhood')" :class="{'bg-gray-400': activeTab === 'neighborhood'}">Barrio</button>
+                <span class="border-l border-white"></span>
+                <button @click="changeTab('moreRooms')" :class="{'bg-gray-400': activeTab === 'moreRooms'}">+Habitaciones</button>
+            </div>
         </div>
         <div class="flex flex-col justify-start items-start lg:ml-10 ml-4 lg:w-1/3 w-[25%] lg:mt-20 mt-12">
             <span class="bg-cyan-300 text-white font-bold text-sm p-2 lg:w-1/3 w-2/3 flex justify-center items-center">275 e/mes</span>
@@ -101,6 +101,7 @@
             return {
                 images,
                 activeSlide: 0,
+                activeTab: 'photos',
                 startCarousel() {
                     setInterval(() => {
                         this.nextSlide();
@@ -114,6 +115,9 @@
                 },
                 nextSlide() {
                     this.activeSlide = (this.activeSlide + 1) % this.images.length;
+                },
+                changeTab(tab) {
+                    this.activeTab = tab;
                 },
             };
         }
