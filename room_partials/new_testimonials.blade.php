@@ -1,4 +1,4 @@
-<div x-data="carouselTestimonial()" x-init="startCarousel()" class="w-full mt-8 lg:px-36 px-10">
+<div class="w-full mt-8 lg:px-36 px-10">
     <div class="flex flex-row justify-start items-start w-full bg-gray-100 py-8 lg:h-[350px] h-[300px]">
         <div class="flex flex-col justify-center items-center w-full">
             <span class="text-2xl font-bold text-black">Opiniones</span>
@@ -23,47 +23,5 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <script>
-        function carouselTestimonial() {
-            const testimonials = [
-                {
-                    name:'Stephanie',
-                    avatar: 'https://www.helloflatmate.com/img/img/avatar-room.png',
-                    content: 'Me gusta la atmósfera juvenil entre compañeros de piso.El piso está situado a pocos minutos andando de la Universidad.Si vas a estudiar en el CEU, esta habitación es perfecta para ti.Aquí tienes el supermercado más cercano, y muy cerca el centro de salud.',
-                },
-                {
-                    name:'Stephanie',
-                    avatar: 'https://www.helloflatmate.com/img/img/avatar-room.png',
-                    content: 'Texto',
-                },
-                {
-                    name:'Stephanie',
-                    avatar: 'https://www.helloflatmate.com/img/img/avatar-room.png',
-                    content: 'Otro texto',
-                },
-
-            ];
-
-            return {
-                testimonials,
-                activeSlide: 0,
-                startCarousel() {
-                    setInterval(() => {
-                        this.nextSlide();
-                    }, 10000);
-                },
-                isActiveSlide(index) {
-                    return this.activeSlide === index;
-                },
-                previousSlide() {
-                    this.activeSlide = (this.activeSlide - 1 + this.testimonials.length) % this.testimonials.length;
-                },
-                nextSlide() {
-                    this.activeSlide = (this.activeSlide + 1) % this.testimonials.length;
-                },
-            };
-        }
-    </script>
+    </div>    
 </div>
