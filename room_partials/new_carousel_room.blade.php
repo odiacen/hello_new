@@ -61,9 +61,9 @@
             </div>
 
             <!-- Tab navigation -->
-            <div class="flex justify-between bg-neutral-600 text-white text-sm absolute bottom-0 w-full">
+            <div class="flex justify-between bg-neutral-600 text-white text-sm absolute bottom-1 w-full">
                 <button @click="changeTab('photos')"
-                        class="py-5 h-full px-3"
+                        class="py-4 h-full flex flex-row justify-center items-center w-full"
                         :class="{'bg-neutral-400': activeTab === 'photos'}">
                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                         <ion-icon class="w-4 h-4" name="image-outline"></ion-icon>
@@ -72,7 +72,7 @@
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('map')"
-                        class="py-5 h-full px-3"
+                        class="py-4 h-full flex flex-row justify-center items-center w-full"
                         :class="{'bg-neutral-400': activeTab === 'map'}">
                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                         <ion-icon class="w-4 h-4" name="location-outline"></ion-icon>
@@ -81,7 +81,7 @@
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('video')"
-                        class="py-5 h-full px-3"
+                        class="py-4 h-full flex flex-row justify-center items-center w-full"
                         :class="{'bg-neutral-400': activeTab === 'video'}">
                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                        <ion-icon class="w-4 h-4" name="film-outline"></ion-icon>
@@ -90,7 +90,7 @@
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('neighborhood')"
-                        class="py-5 h-full px-3"
+                        class="py-4 h-full flex flex-row justify-center items-center w-full"
                         :class="{'bg-neutral-400': activeTab === 'neighborhood'}">
                      <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                        <ion-icon class="w-4 h-4" name="bicycle-outline"></ion-icon>
@@ -99,7 +99,7 @@
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('moreRooms')"
-                        class="py-5 h-full px-3"
+                        class="py-4 h-full flex flex-row justify-center items-center w-full"
                         :class="{'bg-neutral-400': activeTab === 'moreRooms'}">
                      <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                        <ion-icon class="w-4 h-4" name="bed-outline"></ion-icon>
