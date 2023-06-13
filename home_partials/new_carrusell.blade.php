@@ -17,7 +17,7 @@
       id: 'tab3',
       icon: 'https://www.helloflatmate.com/img/img/icon-calendar.png',
       label: 'Check-in',
-      content: 'De lunes a viernes de 10 a 18 h. Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h. Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
+      content: 'De lunes a viernes de 10 a 18 h. <br> Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h. <br> Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
     },
     {
       id: 'tab4',
@@ -69,7 +69,7 @@
                     <template x-for="tab in tabs" :key="tab.id">
                         <div class="flex flex-col" x-show="activeTab === tab.id">
                             <span class="text-white font-bold lg:text-2xl text-xl" x-text="tab.label"></span>
-                            <p class="text-white text-justify lg:text-md text-sd lg:h-auto h-[90px] overflow-y-auto" x-text="tab.content"></p>
+                            <p class="text-white text-justify lg:text-md text-sd lg:h-auto h-[90px] overflow-y-auto" x-html="tab.content"></p>
                         </div>
                     </template>
                 </div>
