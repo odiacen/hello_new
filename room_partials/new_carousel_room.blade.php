@@ -15,9 +15,9 @@
             </div>
 
             <!-- Tab content -->
-            <div class="h-[400px]" x-show="activeTabR === 'photos'">
+            <div class="lg:h-[410px] h-[450px]" x-show="activeTabR === 'photos'">
                 <!-- Existing carousel code -->
-                <div class="relative flex justify-center items-center h-[400px]">
+                <div class="relative flex justify-center items-center h-full">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
@@ -45,9 +45,9 @@
                 <div id="player"></div>
             </div>
 
-            <div class="h-[400px]" x-show="activeTabR === 'neighborhood'">
+            <div class="lg:h-[410px] h-[450px]" x-show="activeTabR === 'neighborhood'">
                 <!-- Carousel with neighborhood photos -->
-                <div class="relative flex justify-center items-center h-[400px]">
+                <div class="relative flex justify-center items-center h-full">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
@@ -66,9 +66,9 @@
                 </div>
             </div>
 
-            <div class="h-[400px]" x-show="activeTabR === 'moreRooms'">
+            <div class="lg:h-[410px] h-[450px]" x-show="activeTabR === 'moreRooms'">
                 <!-- Carousel with more room photos -->
-                <div class="relative flex justify-center items-center h-[400px]">
+                <div class="relative flex justify-center items-center h-full">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
@@ -88,7 +88,7 @@
             </div>
 
             <!-- Tab navigation -->
-            <div class="flex justify-between bg-neutral-600 text-white text-sm absolute -bottom-10 w-full">
+            <div class="flex justify-between bg-neutral-600 text-white text-sm absolute -bottom-12 w-full">
                 <button @click="changeTabR('photos')"
                         class="py-4 h-full flex flex-row justify-center items-center w-full text-xs"
                         :class="{'bg-neutral-400': activeTabR === 'photos'}">
