@@ -61,16 +61,51 @@
             </div>
 
             <!-- Tab navigation -->
-            <div class="flex justify-between bg-neutral-600 text-white text-sm absolute -bottom-4 w-full">
-                <button @click="changeTab('photos')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'photos'}">Fotos</button>
+            <div class="flex justify-between bg-neutral-600 text-white text-sm absolute bottom-0 w-full">
+                <button @click="changeTab('photos')"
+                        class="py-4 h-full"
+                        :class="{'bg-neutral-400': activeTab === 'photos'}">
+                    <span class="text-black bg-white rounded-full p-1 w-6 h-6">
+                        <ion-icon class="w-4 h-4 mr-2" name="image-outline"></ion-icon>
+                    </span>
+                    Fotos
+                </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('map')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'map'}">Mapa</button>
+                <button @click="changeTab('map')"
+                        class="py-4 h-full"
+                        :class="{'bg-neutral-400': activeTab === 'map'}">
+                    <span class="text-black bg-white rounded-full p-1 w-6 h-6">
+                        <ion-icon class="w-4 h-4 mr-2" name="location-outline"></ion-icon>
+                    </span>
+                    Mapa
+                </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('video')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'video'}">Video</button>
+                <button @click="changeTab('video')"
+                        class="py-4 h-full"
+                        :class="{'bg-neutral-400': activeTab === 'video'}">
+                    <span class="text-black bg-white rounded-full p-1 w-6 h-6">
+                       <ion-icon class="w-4 h-4 mr-2" name="film-outline"></ion-icon>
+                    </span>
+                    Video
+                </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('neighborhood')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'neighborhood'}">Barrio</button>
+                <button @click="changeTab('neighborhood')"
+                        class="py-4 h-full"
+                        :class="{'bg-neutral-400': activeTab === 'neighborhood'}">
+                     <span class="text-black bg-white rounded-full p-1 w-6 h-6">
+                       <ion-icon class="w-4 h-4 mr-2" name="bicycle-outline"></ion-icon>
+                    </span>
+                    Barrio
+                </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('moreRooms')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'moreRooms'}">+Habitaciones</button>
+                <button @click="changeTab('moreRooms')"
+                        class="py-4 h-full"
+                        :class="{'bg-neutral-400': activeTab === 'moreRooms'}">
+                     <span class="text-black bg-white rounded-full p-1 w-6 h-6">
+                       <ion-icon class="w-4 h-4 mr-2" name="bed-outline"></ion-icon>
+                    </span>
+                    +Habitaciones
+                </button>
             </div>
         </div>
         <div class="flex flex-col justify-start items-start lg:ml-10 ml-4 lg:w-1/3 w-[25%] lg:mt-20 mt-12">
