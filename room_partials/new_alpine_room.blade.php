@@ -241,22 +241,40 @@
             };
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
-    <script>
-        function initMap() {
-            const location = { lat: 40.712776, lng: -74.005974 }; // Coordenadas de ejemplo
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
+<script>
+    function initMap() {
+        const location = { lat: 40.712776, lng: -74.005974 }; // Coordenadas de ejemplo
 
-            const map = new google.maps.Map(document.getElementById('map'), {
-                center: location,
-                zoom: 12,
-            });
+        const map = new google.maps.Map(document.getElementById('map'), {
+            center: location,
+            zoom: 12,
+        });
 
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map,
-            });
-        }
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+        });
+    }
 
-        // Llamada a la función initMap() para inicializar el mapa
-        initMap();
-    </script>
+    // Llamada a la función initMap() para inicializar el mapa
+    initMap();
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '100%',
+            width: '100%',
+            videoId: '3KSXxo8CbpY',
+            playerVars: {
+                'autoplay': 0,
+                'controls': 0,
+                'showinfo': 0,
+                'rel': 0,
+                'modestbranding': 1
+            },
+        });
+    }
+</script>

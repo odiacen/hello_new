@@ -17,7 +17,7 @@
             <!-- Tab content -->
             <div class="h-[400px]" x-show="activeTabR === 'photos'">
                 <!-- Existing carousel code -->
-                <div class="relative flex justify-center items-center mt-24 lg:mt-40">
+                <div class="relative flex justify-center items-center mt-24 lg:mt-40 h-[400px]">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
@@ -42,20 +42,48 @@
 
             <div class="h-[400px]" x-show="activeTabR === 'video'">
                 <!-- YouTube video embed code or video component -->
-                <p>This is the video content</p>
+                <div id="player"></div>
             </div>
 
             <div class="h-[400px]" x-show="activeTabR === 'neighborhood'">
                 <!-- Carousel with neighborhood photos -->
-                <div class="relative flex justify-center items-center mt-24 lg:mt-40">
-                    <!-- Neighborhood photos carousel code -->
+                <div class="relative flex justify-center items-center mt-24 lg:mt-40 h-[400px]">
+                    <template x-for="(image, index) in imagesR">
+                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
+                            <img :src="image.imageSrc" alt="Slide" class="w-full">
+                        </div>
+                    </template>
+
+                    <!-- Navigation buttons -->
+                    <div class="flex justify-between absolute w-full px-4">
+                        <button @click="previousSlideR()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <button @click="nextSlideR()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <div class="h-[400px]" x-show="activeTabR === 'moreRooms'">
                 <!-- Carousel with more room photos -->
-                <div class="relative flex justify-center items-center mt-24 lg:mt-40">
-                    <!-- More room photos carousel code -->
+                <div class="relative flex justify-center items-center mt-24 lg:mt-40 h-[400px]">
+                    <template x-for="(image, index) in imagesR">
+                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
+                            <img :src="image.imageSrc" alt="Slide" class="w-full">
+                        </div>
+                    </template>
+
+                    <!-- Navigation buttons -->
+                    <div class="flex justify-between absolute w-full px-4">
+                        <button @click="previousSlideR()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <button @click="nextSlideR()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+                    </div>
                 </div>
             </div>
 
