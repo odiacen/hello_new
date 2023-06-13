@@ -5,13 +5,13 @@
       id: 'tab1',
       icon: 'https://www.helloflatmate.com/img/img/icon-mail.png',
       label: 'Contrato',
-      content: 'De lunes a viernes de 10 a 18 h. Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h. Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
+      content: 'Es muy importante que como inquilino tenga contrato de alquiler y así tener un alojamiento legal donde residir. <br> Por ello todos los alojamientos que gestionamos tienen el mismo modelo de contrato temporal y que se acoge al Código Civil y equipara en derecho y obligación tanto a arrendador como arrendatario.',
     },
     {
       id: 'tab2',
       icon: 'https://www.helloflatmate.com/img/img/icon-clock.png',
       label: 'Emergencias 24/7',
-      content: 'De lunes a viernes de 10 a 18 h. Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h. Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
+      content: 'El horario normal de helloflatmate es de lunes a viernes de 10 a 18 horas, donde los flatmates de cada piso disponen de un grupo de whatsapp en comunicación directa con la agencia. <br> Siendo rápidos en dar solución a averías de manera personalizada. <br> Pero si hubiera una emergencia fuera del horario, todos nuestros flatmates disponen de un número de teléfono que les damos en el check in para contactar con helloflatmate en caso de necesidad.',
     },
     {
       id: 'tab3',
@@ -23,7 +23,7 @@
       id: 'tab4',
       icon: 'https://www.helloflatmate.com/img/img/icon-shower.png',
       label: 'Suministros',
-      content: 'De lunes a viernes de 10 a 18 h. Fuera de este horario tendrá un coste extra de 30 €, hasta las 21h. Tienes la opción de contratar nuestro Pick Up Service por 90 € y te recogeremos con tu equipaje en el aeropuerto o estación de tren o bus.',
+      content: 'Todas las viviendas que gestionamos tienen internet wifi y los suministros dados de alta a nombre del propietario/a. <br> Con ello evitamos que nuestros Flatmates tengan que firmar contratos con empresas privadas de suministros las cuales normalmente piden permanencia.',
     },
   ]
 }">
