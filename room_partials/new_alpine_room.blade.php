@@ -222,7 +222,7 @@
                 activeTabR: 'photos',
                 startCarouselR() {
                     setInterval(() => {
-                        this.nextSlide();
+                        this.nextSlideR();
                     }, 10000);
                 },
                 isActiveSlideR(index) {
@@ -235,7 +235,7 @@
                     this.activeSlideR = (this.activeSlideR + 1) % this.images.length;
                 },
                 changeTabR(tab) {
-                    this.activeTab = tab;
+                    this.activeTabR = tab;
                 }
 
             };
