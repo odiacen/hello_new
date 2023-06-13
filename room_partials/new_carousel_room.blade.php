@@ -63,46 +63,46 @@
             <!-- Tab navigation -->
             <div class="flex justify-between bg-neutral-600 text-white text-sm absolute bottom-0 w-full">
                 <button @click="changeTab('photos')"
-                        class="py-4 h-full"
+                        class="py-5 h-full px-3"
                         :class="{'bg-neutral-400': activeTab === 'photos'}">
-                    <span class="text-black bg-white rounded-full p-1 w-6 h-6">
-                        <ion-icon class="w-4 h-4 mr-2" name="image-outline"></ion-icon>
+                    <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
+                        <ion-icon class="w-4 h-4" name="image-outline"></ion-icon>
                     </span>
                     Fotos
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('map')"
-                        class="py-4 h-full"
+                        class="py-5 h-full px-3"
                         :class="{'bg-neutral-400': activeTab === 'map'}">
-                    <span class="text-black bg-white rounded-full p-1 w-6 h-6">
-                        <ion-icon class="w-4 h-4 mr-2" name="location-outline"></ion-icon>
+                    <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
+                        <ion-icon class="w-4 h-4" name="location-outline"></ion-icon>
                     </span>
                     Mapa
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('video')"
-                        class="py-4 h-full"
+                        class="py-5 h-full px-3"
                         :class="{'bg-neutral-400': activeTab === 'video'}">
-                    <span class="text-black bg-white rounded-full p-1 w-6 h-6">
-                       <ion-icon class="w-4 h-4 mr-2" name="film-outline"></ion-icon>
+                    <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
+                       <ion-icon class="w-4 h-4" name="film-outline"></ion-icon>
                     </span>
                     Video
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('neighborhood')"
-                        class="py-4 h-full"
+                        class="py-5 h-full px-3"
                         :class="{'bg-neutral-400': activeTab === 'neighborhood'}">
-                     <span class="text-black bg-white rounded-full p-1 w-6 h-6">
-                       <ion-icon class="w-4 h-4 mr-2" name="bicycle-outline"></ion-icon>
+                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
+                       <ion-icon class="w-4 h-4" name="bicycle-outline"></ion-icon>
                     </span>
                     Barrio
                 </button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('moreRooms')"
-                        class="py-4 h-full"
+                        class="py-5 h-full px-3"
                         :class="{'bg-neutral-400': activeTab === 'moreRooms'}">
-                     <span class="text-black bg-white rounded-full p-1 w-6 h-6">
-                       <ion-icon class="w-4 h-4 mr-2" name="bed-outline"></ion-icon>
+                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
+                       <ion-icon class="w-4 h-4" name="bed-outline"></ion-icon>
                     </span>
                     +Habitaciones
                 </button>
