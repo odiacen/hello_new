@@ -61,16 +61,16 @@
             </div>
 
             <!-- Tab navigation -->
-            <div class="flex justify-between bg-neutral-600 text-white text-sm p-2 absolute -bottom-28 w-full">
-                <button @click="changeTab('photos')" class="h-full" :class="{'bg-neutral-300': activeTab === 'photos'}">Fotos</button>
+            <div class="flex justify-between bg-neutral-600 text-white text-sm absolute -bottom-4 w-full">
+                <button @click="changeTab('photos')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'photos'}">Fotos</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('map')" class="h-full" :class="{'bg-neutral-300': activeTab === 'map'}">Mapa</button>
+                <button @click="changeTab('map')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'map'}">Mapa</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('video')" class="h-full" :class="{'bg-neutral-300': activeTab === 'video'}">Video</button>
+                <button @click="changeTab('video')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'video'}">Video</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('neighborhood')" class="h-full" :class="{'bg-neutral-300': activeTab === 'neighborhood'}">Barrio</button>
+                <button @click="changeTab('neighborhood')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'neighborhood'}">Barrio</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('moreRooms')" class="h-full" :class="{'bg-neutral-300': activeTab === 'moreRooms'}">+Habitaciones</button>
+                <button @click="changeTab('moreRooms')" class="p-4 h-full" :class="{'bg-neutral-400': activeTab === 'moreRooms'}">+Habitaciones</button>
             </div>
         </div>
         <div class="flex flex-col justify-start items-start lg:ml-10 ml-4 lg:w-1/3 w-[25%] lg:mt-20 mt-12">
