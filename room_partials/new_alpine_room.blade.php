@@ -231,7 +231,7 @@
                 previousSlideR() {
                     this.activeSlideR = (this.activeSlideR - 1 + this.images.length) % this.images.length;
                 },
-                nextSlide() {
+                nextSlideR() {
                     this.activeSlideR = (this.activeSlideR + 1) % this.images.length;
                 },
                 changeTabR(tab) {
