@@ -1,7 +1,7 @@
 <div class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
     <div class="flex flex-row justify-start items-start w-full">
         <div class="flex flex-col relative lg:w-2/3 w-[75%]">
-            <div class="flex flex-row justify-between mb-10">
+            <div class="flex flex-row justify-between lg:mb-9 mb-4">
                 <div class="flex flex-col">
                     <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
                     <span class="text-black text-sm">Zona centro</span>
