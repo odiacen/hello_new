@@ -1,4 +1,4 @@
-<div x-init="startCarousel()" class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
+<div class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
     <div class="flex flex-col justify-center items-center w-full">
         <span class="text-black text-2xl font-bold">El barrio</span>
         <div class="flex flex-row justify-start items-start w-full">

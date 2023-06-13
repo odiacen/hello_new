@@ -1,5 +1,5 @@
 @include('nuevo.global.new_header')
-<section x-data="alpineRoom()" x-init="startCarousel(), startCarouseld()">
+<section x-data="alpineRoom()" x-init="startCarousel(), startCarouseld(), startCarouselR()">
 @include('nuevo.room_partials.new_carousel_room')
 @include('nuevo.room_partials.new_faqs_room')
 @include('nuevo.room_partials.new_testimonials')

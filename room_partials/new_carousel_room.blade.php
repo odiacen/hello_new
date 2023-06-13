@@ -1,4 +1,4 @@
-<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
+<div class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
     <div class="flex flex-row justify-start items-start w-full">
         <div class="flex flex-col relative lg:w-2/3 w-[75%]">
             <div class="flex flex-row justify-between mb-10">
@@ -15,44 +15,44 @@
             </div>
 
             <!-- Tab content -->
-            <div class="h-[400px]" x-show="activeTab === 'photos'">
+            <div class="h-[400px]" x-show="activeTabR === 'photos'">
                 <!-- Existing carousel code -->
                 <div class="relative flex justify-center items-center mt-24 lg:mt-40">
-                    <template x-for="(image, index) in images">
-                        <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
+                    <template x-for="(image, index) in imagesR">
+                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
                         </div>
                     </template>
 
                     <!-- Navigation buttons -->
                     <div class="flex justify-between absolute w-full px-4">
-                        <button @click="previousSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                        <button @click="previousSlideR()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                             <ion-icon name="chevron-back-outline"></ion-icon>
                         </button>
-                        <button @click="nextSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                        <button @click="nextSlideR()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="h-[400px]" x-show="activeTab === 'map'">
+            <div class="h-[400px]" x-show="activeTabR === 'map'">
                 <div id="map" style="height: 400px;"></div>
             </div>
 
-            <div class="h-[400px]" x-show="activeTab === 'video'">
+            <div class="h-[400px]" x-show="activeTabR === 'video'">
                 <!-- YouTube video embed code or video component -->
                 <p>This is the video content</p>
             </div>
 
-            <div class="h-[400px]" x-show="activeTab === 'neighborhood'">
+            <div class="h-[400px]" x-show="activeTabR === 'neighborhood'">
                 <!-- Carousel with neighborhood photos -->
                 <div class="relative flex justify-center items-center mt-24 lg:mt-40">
                     <!-- Neighborhood photos carousel code -->
                 </div>
             </div>
 
-            <div class="h-[400px]" x-show="activeTab === 'moreRooms'">
+            <div class="h-[400px]" x-show="activeTabR === 'moreRooms'">
                 <!-- Carousel with more room photos -->
                 <div class="relative flex justify-center items-center mt-24 lg:mt-40">
                     <!-- More room photos carousel code -->
@@ -61,45 +61,45 @@
 
             <!-- Tab navigation -->
             <div class="flex justify-between bg-neutral-600 text-white text-sm absolute bottom-2 w-full">
-                <button @click="changeTab('photos')"
+                <button @click="changeTabR('photos')"
                         class="py-4 h-full flex flex-row justify-center items-center w-full text-xs"
-                        :class="{'bg-neutral-400': activeTab === 'photos'}">
+                        :class="{'bg-neutral-400': activeTabR === 'photos'}">
                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                         <ion-icon class="w-4 h-4" name="image-outline"></ion-icon>
                     </span>
                     Fotos
                 </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('map')"
+                <button @click="changeTabR('map')"
                         class="py-4 h-full flex flex-row justify-center items-center w-full text-xs"
-                        :class="{'bg-neutral-400': activeTab === 'map'}">
+                        :class="{'bg-neutral-400': activeTabR === 'map'}">
                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                         <ion-icon class="w-4 h-4" name="location-outline"></ion-icon>
                     </span>
                     Mapa
                 </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('video')"
+                <button @click="changeTabR('video')"
                         class="py-4 h-full flex flex-row justify-center items-center w-full text-xs"
-                        :class="{'bg-neutral-400': activeTab === 'video'}">
+                        :class="{'bg-neutral-400': activeTabR === 'video'}">
                     <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                        <ion-icon class="w-4 h-4" name="film-outline"></ion-icon>
                     </span>
                     Video
                 </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('neighborhood')"
+                <button @click="changeTabR('neighborhood')"
                         class="py-4 h-full flex flex-row justify-center items-center w-full text-xs"
-                        :class="{'bg-neutral-400': activeTab === 'neighborhood'}">
+                        :class="{'bg-neutral-400': activeTabR === 'neighborhood'}">
                      <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                        <ion-icon class="w-4 h-4" name="bicycle-outline"></ion-icon>
                     </span>
                     Barrio
                 </button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('moreRooms')"
+                <button @click="changeTabR('moreRooms')"
                         class="py-4 h-full flex flex-row justify-center items-center w-full text-xs"
-                        :class="{'bg-neutral-400': activeTab === 'moreRooms'}">
+                        :class="{'bg-neutral-400': activeTabR === 'moreRooms'}">
                      <span class="text-gray-500 bg-white rounded-full p-1 w-6 h-6 mr-2 flex justify-center items-center">
                        <ion-icon class="w-4 h-4" name="bed-outline"></ion-icon>
                     </span>
@@ -128,63 +128,6 @@
                 </span>
             </button>
         </div>
-    </div>
-    <script>
-        function carousel() {
-            const images = [
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
-                },
-            ];
-
-            return {
-                images,
-                activeSlide: 0,
-                activeTab: 'photos',
-                startCarousel() {
-                    setInterval(() => {
-                        this.nextSlide();
-                    }, 10000);
-                },
-                isActiveSlide(index) {
-                    return this.activeSlide === index;
-                },
-                previousSlide() {
-                    this.activeSlide = (this.activeSlide - 1 + this.images.length) % this.images.length;
-                },
-                nextSlide() {
-                    this.activeSlide = (this.activeSlide + 1) % this.images.length;
-                },
-                changeTab(tab) {
-                    this.activeTab = tab;
-                },
-            };
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
-    <script>
-        function initMap() {
-            const location = { lat: 40.712776, lng: -74.005974 }; // Coordenadas de ejemplo
-
-            const map = new google.maps.Map(document.getElementById('map'), {
-                center: location,
-                zoom: 12,
-            });
-
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map,
-            });
-        }
-
-        // Llamada a la función initMap() para inicializar el mapa
-        initMap();
-    </script>
+    </div>    
 </div>
 

@@ -205,6 +205,58 @@
                 nextSlided() {
                     this.activeSlided = (this.activeSlided + 1) % this.images.length;
                 },
+
+
+                imagesR : [
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
+                },
+            ],
+            activeSlideR: 0,
+                activeTabR: 'photos',
+                startCarouselR() {
+                    setInterval(() => {
+                        this.nextSlide();
+                    }, 10000);
+                },
+                isActiveSlideR(index) {
+                    return this.activeSlideR === index;
+                },
+                previousSlideR() {
+                    this.activeSlideR = (this.activeSlideR - 1 + this.images.length) % this.images.length;
+                },
+                nextSlide() {
+                    this.activeSlideR = (this.activeSlideR + 1) % this.images.length;
+                },
+                changeTabR(tab) {
+                    this.activeTab = tab;
+                }
+
             };
         }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
+    <script>
+        function initMap() {
+            const location = { lat: 40.712776, lng: -74.005974 }; // Coordenadas de ejemplo
+
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 12,
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+
+        // Llamada a la función initMap() para inicializar el mapa
+        initMap();
     </script>
