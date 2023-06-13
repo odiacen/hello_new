@@ -61,7 +61,7 @@
             </div>
 
             <!-- Tab navigation -->
-            <div class="flex justify-between bg-gray-300 text-white text-sm p-2 absolute -bottom-10 w-full">
+            <div class="flex justify-between bg-gray-300 text-white text-sm p-2 absolute -bottom-14 w-full">
                 <button @click="changeTab('photos')" :class="{'bg-gray-400': activeTab === 'photos'}">Fotos</button>
                 <span class="border-l border-white"></span>
                 <button @click="changeTab('map')" :class="{'bg-gray-400': activeTab === 'map'}">Mapa</button>
@@ -138,18 +138,18 @@
 {{--<div x-data="carousel()" x-init="startCarousel()" class="w-full mt-14 lg:mb-28 lg:px-36 px-10">--}}
 {{--    <div class="flex flex-row justify-start items-start w-full">--}}
 {{--        <div class="flex flex-col justify-between lg:w-2/3 w-[75%]">--}}
-            <div class="flex flex-row justify-between mb-10">
-                <div class="flex flex-col">
-                    <span class="text-black text-xl font-bold">Tranquila habitación doble</span>
-                    <span class="text-black text-sm">Zona centro</span>
-                </div>
-                <div class="bg-neutral-200 text-black text-xs flex flex-row p-1 h-[20px]">
-                    <span>
-                        Cod. habitación
-                    </span>
-                    <span class="font-bold ml-2">ZNANSDHAJAKJA</span>
-                </div>
-            </div>
+{{--            <div class="flex flex-row justify-between mb-10">--}}
+{{--                <div class="flex flex-col">--}}
+{{--                    <span class="text-black text-xl font-bold">Tranquila habitación doble</span>--}}
+{{--                    <span class="text-black text-sm">Zona centro</span>--}}
+{{--                </div>--}}
+{{--                <div class="bg-neutral-200 text-black text-xs flex flex-row p-1 h-[20px]">--}}
+{{--                    <span>--}}
+{{--                        Cod. habitación--}}
+{{--                    </span>--}}
+{{--                    <span class="font-bold ml-2">ZNANSDHAJAKJA</span>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 {{--            <div class="relative flex justify-center items-center mt-24 lg:mt-40">--}}
 {{--                <template x-for="(image, index) in images">--}}
 {{--                    <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">--}}
