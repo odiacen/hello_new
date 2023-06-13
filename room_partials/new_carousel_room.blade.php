@@ -20,7 +20,7 @@
                 <div class="relative flex justify-center items-center h-[420px]">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[420px]">
-                            <img :src="image.imageSrc" alt="Slide" class="w-full">
+                            <img :src="image.imageSrc" alt="Slide" class="w-full h-[420px]">
                         </div>
                     </template>
 
@@ -50,7 +50,7 @@
                 <div class="relative flex justify-center items-center h-[420px]">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[420px]">
-                            <img :src="image.imageSrc" alt="Slide" class="w-full">
+                            <img :src="image.imageSrc" alt="Slide" class="w-full h-[420px]">
                         </div>
                     </template>
 
@@ -71,7 +71,7 @@
                 <div class="relative flex justify-center items-center h-[420px]">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[420px]">
-                            <img :src="image.imageSrc" alt="Slide" class="w-full">
+                            <img :src="image.imageSrc" alt="Slide" class="w-full h-[420px]">
                         </div>
                     </template>
 
