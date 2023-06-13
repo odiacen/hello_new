@@ -15,7 +15,7 @@
             </div>
 
             <!-- Tab content -->
-            <div x-show="activeTab === 'photos'">
+            <div class="h-[400px]" x-show="activeTab === 'photos'">
                 <!-- Existing carousel code -->
                 <div class="relative flex justify-center items-center mt-24 lg:mt-40">
                     <template x-for="(image, index) in images">
@@ -36,24 +36,24 @@
                 </div>
             </div>
 
-            <div x-show="activeTab === 'map'">
+            <div class="h-[400px]" x-show="activeTab === 'map'">
                 <!-- Google Maps embed code or map component -->
                 <p>This is the map content</p>
             </div>
 
-            <div x-show="activeTab === 'video'">
+            <div class="h-[400px]" x-show="activeTab === 'video'">
                 <!-- YouTube video embed code or video component -->
                 <p>This is the video content</p>
             </div>
 
-            <div x-show="activeTab === 'neighborhood'">
+            <div class="h-[400px]" x-show="activeTab === 'neighborhood'">
                 <!-- Carousel with neighborhood photos -->
                 <div class="relative flex justify-center items-center mt-24 lg:mt-40">
                     <!-- Neighborhood photos carousel code -->
                 </div>
             </div>
 
-            <div x-show="activeTab === 'moreRooms'">
+            <div class="h-[400px]" x-show="activeTab === 'moreRooms'">
                 <!-- Carousel with more room photos -->
                 <div class="relative flex justify-center items-center mt-24 lg:mt-40">
                     <!-- More room photos carousel code -->
@@ -61,16 +61,16 @@
             </div>
 
             <!-- Tab navigation -->
-            <div class="flex justify-between bg-gray-300 text-white text-sm p-2 absolute -bottom-14 w-full">
-                <button @click="changeTab('photos')" :class="{'bg-gray-400': activeTab === 'photos'}">Fotos</button>
+            <div class="flex justify-between bg-neutral-600 text-white text-sm p-2 absolute -bottom-28 w-full">
+                <button @click="changeTab('photos')" class="h-full" :class="{'bg-neutral-300': activeTab === 'photos'}">Fotos</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('map')" :class="{'bg-gray-400': activeTab === 'map'}">Mapa</button>
+                <button @click="changeTab('map')" class="h-full" :class="{'bg-neutral-300': activeTab === 'map'}">Mapa</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('video')" :class="{'bg-gray-400': activeTab === 'video'}">Video</button>
+                <button @click="changeTab('video')" class="h-full" :class="{'bg-neutral-300': activeTab === 'video'}">Video</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('neighborhood')" :class="{'bg-gray-400': activeTab === 'neighborhood'}">Barrio</button>
+                <button @click="changeTab('neighborhood')" class="h-full" :class="{'bg-neutral-300': activeTab === 'neighborhood'}">Barrio</button>
                 <span class="border-l border-white"></span>
-                <button @click="changeTab('moreRooms')" :class="{'bg-gray-400': activeTab === 'moreRooms'}">+Habitaciones</button>
+                <button @click="changeTab('moreRooms')" class="h-full" :class="{'bg-neutral-300': activeTab === 'moreRooms'}">+Habitaciones</button>
             </div>
         </div>
         <div class="flex flex-col justify-start items-start lg:ml-10 ml-4 lg:w-1/3 w-[25%] lg:mt-20 mt-12">
