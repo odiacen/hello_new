@@ -17,6 +17,29 @@
                     avatar: 'https://www.helloflatmate.com/img/img/avatar-room.png',
                     content: 'Otro texto',
                 }],
+                rooms : [
+                {
+                    title: "Cama doble",
+                    type: "x2",
+                    price: "100"
+                },
+                {
+                    title: "Cama individual",
+                    type: "x1",
+                    price: "200"
+                },
+                {
+                    title: "Cama individual",
+                    type: "x1",
+                    price: "300"
+                }
+            ],
+
+             portadas : [
+                'https://www.helloflatmate.com/img/img/room1.png',
+                'https://www.helloflatmate.com/img/img/room2.png',
+                'https://www.helloflatmate.com/img/img/room3.png'
+            ],
                 activeSlide: 0,
                 startCarousel() {
                     setInterval(() => {
