@@ -1,20 +1,20 @@
-<div x-data="carouselDistrict()" x-init="startCarousel()" class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
+<div x-init="startCarousel()" class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
     <div class="flex flex-col justify-center items-center w-full">
         <span class="text-black text-2xl font-bold">El barrio</span>
         <div class="flex flex-row justify-start items-start w-full">
             <div class="flex flex-col justify-between w-1/2 h-[250px]">
                 <div class="relative flex justify-center items-center mt-32 lg:mt-40">
                     <template x-for="(image, index) in images">
-                        <div x-show="isActiveSlide(index)" :key="index" class="absolute w-full">
+                        <div x-show="isActiveSlided(index)" :key="index" class="absolute w-full">
                             <img :src="image.imageSrc" alt="Slide" class="w-full h-[250px]">
                         </div>
                     </template>
 
                     <div class="flex justify-between absolute w-full px-4">
-                        <button @click="previousSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                        <button @click="previousSlided()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                             <ion-icon name="chevron-back-outline"></ion-icon>
                         </button>
-                        <button @click="nextSlide()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
+                        <button @click="nextSlided()" class="text-cyan-300 bg-white text-xl p-1 rounded-full">
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </button>
                     </div>
@@ -36,39 +36,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function carouselDistrict() {
-            const images = [
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/barrio.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
-                },
-            ];
-
-            return {
-                images,
-                activeSlide: 0,
-                startCarousel() {
-                    setInterval(() => {
-                        this.nextSlide();
-                    }, 10000);
-                },
-                isActiveSlide(index) {
-                    return this.activeSlide === index;
-                },
-                previousSlide() {
-                    this.activeSlide = (this.activeSlide - 1 + this.images.length) % this.images.length;
-                },
-                nextSlide() {
-                    this.activeSlide = (this.activeSlide + 1) % this.images.length;
-                },
-            };
-        }
-    </script>
 </div>

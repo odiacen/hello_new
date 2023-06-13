@@ -106,7 +106,7 @@
                     answer: {
                         title:"Incluido el precio de la habitación",
                         list:[
-                            "Servicio de raparaciones y mantenimiento",
+                            "Servicio de reparaciones y mantenimiento",
                             "Atención a emergencias 24h",
                             "Fast WIFI",
                             "Desinfectada anti COVID-19",
@@ -176,6 +176,34 @@
                 },
                 nextSlide() {
                     this.activeSlide = (this.activeSlide + 1) % this.testimonials.length;
+                },
+
+
+                images : [
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/barrio.png',
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
+                },
+                {
+                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
+                },
+            ],
+            activeSlided: 0,
+                startCarouseld() {
+                    setInterval(() => {
+                        this.nextSlide();
+                    }, 10000);
+                },
+                isActiveSlided(index) {
+                    return this.activeSlided === index;
+                },
+                previousSlided() {
+                    this.activeSlided = (this.activeSlided - 1 + this.images.length) % this.images.length;
+                },
+                nextSlided() {
+                    this.activeSlided = (this.activeSlided + 1) % this.images.length;
                 },
             };
         }
