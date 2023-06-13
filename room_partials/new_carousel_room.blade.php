@@ -15,9 +15,9 @@
             </div>
 
             <!-- Tab content -->
-            <div class="lg:h-[420px] h-[460px]" x-show="activeTabR === 'photos'">
+            <div class="lg:h-[420px] h-[460px] bg-green-300" x-show="activeTabR === 'photos'">
                 <!-- Existing carousel code -->
-                <div class="relative flex justify-center items-center lg:h-[420px] h-[460px]">
+                <div class="relative flex justify-center items-center lg:h-[420px] h-[460px] bg-pink-300">
                     <template x-for="(image, index) in imagesR">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full">
                             <img :src="image.imageSrc" alt="Slide" class="w-full">
