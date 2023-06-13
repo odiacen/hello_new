@@ -1,6 +1,9 @@
 <script>
         function alpineRoom() {
             return {
+                getData(){
+                    console.log(getting);
+                },
                 testimonials : [
                 {
                     name:'Stephanie',
