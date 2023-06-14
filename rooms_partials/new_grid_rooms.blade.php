@@ -1,7 +1,7 @@
 <div class="grid justify-center items-center">
     <div class="grid grid-cols-2 lg:grid-cols-3 justify-center items-center px-20 mt-2">
         <template x-for="(room, index) in rooms">
-            <a x-bind:href="`https://www.helloflatmate.com/nuevo_room/` + room.id" class="flex flex-col lg:w-[300px] w-[330px] items-start bg-gray-100 mt-10 ml-10 relative">
+            <a x-bind:href="`https://www.helloflatmate.com/nuevo_room/` + room.code_home" class="flex flex-col lg:w-[300px] w-[330px] items-start bg-gray-100 mt-10 ml-10 relative">
                 <img class="object-cover w-full lg:h-48 h-56" :src="portadas[index]" alt="">
                 <div class="absolute bg-cyan-300 flex flex-row p-2 text-sm text-white font-bold mb-1 bottom-14 right-1">
                     <span x-text="room.price"></span>
