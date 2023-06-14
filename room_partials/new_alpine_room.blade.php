@@ -2,7 +2,7 @@
         function alpineRoom() {
             return {
                 endpointRoom: 'https://www.helloflatmate.com/api/rooms/',
-                path = 'path'
+                path = 'path',
                 getData(){
                     let url = window.location.pathname;
                     this.path = url.split("/").pop();
