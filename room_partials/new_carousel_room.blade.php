@@ -18,7 +18,7 @@
             <div class="h-[400px]" x-show="activeTabR === 'photos'">
                 <!-- Existing carousel code -->
                 <div class="relative flex justify-center items-center h-[400px]">
-                    <template x-for="(image, index) in imagesR">
+                    <template x-for="(image, index) in imagesR[0]">
                         <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[400px]">
                             <img :src="image" alt="Slide" class="w-full h-[400px]">
                         </div>
