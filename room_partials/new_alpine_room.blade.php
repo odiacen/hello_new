@@ -7,7 +7,15 @@
                     let url = window.location.pathname;
                     this.path = url.split("/").pop();
                     let endpoint = this.endpointRoom + this.path;
-                    console.log(endpoint);
+                    axios.get( endpoint )
+                    .then( (r)=>{
+                            
+                        this.imagesR.push(r.data.imagesR);
+                        console.log(this.imagesR);
+                            
+                        }).catch( (e)=>{
+                            
+                        })
                 },
                 testimonials : [
                 {
@@ -215,17 +223,7 @@
                 },
 
 
-                imagesR : [
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room1.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room2.png',
-                },
-                {
-                    imageSrc: 'https://www.helloflatmate.com/img/img/room3.png',
-                },
-            ],
+                imagesR : [],
             activeSlideR: 0,
                 activeTabR: 'photos',
                 startCarouselR() {
