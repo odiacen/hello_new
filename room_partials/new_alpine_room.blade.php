@@ -1,3 +1,4 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
 <script>
         function alpineRoom() {
             return {
@@ -23,8 +24,7 @@
                         this.questionlist.push(r.data.reparaciones);
                         this.questionlist.push(r.data.normas);
                         this.questionlist.push(r.data.checkin);
-                        
-                            
+                        this.initMap();                            
                         }).catch( (e)=>{
                             
                         })
@@ -159,30 +159,28 @@
                 },
                 changeTabR(tab) {
                     this.activeTabR = tab;
+                },
+
+                initMap() {
+                    if (this.home.length > 0) {
+                        const location = { lat: this.home.latitud, lng: this.home.longitud }; 
+
+                        const map = new google.maps.Map(document.getElementById('map'), {
+                            center: location,
+                            zoom: 12,
+                        });
+
+                        const marker = new google.maps.Marker({
+                            position: location,
+                            map: map,
+                        });
+                    }
                 }
 
             };
         }
     </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
-<script>
-    function initMap() {
-        const location = { lat: 40.712776, lng: -74.005974 }; // Coordenadas de ejemplo
 
-        const map = new google.maps.Map(document.getElementById('map'), {
-            center: location,
-            zoom: 12,
-        });
-
-        const marker = new google.maps.Marker({
-            position: location,
-            map: map,
-        });
-    }
-
-    // Llamada a la función initMap() para inicializar el mapa
-    initMap();
-</script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
     let player;
