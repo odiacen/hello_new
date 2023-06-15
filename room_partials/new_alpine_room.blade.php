@@ -15,7 +15,7 @@
                         this.imagesR.push(r.data.imagesR);
                         this.room = r.data.room;
                         this.home = r.data.home;
-                        this.question[0].answer.list = r.data.condiciones;
+                        this.question[0].answer.list.push(r.data.condiciones);
                         console.log(this.imagesR);
                             
                         }).catch( (e)=>{
