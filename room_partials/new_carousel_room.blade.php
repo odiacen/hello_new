@@ -3,8 +3,8 @@
         <div class="flex flex-col relative lg:w-2/3 w-[75%]">
             <div class="flex flex-row justify-between lg:mb-9 mb-4">
                 <div class="flex flex-col">
-                    <span x-text="room.type" class="text-black text-xl font-bold">Tranquila habitación doble</span>
-                    <span x-text="room.title" class="text-black text-sm">Zona centro</span>
+                    <span x-text="room.title" class="text-black text-xl font-bold">Tranquila habitación doble</span>
+                    <span x-text="room.type" class="text-black text-sm">Zona centro</span>
                 </div>
                 <div class="bg-neutral-200 text-black text-xs flex flex-row p-1 h-[20px]">
                     <span>
