@@ -1,4 +1,4 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3hC35ehz1oAfUll7q7qzUlPa27Gz5g5g"></script>
 <script>
         function alpineRoom() {
             return {
@@ -168,9 +168,9 @@
                                            lng: this.home.longitud, 
                                          }; 
                         console.log(location);
+                        
                         const map = new google.maps.Map(document.getElementById('map'), {
                             center: location,
-                            zoom: 12,
                         });
 
                         const marker = new google.maps.Marker({
