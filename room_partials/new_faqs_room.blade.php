@@ -9,7 +9,7 @@
                         <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
                         <ul class="p-1 text-black text-sm text-justify mt-2 custom-list" >
                             <template x-for="(item, index) in question.answer.list" :key="index">
-                                <li x-text="item">
+                                <li x-html="item">
                                 </li>
                             </template>
                         </ul>

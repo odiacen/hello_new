@@ -3,6 +3,8 @@
             return {
                 endpointRoom: "https://www.helloflatmate.com/api/rooms/",
                 path: "path",
+                room: [],
+                home: [],
                 getData(){
                     let url = window.location.pathname;
                     this.path = url.split("/").pop();
@@ -11,6 +13,9 @@
                     .then( (r)=>{
                             
                         this.imagesR.push(r.data.imagesR);
+                        this.room = r.data.room;
+                        this.home = r.data.home;
+                        this.question[0].answer.list = r.data.condiciones;
                         console.log(this.imagesR);
                             
                         }).catch( (e)=>{
@@ -61,19 +66,7 @@
                     title: "Condiciones de alquiler",
                     answer: {
                         title:"Incluido el precio de la habitación",
-                        list:[
-                            "Servicio de raparaciones y mantenimiento",
-                            "Atención a emergencias 24h",
-                            "Fast WIFI",
-                            "Desinfectada anti COVID-19",
-                            "Habitación de unos 8m2",
-                            "Cama de 105 x 190 cm",
-                            "Exterior al patio de manzana",
-                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
-                            "Armario empotrado de 4 puertas, increible capacidad",
-                            "Ventana de aluminio con persiana",
-                            "Habitación muy luminosa",
-                        ]
+                        list:[]
                     },
                     open: false
                 },
