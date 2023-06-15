@@ -6,7 +6,7 @@
                 <div class="flex flex-col">
                     <h3 class="text-md font-bold"  x-text="question.title"></h3>
                     <div class="mt-4" x-show="question.open">
-                        <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
+                        
                         <ul class="p-1 text-black text-sm text-justify mt-2 custom-list" >
                             
                                 <li x-html="questionlist[index]">

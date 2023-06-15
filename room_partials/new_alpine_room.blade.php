@@ -70,110 +70,26 @@
             questions : [
                 {
                     title: "Condiciones de alquiler",
-                    answer: {
-                        title:"Incluido el precio de la habitación",
-                        list:[]
-                    },
                     open: false
                 },
                 {
                     title: "Habitación",
-                    answer: {
-                        title:"Incluido el precio de la habitación",
-                        list:[
-                            "Servicio de raparaciones y mantenimiento",
-                            "Atención a emergencias 24h",
-                            "Fast WIFI",
-                            "Desinfectada anti COVID-19",
-                            "Habitación de unos 8m2",
-                            "Cama de 105 x 190 cm",
-                            "Exterior al patio de manzana",
-                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
-                            "Armario empotrado de 4 puertas, increible capacidad",
-                            "Ventana de aluminio con persiana",
-                            "Habitación muy luminosa",
-                        ]
-                    },
                     open: false
                 },
                 {
                     title: "Facturas",
-                    answer: {
-                        title:"Incluido el precio de la habitación",
-                        list:[
-                            "Servicio de raparaciones y mantenimiento",
-                            "Atención a emergencias 24h",
-                            "Fast WIFI",
-                            "Desinfectada anti COVID-19",
-                            "Habitación de unos 8m2",
-                            "Cama de 105 x 190 cm",
-                            "Exterior al patio de manzana",
-                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
-                            "Armario empotrado de 4 puertas, increible capacidad",
-                            "Ventana de aluminio con persiana",
-                            "Habitación muy luminosa",
-                        ]
-                    },
                     open: false
                 },
                 {
                     title: "Reparaciones",
-                    answer: {
-                        title:"Incluido el precio de la habitación",
-                        list:[
-                            "Servicio de reparaciones y mantenimiento",
-                            "Atención a emergencias 24h",
-                            "Fast WIFI",
-                            "Desinfectada anti COVID-19",
-                            "Habitación de unos 8m2",
-                            "Cama de 105 x 190 cm",
-                            "Exterior al patio de manzana",
-                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
-                            "Armario empotrado de 4 puertas, increible capacidad",
-                            "Ventana de aluminio con persiana",
-                            "Habitación muy luminosa",
-                        ]
-                    },
                     open: false
                 },
                 {
                     title: "Normas",
-                    answer: {
-                        title:"Incluido el precio de la habitación",
-                        list:[
-                            "Servicio de raparaciones y mantenimiento",
-                            "Atención a emergencias 24h",
-                            "Fast WIFI",
-                            "Desinfectada anti COVID-19",
-                            "Habitación de unos 8m2",
-                            "Cama de 105 x 190 cm",
-                            "Exterior al patio de manzana",
-                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
-                            "Armario empotrado de 4 puertas, increible capacidad",
-                            "Ventana de aluminio con persiana",
-                            "Habitación muy luminosa",
-                        ]
-                    },
                     open: false
                 },
                 {
                     title: "Check-in",
-                    answer: {
-                        title:"Incluido el precio de la habitación",
-                        list:[
-                            "Servicio de raparaciones y mantenimiento",
-                            "Atención a emergencias 24h",
-                            "Fast WIFI",
-                            "Desinfectada anti COVID-19",
-                            "Habitación de unos 8m2",
-                            "Cama de 105 x 190 cm",
-                            "Exterior al patio de manzana",
-                            "Encontrarás un escritorio, una cómoda silla de trabajo y una mesita de noche",
-                            "Armario empotrado de 4 puertas, increible capacidad",
-                            "Ventana de aluminio con persiana",
-                            "Habitación muy luminosa",
-                        ]
-                    },
                     open: false
                 },
             ],
