@@ -136,7 +136,7 @@
             </div>
         </div>
         <div class="flex flex-col justify-start items-start lg:ml-10 ml-4 lg:w-1/3 w-[25%] lg:mt-20 mt-12">
-            <span class="bg-cyan-300 text-white font-bold text-sm p-2 lg:w-1/3 w-2/3 flex justify-center items-center">275 e/mes</span>
+            <span x-text="room.price + `e/mes`" class="bg-cyan-300 text-white font-bold text-sm p-2 lg:w-1/3 w-2/3 flex justify-center items-center">275 e/mes</span>
             <button class="bg-[#3f12a3] lg:w-[65%] w-full mt-4 flex flex-row justify-between items-center px-2 p-2 rounded-full text-white text-sm font-bold">
                 Reserva sin esperas
                 <span class="bg-white rounded-full p-1 h-6 w-6 flex justify-center items-center ml-2">
