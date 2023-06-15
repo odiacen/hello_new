@@ -162,9 +162,12 @@
                 },
 
                 initMap() {
-                    if (this.home.length > 0) {
-                        const location = { lat: this.home.latitud, lng: this.home.longitud }; 
-
+                    
+                        const location = { 
+                                           lat: this.home.latitud, 
+                                           lng: this.home.longitud, 
+                                         }; 
+                        console.log(location);
                         const map = new google.maps.Map(document.getElementById('map'), {
                             center: location,
                             zoom: 12,
@@ -174,7 +177,7 @@
                             position: location,
                             map: map,
                         });
-                    }
+                    
                 }
 
             };
