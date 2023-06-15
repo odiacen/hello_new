@@ -1,5 +1,6 @@
 <div class="w-full mt-14 lg:mb-28 lg:px-36 px-10">
     <div class="flex flex-row justify-start items-start w-full">
+    <template x-if="room.title">   
         <div class="flex flex-col relative lg:w-2/3 w-[75%]">
          <template x-if="room.title">   
         <div class="flex flex-row justify-between lg:mb-9 mb-4">
@@ -16,6 +17,7 @@
             </div>
             </template>
             <!-- Tab content -->
+            
             <div class="h-[400px]" x-show="activeTabR === 'photos'">
                 <!-- Existing carousel code -->
                 <div class="relative flex justify-center items-center h-[400px]">
@@ -159,6 +161,7 @@
                 </span>
             </button>
         </div>
+        </template>
     </div>    
 </div>
 
