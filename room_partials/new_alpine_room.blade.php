@@ -15,7 +15,12 @@
                         this.imagesR.push(r.data.imagesR);
                         this.room = r.data.room;
                         this.home = r.data.home;
-                        this.question[0].answer.list.push(r.data.condiciones);
+                        this.questionlist.push(r.data.condiciones);
+                        this.questionlist.push(r.data.habitaciones);
+                        this.questionlist.push(r.data.facturas);
+                        this.questionlist.push(r.data.reparaciones);
+                        this.questionlist.push(r.data.normas);
+                        this.questionlist.push(r.data.checkin);
                         console.log(this.imagesR);
                             
                         }).catch( (e)=>{
@@ -61,6 +66,7 @@
                 'https://www.helloflatmate.com/img/img/room2.png',
                 'https://www.helloflatmate.com/img/img/room3.png'
             ],
+            questionlist: [],
             questions : [
                 {
                     title: "Condiciones de alquiler",

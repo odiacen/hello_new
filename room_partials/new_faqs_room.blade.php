@@ -8,10 +8,10 @@
                     <div class="mt-4" x-show="question.open">
                         <spam class="text-sm font-bold" x-text="question.answer.title"></spam>
                         <ul class="p-1 text-black text-sm text-justify mt-2 custom-list" >
-                            <template x-for="(item, index) in question.answer.list" :key="index">
-                                <li x-html="item">
+                            
+                                <li x-html="questionlist[index]">
                                 </li>
-                            </template>
+                            
                         </ul>
                     </div>
                 </div>
