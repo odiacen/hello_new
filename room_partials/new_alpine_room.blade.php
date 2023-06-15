@@ -235,10 +235,10 @@
                     return this.activeSlideR === index;
                 },
                 previousSlideR() {
-                    this.activeSlideR = (this.activeSlideR - 1 + this.imagesR.length) % this.imagesR.length;
+                    this.activeSlideR = (this.activeSlideR - 1 + this.imagesR[0].length) % this.imagesR[0].length;
                 },
                 nextSlideR() {
-                    this.activeSlideR = (this.activeSlideR + 1) % this.imagesR.length;
+                    this.activeSlideR = (this.activeSlideR + 1) % this.imagesR[0].length;
                 },
                 changeTabR(tab) {
                     this.activeTabR = tab;
