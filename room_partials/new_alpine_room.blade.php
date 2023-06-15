@@ -3,6 +3,7 @@
             return {
                 endpointRoom: "https://www.helloflatmate.com/api/rooms/",
                 path: "path",
+                imagenB: "",
                 room: [],
                 home: [],
                 getData(){
@@ -13,6 +14,7 @@
                     .then( (r)=>{
                             
                         this.imagesR.push(r.data.imagesR);
+                        this.imagenB = r.data.imageB;
                         this.room = r.data.room;
                         this.home = r.data.home;
                         this.questionlist.push(r.data.condiciones);
@@ -21,7 +23,7 @@
                         this.questionlist.push(r.data.reparaciones);
                         this.questionlist.push(r.data.normas);
                         this.questionlist.push(r.data.checkin);
-                        console.log(this.imagesR);
+                        
                             
                         }).catch( (e)=>{
                             

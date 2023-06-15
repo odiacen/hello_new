@@ -48,11 +48,11 @@
             <div class="h-[400px]" x-show="activeTabR === 'neighborhood'">
                 <!-- Carousel with neighborhood photos -->
                 <div class="relative flex justify-center items-center h-[400px]">
-                    <template x-for="(image, index) in imagesR">
-                        <div x-show="isActiveSlideR(index)" :key="index" class="absolute w-full h-[400px]">
-                            <img :src="image.imageSrc" alt="Slide" class="w-full h-[400px]">
+                    
+                        <div class="absolute w-full h-[400px]">
+                            <img :src="imagenB" alt="Slide" class="w-full h-[400px]">
                         </div>
-                    </template>
+                    
 
                     <!-- Navigation buttons -->
                     <div class="flex justify-between absolute w-full px-4">
